@@ -1,0 +1,158 @@
+[2025-09-11T17:23:42.919+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-11T17:23:42.987+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: generate_append_latest_pipeline.ingest_etl scheduled__2025-09-10T00:00:00+00:00 [queued]>
+[2025-09-11T17:23:42.997+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: generate_append_latest_pipeline.ingest_etl scheduled__2025-09-10T00:00:00+00:00 [queued]>
+[2025-09-11T17:23:42.998+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-09-11T17:23:43.023+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): ingest_etl> on 2025-09-10 00:00:00+00:00
+[2025-09-11T17:23:43.030+0000] {standard_task_runner.py:64} INFO - Started process 343 to run task
+[2025-09-11T17:23:43.034+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'generate_append_latest_pipeline', 'ingest_etl', 'scheduled__2025-09-10T00:00:00+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/sync_data.py', '--cfg-path', '/tmp/tmp0y8zpa0h']
+[2025-09-11T17:23:43.037+0000] {standard_task_runner.py:91} INFO - Job 70: Subtask ingest_etl
+[2025-09-11T17:23:43.199+0000] {task_command.py:426} INFO - Running <TaskInstance: generate_append_latest_pipeline.ingest_etl scheduled__2025-09-10T00:00:00+00:00 [running]> on host e95bde6b8d07
+[2025-09-11T17:23:43.603+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='generate_append_latest_pipeline' AIRFLOW_CTX_TASK_ID='ingest_etl' AIRFLOW_CTX_EXECUTION_DATE='2025-09-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-10T00:00:00+00:00'
+[2025-09-11T17:23:43.603+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-11T17:23:43.737+0000] {logging_mixin.py:188} INFO - ✅ Connected to ClickHouse 24.8.14.39 | DB=ecom_db_raw
+[2025-09-11T17:23:43.737+0000] {logging_mixin.py:188} INFO - 
+🚀 Starting ETL process...
+[2025-09-11T17:23:43.738+0000] {logging_mixin.py:188} INFO - 
+=== Processing categories ===
+[2025-09-11T17:23:43.811+0000] {logging_mixin.py:188} INFO - ℹ️ Latest data starts from: 2025-08-12 17:23:22.802903
+[2025-09-11T17:23:43.816+0000] {logging_mixin.py:188} INFO - 💾 Saved combined data to ingested_data/categories_combined.csv
+[2025-09-11T17:23:43.876+0000] {logging_mixin.py:188} INFO - ✅ Saved categories to S3 historic (CSV + metadata)
+[2025-09-11T17:23:43.879+0000] {logging_mixin.py:188} INFO - 🛠️ Ensured table ecom_db_raw.CATEGORIES exists
+[2025-09-11T17:23:43.890+0000] {logging_mixin.py:188} INFO - ➡️ Inserted rows 0..9 into ecom_db_raw.CATEGORIES
+[2025-09-11T17:23:43.891+0000] {logging_mixin.py:188} INFO - ✅ Loaded 10 rows to ecom_db_raw.CATEGORIES
+[2025-09-11T17:23:43.891+0000] {logging_mixin.py:188} INFO - 
+✅ Done categories:
+- Historic: 5 rows
+- Latest:   5 rows
+- Total:    10 rows
+- Date col: CREATED_AT
+- Saved:    ingested_data/categories_combined.csv
+- Loaded -> ClickHouse table: CATEGORIES
+                    
+[2025-09-11T17:23:43.891+0000] {logging_mixin.py:188} INFO - 
+=== Processing subcategories ===
+[2025-09-11T17:23:43.911+0000] {logging_mixin.py:188} INFO - ℹ️ Latest data starts from: 2025-08-12 17:23:22.802903
+[2025-09-11T17:23:43.915+0000] {logging_mixin.py:188} INFO - 💾 Saved combined data to ingested_data/subcategories_combined.csv
+[2025-09-11T17:23:43.933+0000] {logging_mixin.py:188} INFO - ✅ Saved subcategories to S3 historic (CSV + metadata)
+[2025-09-11T17:23:43.936+0000] {logging_mixin.py:188} INFO - 🛠️ Ensured table ecom_db_raw.SUBCATEGORIES exists
+[2025-09-11T17:23:43.946+0000] {logging_mixin.py:188} INFO - ➡️ Inserted rows 0..26 into ecom_db_raw.SUBCATEGORIES
+[2025-09-11T17:23:43.947+0000] {logging_mixin.py:188} INFO - ✅ Loaded 27 rows to ecom_db_raw.SUBCATEGORIES
+[2025-09-11T17:23:43.948+0000] {logging_mixin.py:188} INFO - 
+✅ Done subcategories:
+- Historic: 2 rows
+- Latest:   25 rows
+- Total:    27 rows
+- Date col: CREATED_AT
+- Saved:    ingested_data/subcategories_combined.csv
+- Loaded -> ClickHouse table: SUBCATEGORIES
+                    
+[2025-09-11T17:23:43.948+0000] {logging_mixin.py:188} INFO - 
+=== Processing order_items ===
+[2025-09-11T17:23:44.144+0000] {logging_mixin.py:188} INFO - ℹ️ Latest data starts from: 2025-08-12 17:23:22.802903
+[2025-09-11T17:23:44.235+0000] {logging_mixin.py:188} INFO - 💾 Saved combined data to ingested_data/order_items_combined.csv
+[2025-09-11T17:23:44.369+0000] {logging_mixin.py:188} INFO - ✅ Saved order_items to S3 historic (CSV + metadata)
+[2025-09-11T17:23:44.373+0000] {logging_mixin.py:188} INFO - 🛠️ Ensured table ecom_db_raw.ORDER_ITEMS exists
+[2025-09-11T17:23:44.679+0000] {logging_mixin.py:188} INFO - ➡️ Inserted rows 0..16146 into ecom_db_raw.ORDER_ITEMS
+[2025-09-11T17:23:44.679+0000] {logging_mixin.py:188} INFO - ✅ Loaded 16147 rows to ecom_db_raw.ORDER_ITEMS
+[2025-09-11T17:23:44.680+0000] {logging_mixin.py:188} INFO - 
+✅ Done order_items:
+- Historic: 10000 rows
+- Latest:   6147 rows
+- Total:    16147 rows
+- Date col: CREATED_AT
+- Saved:    ingested_data/order_items_combined.csv
+- Loaded -> ClickHouse table: ORDER_ITEMS
+                    
+[2025-09-11T17:23:44.680+0000] {logging_mixin.py:188} INFO - 
+=== Processing interactions ===
+[2025-09-11T17:23:44.948+0000] {logging_mixin.py:188} INFO - ℹ️ Latest data starts from: 2025-08-12 17:23:22.802903
+[2025-09-11T17:23:45.080+0000] {logging_mixin.py:188} INFO - 💾 Saved combined data to ingested_data/interactions_combined.csv
+[2025-09-11T17:23:45.302+0000] {logging_mixin.py:188} INFO - ✅ Saved interactions to S3 historic (CSV + metadata)
+[2025-09-11T17:23:45.305+0000] {logging_mixin.py:188} INFO - 🛠️ Ensured table ecom_db_raw.INTERACTIONS exists
+[2025-09-11T17:23:45.768+0000] {logging_mixin.py:188} INFO - ➡️ Inserted rows 0..18971 into ecom_db_raw.INTERACTIONS
+[2025-09-11T17:23:45.769+0000] {logging_mixin.py:188} INFO - ✅ Loaded 18972 rows to ecom_db_raw.INTERACTIONS
+[2025-09-11T17:23:45.772+0000] {logging_mixin.py:188} INFO - 
+✅ Done interactions:
+- Historic: 9090 rows
+- Latest:   9882 rows
+- Total:    18972 rows
+- Date col: EVENT_DATE
+- Saved:    ingested_data/interactions_combined.csv
+- Loaded -> ClickHouse table: INTERACTIONS
+                    
+[2025-09-11T17:23:45.773+0000] {logging_mixin.py:188} INFO - 
+=== Processing customers ===
+[2025-09-11T17:23:45.834+0000] {logging_mixin.py:188} INFO - ℹ️ Latest data starts from: 2025-08-12 17:23:22.802000
+[2025-09-11T17:23:45.857+0000] {logging_mixin.py:188} INFO - 💾 Saved combined data to ingested_data/customers_combined.csv
+[2025-09-11T17:23:45.894+0000] {logging_mixin.py:188} INFO - ✅ Saved customers to S3 historic (CSV + metadata)
+[2025-09-11T17:23:45.898+0000] {logging_mixin.py:188} INFO - 🛠️ Ensured table ecom_db_raw.CUSTOMERS exists
+[2025-09-11T17:23:45.949+0000] {logging_mixin.py:188} INFO - ➡️ Inserted rows 0..2089 into ecom_db_raw.CUSTOMERS
+[2025-09-11T17:23:45.949+0000] {logging_mixin.py:188} INFO - ✅ Loaded 2090 rows to ecom_db_raw.CUSTOMERS
+[2025-09-11T17:23:45.950+0000] {logging_mixin.py:188} INFO - 
+✅ Done customers:
+- Historic: 1090 rows
+- Latest:   1000 rows
+- Total:    2090 rows
+- Date col: SIGNUP_DATE
+- Saved:    ingested_data/customers_combined.csv
+- Loaded -> ClickHouse table: CUSTOMERS
+                    
+[2025-09-11T17:23:45.950+0000] {logging_mixin.py:188} INFO - 
+=== Processing products ===
+[2025-09-11T17:23:45.999+0000] {logging_mixin.py:188} INFO - ℹ️ Latest data starts from: 2025-08-12 17:23:22.802000
+[2025-09-11T17:23:46.015+0000] {logging_mixin.py:188} INFO - 💾 Saved combined data to ingested_data/products_combined.csv
+[2025-09-11T17:23:46.050+0000] {logging_mixin.py:188} INFO - ✅ Saved products to S3 historic (CSV + metadata)
+[2025-09-11T17:23:46.053+0000] {logging_mixin.py:188} INFO - 🛠️ Ensured table ecom_db_raw.PRODUCTS exists
+[2025-09-11T17:23:46.083+0000] {logging_mixin.py:188} INFO - ➡️ Inserted rows 0..1100 into ecom_db_raw.PRODUCTS
+[2025-09-11T17:23:46.084+0000] {logging_mixin.py:188} INFO - ✅ Loaded 1101 rows to ecom_db_raw.PRODUCTS
+[2025-09-11T17:23:46.084+0000] {logging_mixin.py:188} INFO - 
+✅ Done products:
+- Historic: 101 rows
+- Latest:   1000 rows
+- Total:    1101 rows
+- Date col: CREATED_AT
+- Saved:    ingested_data/products_combined.csv
+- Loaded -> ClickHouse table: PRODUCTS
+                    
+[2025-09-11T17:23:46.085+0000] {logging_mixin.py:188} INFO - 
+=== Processing orders ===
+[2025-09-11T17:23:46.191+0000] {logging_mixin.py:188} INFO - ℹ️ Latest data starts from: 2025-08-12 17:23:22.802000
+[2025-09-11T17:23:46.274+0000] {logging_mixin.py:188} INFO - 💾 Saved combined data to ingested_data/orders_combined.csv
+[2025-09-11T17:23:46.395+0000] {logging_mixin.py:188} INFO - ✅ Saved orders to S3 historic (CSV + metadata)
+[2025-09-11T17:23:46.399+0000] {logging_mixin.py:188} INFO - 🛠️ Ensured table ecom_db_raw.ORDERS exists
+[2025-09-11T17:23:46.593+0000] {logging_mixin.py:188} INFO - ➡️ Inserted rows 0..7453 into ecom_db_raw.ORDERS
+[2025-09-11T17:23:46.594+0000] {logging_mixin.py:188} INFO - ✅ Loaded 7454 rows to ecom_db_raw.ORDERS
+[2025-09-11T17:23:46.594+0000] {logging_mixin.py:188} INFO - 
+✅ Done orders:
+- Historic: 5412 rows
+- Latest:   2042 rows
+- Total:    7454 rows
+- Date col: ORDER_DATE
+- Saved:    ingested_data/orders_combined.csv
+- Loaded -> ClickHouse table: ORDERS
+                    
+[2025-09-11T17:23:46.594+0000] {logging_mixin.py:188} INFO - 
+=== Processing reviews ===
+[2025-09-11T17:23:46.752+0000] {logging_mixin.py:188} INFO - 💾 Saved combined data to ingested_data/reviews_combined.csv
+[2025-09-11T17:23:46.900+0000] {logging_mixin.py:188} INFO - ✅ Saved reviews to S3 historic (CSV + metadata)
+[2025-09-11T17:23:46.903+0000] {logging_mixin.py:188} INFO - 🛠️ Ensured table ecom_db_raw.REVIEWS exists
+[2025-09-11T17:23:47.004+0000] {logging_mixin.py:188} INFO - ➡️ Inserted rows 0..12294 into ecom_db_raw.REVIEWS
+[2025-09-11T17:23:47.005+0000] {logging_mixin.py:188} INFO - ✅ Loaded 12295 rows to ecom_db_raw.REVIEWS
+[2025-09-11T17:23:47.005+0000] {logging_mixin.py:188} INFO - 
+✅ Done reviews:
+- Historic: 6148 rows
+- Latest:   6147 rows
+- Total:    12295 rows
+- Date col: N/A
+- Saved:    ingested_data/reviews_combined.csv
+- Loaded -> ClickHouse table: REVIEWS
+                    
+[2025-09-11T17:23:47.005+0000] {logging_mixin.py:188} INFO - 
+🏁 ETL process completed. ClickHouse connection closed.
+[2025-09-11T17:23:47.006+0000] {logging_mixin.py:188} INFO - ETL processing completed successfully
+[2025-09-11T17:23:47.007+0000] {python.py:237} INFO - Done. Returned value was: True
+[2025-09-11T17:23:47.008+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-11T17:23:47.118+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=generate_append_latest_pipeline, task_id=ingest_etl, run_id=scheduled__2025-09-10T00:00:00+00:00, execution_date=20250910T000000, start_date=20250911T172342, end_date=20250911T172347
+[2025-09-11T17:23:47.181+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-11T17:23:47.234+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-11T17:23:47.247+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

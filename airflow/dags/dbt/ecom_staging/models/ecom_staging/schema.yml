@@ -1,0 +1,221 @@
+version: 2
+
+sources:
+  - name: ecom_raw
+    database: ecom_db_raw
+    tables:
+      - name: CATEGORIES
+        columns:
+          - name: CATEGORY_ID
+            tests:
+              - unique
+              - not_null
+          - name: CATEGORY_NAME
+            tests:
+              - not_null
+
+      - name: CUSTOMERS
+        columns:
+          - name: CUSTOMER_ID
+            tests:
+              - unique
+              - not_null
+          - name: EMAIL
+            tests:
+              - not_null
+
+      - name: INTERACTIONS
+        columns:
+          - name: EVENT_ID
+            tests:
+              - unique
+              - not_null
+          - name: CUSTOMER_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'CUSTOMERS')
+                  field: CUSTOMER_ID
+          - name: PRODUCT_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'PRODUCTS')
+                  field: PRODUCT_ID
+
+      - name: ORDER_ITEMS
+        columns:
+          - name: ORDER_ITEM_ID
+            tests:
+              - unique
+              - not_null
+          - name: ORDER_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'ORDERS')
+                  field: ORDER_ID
+          - name: PRODUCT_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'PRODUCTS')
+                  field: PRODUCT_ID
+
+      - name: ORDERS
+        columns:
+          - name: ORDER_ID
+            tests:
+              - unique
+              - not_null
+          - name: CUSTOMER_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'CUSTOMERS')
+                  field: CUSTOMER_ID
+
+      - name: PRODUCTS
+        columns:
+          - name: PRODUCT_ID
+            tests:
+              - unique
+              - not_null
+          - name: CATEGORY_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'CATEGORIES')
+                  field: CATEGORY_ID
+          - name: SUBCATEGORY_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'SUBCATEGORIES')
+                  field: SUBCATEGORY_ID
+
+      - name: REVIEWS
+        columns:
+          - name: PRODUCT_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'PRODUCTS')
+                  field: PRODUCT_ID
+          - name: ORDER_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'ORDERS')
+                  field: ORDER_ID
+          - name: CUSTOMER_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'CUSTOMERS')
+                  field: CUSTOMER_ID
+
+      - name: SUBCATEGORIES
+        columns:
+          - name: SUBCATEGORY_ID
+            tests:
+              - unique
+              - not_null
+          - name: CATEGORY_ID
+            tests:
+              - not_null
+              - relationships:
+                  to: source('ECOM_RAW', 'CATEGORIES')
+                  field: CATEGORY_ID
+
+models:
+  - name: stg_categories
+    columns:
+      - name: CATEGORY_ID
+        tests:
+          - unique
+          - not_null
+      - name: CATEGORY_NAME
+        tests:
+          - not_null
+
+  - name: stg_customers
+    columns:
+      - name: CUSTOMER_ID
+        tests:
+          - unique
+          - not_null
+      - name: EMAIL
+        tests:
+          - not_null
+
+  - name: stg_interactions
+    columns:
+      - name: EVENT_ID
+        tests:
+          - unique
+          - not_null
+      - name: CUSTOMER_ID
+        tests:
+          - not_null
+      - name: PRODUCT_ID
+        tests:
+          - not_null
+
+  - name: stg_order_items
+    columns:
+      - name: ORDER_ITEM_ID
+        tests:
+          - unique
+          - not_null
+      - name: ORDER_ID
+        tests:
+          - not_null
+      - name: PRODUCT_ID
+        tests:
+          - not_null
+
+  - name: stg_orders
+    columns:
+      - name: ORDER_ID
+        tests:
+          - unique
+          - not_null
+      - name: CUSTOMER_ID
+        tests:
+          - not_null
+
+  - name: stg_products
+    columns:
+      - name: PRODUCT_ID
+        tests:
+          - unique
+          - not_null
+      - name: CATEGORY_ID
+        tests:
+          - not_null
+      - name: SUBCATEGORY_ID
+        tests:
+          - not_null
+
+  - name: stg_reviews
+    columns:
+      - name: PRODUCT_ID
+        tests:
+          - not_null
+      - name: ORDER_ID
+        tests:
+          - not_null
+      - name: CUSTOMER_ID
+        tests:
+          - not_null
+
+  - name: stg_subcategories
+    columns:
+      - name: SUBCATEGORY_ID
+        tests:
+          - unique
+          - not_null
+      - name: CATEGORY_ID
+        tests:
+          - not_null

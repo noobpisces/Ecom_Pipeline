@@ -1,0 +1,6 @@
+/jars/
+.env
+Run.txt
+/clickhouse/
+/pipeline/
+/postgres-data/

@@ -1,0 +1,48 @@
+[2025-09-13T09:41:04.381+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-13T09:41:04.600+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_marts.marts.dim_dates.run manual__2025-09-13T09:40:29.757092+00:00 [queued]>
+[2025-09-13T09:41:04.647+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_marts.marts.dim_dates.run manual__2025-09-13T09:40:29.757092+00:00 [queued]>
+[2025-09-13T09:41:04.648+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-13T09:41:04.907+0000] {taskinstance.py:2330} INFO - Executing <Task(DbtRunVirtualenvOperator): marts.dim_dates.run> on 2025-09-13 09:40:29.757092+00:00
+[2025-09-13T09:41:04.928+0000] {standard_task_runner.py:64} INFO - Started process 6306 to run task
+[2025-09-13T09:41:04.934+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_marts', 'marts.dim_dates.run', 'manual__2025-09-13T09:40:29.757092+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/dbt_marts.py', '--cfg-path', '/tmp/tmp6_pjlt6_']
+[2025-09-13T09:41:04.941+0000] {standard_task_runner.py:91} INFO - Job 201: Subtask marts.dim_dates.run
+[2025-09-13T09:41:05.531+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_marts.marts.dim_dates.run manual__2025-09-13T09:40:29.757092+00:00 [running]> on host e95bde6b8d07
+[2025-09-13T09:41:06.345+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_marts' AIRFLOW_CTX_TASK_ID='marts.dim_dates.run' AIRFLOW_CTX_EXECUTION_DATE='2025-09-13T09:40:29.757092+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-13T09:40:29.757092+00:00'
+[2025-09-13T09:41:06.349+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-13T09:41:06.372+0000] {virtualenv.py:120} INFO - Checking if the virtualenv lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock exists
+[2025-09-13T09:41:06.373+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:06.374+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:06.376+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:07.380+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:07.381+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:07.381+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:08.383+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:08.385+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:08.386+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:09.388+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:09.388+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:09.389+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:10.390+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:10.391+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:10.391+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:11.392+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:11.393+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:11.394+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:12.396+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:12.397+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:12.397+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:13.398+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:13.399+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:13.399+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:14.401+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:14.402+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:14.403+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:15.315+0000] {local_task_job_runner.py:313} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-09-13T09:41:15.316+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-09-13T09:41:15.319+0000] {process_utils.py:132} INFO - Sending 15 to group 6306. PIDs of all processes in the group: [6306]
+[2025-09-13T09:41:15.320+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 6306
+[2025-09-13T09:41:15.321+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-09-13T09:41:15.322+0000] {virtualenv.py:131} INFO - Releasing virtualenv lock
+[2025-09-13T09:41:15.322+0000] {virtualenv.py:210} WARNING - Lockfile owned by process of pid 6194, while operator has pid 6306
+[2025-09-13T09:41:15.323+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-13T09:41:15.456+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=6306, status='terminated', exitcode=0, started='09:41:04') (6306) terminated with exit code 0

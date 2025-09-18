@@ -1,0 +1,41 @@
+[2025-09-13T10:10:32.221+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-13T10:10:32.379+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_staging.dbt_ecom.stg_interactions.run manual__2025-09-13T10:10:29.534586+00:00 [queued]>
+[2025-09-13T10:10:32.399+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_staging.dbt_ecom.stg_interactions.run manual__2025-09-13T10:10:29.534586+00:00 [queued]>
+[2025-09-13T10:10:32.411+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-13T10:10:32.454+0000] {taskinstance.py:2330} INFO - Executing <Task(DbtRunVirtualenvOperator): dbt_ecom.stg_interactions.run> on 2025-09-13 10:10:29.534586+00:00
+[2025-09-13T10:10:32.469+0000] {standard_task_runner.py:64} INFO - Started process 9606 to run task
+[2025-09-13T10:10:32.477+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_staging', 'dbt_ecom.stg_interactions.run', 'manual__2025-09-13T10:10:29.534586+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/dbt_staging.py', '--cfg-path', '/tmp/tmpxumr2enr']
+[2025-09-13T10:10:32.483+0000] {standard_task_runner.py:91} INFO - Job 260: Subtask dbt_ecom.stg_interactions.run
+[2025-09-13T10:10:32.869+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_staging.dbt_ecom.stg_interactions.run manual__2025-09-13T10:10:29.534586+00:00 [running]> on host e95bde6b8d07
+[2025-09-13T10:10:33.514+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_staging' AIRFLOW_CTX_TASK_ID='dbt_ecom.stg_interactions.run' AIRFLOW_CTX_EXECUTION_DATE='2025-09-13T10:10:29.534586+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-13T10:10:29.534586+00:00'
+[2025-09-13T10:10:33.518+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-13T10:10:33.548+0000] {virtualenv.py:120} INFO - Checking if the virtualenv lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock exists
+[2025-09-13T10:10:33.552+0000] {virtualenv.py:131} INFO - Releasing virtualenv lock
+[2025-09-13T10:10:33.553+0000] {virtualenv.py:210} WARNING - Lockfile owned by process of pid 9610, while operator has pid 9606
+[2025-09-13T10:10:33.554+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-13T10:10:33.554+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/virtualenv.py", line 144, in execute
+    output = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/base.py", line 310, in execute
+    self.build_and_run_cmd(context=context, cmd_flags=self.add_cmd_flags())
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/local.py", line 853, in build_and_run_cmd
+    result = self.run_command(
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/virtualenv.py", line 121, in run_command
+    while not self._is_lock_available() and self.max_retries_lock:
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/virtualenv.py", line 52, in wrapper
+    return method(operator, *args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/virtualenv.py", line 177, in _is_lock_available
+    pid = int(lf.read())
+ValueError: invalid literal for int() with base 10: ''
+[2025-09-13T10:10:33.616+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dbt_staging, task_id=dbt_ecom.stg_interactions.run, run_id=manual__2025-09-13T10:10:29.534586+00:00, execution_date=20250913T101029, start_date=20250913T101032, end_date=20250913T101033
+[2025-09-13T10:10:33.648+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 260 for task dbt_ecom.stg_interactions.run (invalid literal for int() with base 10: ''; 9606)
+[2025-09-13T10:10:33.663+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-09-13T10:10:33.736+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-13T10:10:33.753+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

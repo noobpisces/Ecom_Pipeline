@@ -1,0 +1,239 @@
+[2025-09-18T13:33:57.706+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-18T13:33:57.919+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_intermediate.intermediate.orders.test scheduled__2025-09-17T00:00:00+00:00 [queued]>
+[2025-09-18T13:33:57.930+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_intermediate.intermediate.orders.test scheduled__2025-09-17T00:00:00+00:00 [queued]>
+[2025-09-18T13:33:57.931+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-18T13:33:57.956+0000] {taskinstance.py:2330} INFO - Executing <Task(DbtTestVirtualenvOperator): intermediate.orders.test> on 2025-09-17 00:00:00+00:00
+[2025-09-18T13:33:57.964+0000] {standard_task_runner.py:64} INFO - Started process 2913 to run task
+[2025-09-18T13:33:57.967+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_intermediate', 'intermediate.orders.test', 'scheduled__2025-09-17T00:00:00+00:00', '--job-id', '499', '--raw', '--subdir', 'DAGS_FOLDER/dbt_intermediate.py', '--cfg-path', '/tmp/tmpv8x5vjaw']
+[2025-09-18T13:33:57.970+0000] {standard_task_runner.py:91} INFO - Job 499: Subtask intermediate.orders.test
+[2025-09-18T13:33:58.115+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_intermediate.intermediate.orders.test scheduled__2025-09-17T00:00:00+00:00 [running]> on host e95bde6b8d07
+[2025-09-18T13:33:58.343+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_intermediate' AIRFLOW_CTX_TASK_ID='intermediate.orders.test' AIRFLOW_CTX_EXECUTION_DATE='2025-09-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-17T00:00:00+00:00'
+[2025-09-18T13:33:58.346+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-18T13:33:58.357+0000] {baseoperator.py:400} WARNING - DbtTestVirtualenvOperator.execute cannot be called outside TaskInstance!
+[2025-09-18T13:33:58.358+0000] {virtualenv.py:120} INFO - Checking if the virtualenv lock /tmp/cosmos_venv_ecom_intermediate/cosmos_virtualenv.lock exists
+[2025-09-18T13:33:58.358+0000] {virtualenv.py:126} INFO - Acquiring the virtualenv lock
+[2025-09-18T13:33:58.359+0000] {virtualenv.py:195} INFO - Acquiring lock at /tmp/cosmos_venv_ecom_intermediate/cosmos_virtualenv.lock with pid 2913
+[2025-09-18T13:33:58.359+0000] {virtualenv.py:153} INFO - Creating or updating the virtualenv at `/tmp/cosmos_venv_ecom_intermediate
+[2025-09-18T13:33:58.359+0000] {process_utils.py:183} INFO - Executing cmd: /home/***/.local/bin/python -m virtualenv /tmp/cosmos_venv_ecom_intermediate --python=python3
+[2025-09-18T13:33:58.360+0000] {process_utils.py:187} INFO - Output:
+[2025-09-18T13:33:59.357+0000] {process_utils.py:191} INFO - created virtual environment CPython3.10.14.final.0-64 in 374ms
+[2025-09-18T13:33:59.357+0000] {process_utils.py:191} INFO -   creator CPython3Posix(dest=/tmp/cosmos_venv_ecom_intermediate, clear=False, no_vcs_ignore=False, global=False)
+[2025-09-18T13:33:59.361+0000] {process_utils.py:191} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/***/.local/share/virtualenv)
+[2025-09-18T13:33:59.363+0000] {process_utils.py:191} INFO -     added seed packages: MarkupSafe==3.0.2, PyYAML==6.0.2, agate==1.9.1, annotated_types==0.7.0, attrs==25.3.0, babel==2.17.0, certifi==2025.8.3, charset_normalizer==3.4.3, click==8.2.1, clickhouse_connect==0.8.18, clickhouse_driver==0.2.9, colorama==0.4.6, daff==1.4.2, dbt_adapters==1.16.7, dbt_clickhouse==1.9.3, dbt_common==1.30.0, dbt_core==1.10.11, dbt_extractor==0.6.0, dbt_protos==1.0.375, dbt_semantic_interfaces==0.9.0, deepdiff==8.6.1, idna==3.10, importlib_metadata==8.7.0, isodate==0.6.1, jinja2==3.1.6, jsonschema==4.25.1, jsonschema_specifications==2025.9.1, leather==0.4.0, lz4==4.4.4, mashumaro==3.14, more_itertools==10.8.0, msgpack==1.1.1, networkx==3.4.2, orderly_set==5.5.0, packaging==25.0, parsedatetime==2.6, pathspec==0.12.1, pip==25.2, protobuf==6.32.1, pydantic==2.11.8, pydantic_core==2.33.2, python_dateutil==2.9.0.post0, python_slugify==8.0.4, pytimeparse==1.1.8, pytz==2025.2, referencing==0.36.2, requests==2.32.5, rpds_py==0.27.1, setuptools==80.9.0, six==1.17.0, snowplow_tracker==1.1.0, sqlparse==0.5.3, text_unidecode==1.3, typing_extensions==4.15.0, typing_inspection==0.4.1, tzlocal==5.3.1, urllib3==2.5.0, wheel==0.45.1, zipp==3.23.0, zstandard==0.24.0
+[2025-09-18T13:33:59.364+0000] {process_utils.py:191} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2025-09-18T13:33:59.404+0000] {process_utils.py:183} INFO - Executing cmd: /tmp/cosmos_venv_ecom_intermediate/bin/pip install dbt-clickhouse
+[2025-09-18T13:33:59.406+0000] {process_utils.py:187} INFO - Output:
+[2025-09-18T13:34:00.447+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-clickhouse in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (1.9.3)
+[2025-09-18T13:34:00.448+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-core>=1.9 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-clickhouse) (1.10.11)
+[2025-09-18T13:34:00.449+0000] {process_utils.py:191} INFO - Requirement already satisfied: clickhouse-connect>=0.6.22 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-clickhouse) (0.8.18)
+[2025-09-18T13:34:00.450+0000] {process_utils.py:191} INFO - Requirement already satisfied: clickhouse-driver>=0.2.6 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-clickhouse) (0.2.9)
+[2025-09-18T13:34:00.451+0000] {process_utils.py:191} INFO - Requirement already satisfied: setuptools>=0.69 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-clickhouse) (80.9.0)
+[2025-09-18T13:34:00.451+0000] {process_utils.py:191} INFO - Requirement already satisfied: certifi in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (2025.8.3)
+[2025-09-18T13:34:00.452+0000] {process_utils.py:191} INFO - Requirement already satisfied: urllib3>=1.26 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (2.5.0)
+[2025-09-18T13:34:00.453+0000] {process_utils.py:191} INFO - Requirement already satisfied: pytz in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (2025.2)
+[2025-09-18T13:34:00.454+0000] {process_utils.py:191} INFO - Requirement already satisfied: zstandard in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (0.24.0)
+[2025-09-18T13:34:00.454+0000] {process_utils.py:191} INFO - Requirement already satisfied: lz4 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (4.4.4)
+[2025-09-18T13:34:00.455+0000] {process_utils.py:191} INFO - Requirement already satisfied: tzlocal in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from clickhouse-driver>=0.2.6->dbt-clickhouse) (5.3.1)
+[2025-09-18T13:34:00.457+0000] {process_utils.py:191} INFO - Requirement already satisfied: agate<1.10,>=1.7.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.9.1)
+[2025-09-18T13:34:00.458+0000] {process_utils.py:191} INFO - Requirement already satisfied: Jinja2<4,>=3.1.3 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (3.1.6)
+[2025-09-18T13:34:00.459+0000] {process_utils.py:191} INFO - Requirement already satisfied: mashumaro<3.15,>=3.9 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from mashumaro[msgpack]<3.15,>=3.9->dbt-core>=1.9->dbt-clickhouse) (3.14)
+[2025-09-18T13:34:00.460+0000] {process_utils.py:191} INFO - Requirement already satisfied: click<9.0,>=8.0.2 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (8.2.1)
+[2025-09-18T13:34:00.460+0000] {process_utils.py:191} INFO - Requirement already satisfied: jsonschema<5.0,>=4.19.1 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (4.25.1)
+[2025-09-18T13:34:00.461+0000] {process_utils.py:191} INFO - Requirement already satisfied: networkx<4.0,>=2.3 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (3.4.2)
+[2025-09-18T13:34:00.462+0000] {process_utils.py:191} INFO - Requirement already satisfied: protobuf<7.0,>=6.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (6.32.1)
+[2025-09-18T13:34:00.463+0000] {process_utils.py:191} INFO - Requirement already satisfied: requests<3.0.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (2.32.5)
+[2025-09-18T13:34:00.463+0000] {process_utils.py:191} INFO - Requirement already satisfied: snowplow-tracker<2.0,>=1.0.2 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.1.0)
+[2025-09-18T13:34:00.464+0000] {process_utils.py:191} INFO - Requirement already satisfied: pathspec<0.13,>=0.9 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.12.1)
+[2025-09-18T13:34:00.465+0000] {process_utils.py:191} INFO - Requirement already satisfied: sqlparse<0.6.0,>=0.5.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.5.3)
+[2025-09-18T13:34:00.466+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-extractor<=0.6,>=0.5.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.6.0)
+[2025-09-18T13:34:00.466+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-semantic-interfaces<0.10,>=0.9.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.9.0)
+[2025-09-18T13:34:00.467+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-common<2.0,>=1.27.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.30.0)
+[2025-09-18T13:34:00.468+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-adapters<2.0,>=1.15.5 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.16.7)
+[2025-09-18T13:34:00.468+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-protos<2.0,>=1.0.346 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.0.375)
+[2025-09-18T13:34:00.469+0000] {process_utils.py:191} INFO - Requirement already satisfied: pydantic<3 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (2.11.8)
+[2025-09-18T13:34:00.470+0000] {process_utils.py:191} INFO - Requirement already satisfied: packaging>20.9 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (25.0)
+[2025-09-18T13:34:00.470+0000] {process_utils.py:191} INFO - Requirement already satisfied: pyyaml>=6.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (6.0.2)
+[2025-09-18T13:34:00.471+0000] {process_utils.py:191} INFO - Requirement already satisfied: daff>=1.3.46 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.4.2)
+[2025-09-18T13:34:00.471+0000] {process_utils.py:191} INFO - Requirement already satisfied: typing-extensions>=4.4 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (4.15.0)
+[2025-09-18T13:34:00.472+0000] {process_utils.py:191} INFO - Requirement already satisfied: Babel>=2.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (2.17.0)
+[2025-09-18T13:34:00.473+0000] {process_utils.py:191} INFO - Requirement already satisfied: isodate>=0.5.4 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (0.6.1)
+[2025-09-18T13:34:00.473+0000] {process_utils.py:191} INFO - Requirement already satisfied: leather>=0.3.2 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (0.4.0)
+[2025-09-18T13:34:00.474+0000] {process_utils.py:191} INFO - Requirement already satisfied: parsedatetime!=2.5,>=2.1 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (2.6)
+[2025-09-18T13:34:00.474+0000] {process_utils.py:191} INFO - Requirement already satisfied: python-slugify>=1.2.1 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (8.0.4)
+[2025-09-18T13:34:00.474+0000] {process_utils.py:191} INFO - Requirement already satisfied: pytimeparse>=1.1.5 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (1.1.8)
+[2025-09-18T13:34:00.480+0000] {process_utils.py:191} INFO - Requirement already satisfied: colorama<0.5,>=0.3.9 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (0.4.6)
+[2025-09-18T13:34:00.481+0000] {process_utils.py:191} INFO - Requirement already satisfied: deepdiff<9.0,>=7.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (8.6.1)
+[2025-09-18T13:34:00.483+0000] {process_utils.py:191} INFO - Requirement already satisfied: python-dateutil<3.0,>=2.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (2.9.0.post0)
+[2025-09-18T13:34:00.488+0000] {process_utils.py:191} INFO - Requirement already satisfied: importlib-metadata<9,>=6.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse) (8.7.0)
+[2025-09-18T13:34:00.490+0000] {process_utils.py:191} INFO - Requirement already satisfied: more-itertools<11.0,>=8.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse) (10.8.0)
+[2025-09-18T13:34:00.498+0000] {process_utils.py:191} INFO - Requirement already satisfied: orderly-set<6,>=5.4.1 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from deepdiff<9.0,>=7.0->dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (5.5.0)
+[2025-09-18T13:34:00.503+0000] {process_utils.py:191} INFO - Requirement already satisfied: zipp>=3.20 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from importlib-metadata<9,>=6.0->dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse) (3.23.0)
+[2025-09-18T13:34:00.505+0000] {process_utils.py:191} INFO - Requirement already satisfied: six in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from isodate>=0.5.4->agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (1.17.0)
+[2025-09-18T13:34:00.507+0000] {process_utils.py:191} INFO - Requirement already satisfied: MarkupSafe>=2.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from Jinja2<4,>=3.1.3->dbt-core>=1.9->dbt-clickhouse) (3.0.2)
+[2025-09-18T13:34:00.511+0000] {process_utils.py:191} INFO - Requirement already satisfied: attrs>=22.2.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (25.3.0)
+[2025-09-18T13:34:00.511+0000] {process_utils.py:191} INFO - Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (2025.9.1)
+[2025-09-18T13:34:00.512+0000] {process_utils.py:191} INFO - Requirement already satisfied: referencing>=0.28.4 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (0.36.2)
+[2025-09-18T13:34:00.513+0000] {process_utils.py:191} INFO - Requirement already satisfied: rpds-py>=0.7.1 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (0.27.1)
+[2025-09-18T13:34:00.519+0000] {process_utils.py:191} INFO - Requirement already satisfied: msgpack>=0.5.6 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from mashumaro[msgpack]<3.15,>=3.9->dbt-core>=1.9->dbt-clickhouse) (1.1.1)
+[2025-09-18T13:34:00.531+0000] {process_utils.py:191} INFO - Requirement already satisfied: annotated-types>=0.6.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from pydantic<3->dbt-core>=1.9->dbt-clickhouse) (0.7.0)
+[2025-09-18T13:34:00.532+0000] {process_utils.py:191} INFO - Requirement already satisfied: pydantic-core==2.33.2 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from pydantic<3->dbt-core>=1.9->dbt-clickhouse) (2.33.2)
+[2025-09-18T13:34:00.533+0000] {process_utils.py:191} INFO - Requirement already satisfied: typing-inspection>=0.4.0 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from pydantic<3->dbt-core>=1.9->dbt-clickhouse) (0.4.1)
+[2025-09-18T13:34:00.538+0000] {process_utils.py:191} INFO - Requirement already satisfied: charset_normalizer<4,>=2 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from requests<3.0.0->dbt-core>=1.9->dbt-clickhouse) (3.4.3)
+[2025-09-18T13:34:00.539+0000] {process_utils.py:191} INFO - Requirement already satisfied: idna<4,>=2.5 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from requests<3.0.0->dbt-core>=1.9->dbt-clickhouse) (3.10)
+[2025-09-18T13:34:00.573+0000] {process_utils.py:191} INFO - Requirement already satisfied: text-unidecode>=1.3 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from python-slugify>=1.2.1->agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (1.3)
+[2025-09-18T13:34:00.675+0000] {local.py:470} INFO - Cloning project to writable temp directory /tmp/tmpz2bcwv0x from /opt/airflow/dags/dbt/ecom_intermediate
+[2025-09-18T13:34:00.690+0000] {local.py:490} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/dbt_intermediate__intermediate/target/partial_parse.msgpack
+[2025-09-18T13:34:00.700+0000] {config.py:362} INFO - Using user-supplied profiles.yml at /opt/airflow/dags/dbt/profiles.yml
+[2025-09-18T13:34:00.708+0000] {virtualenv.py:99} INFO - Using Python binary from virtualenv: /tmp/cosmos_venv_ecom_intermediate/bin/python
+[2025-09-18T13:34:00.709+0000] {local.py:434} INFO - Trying to run the command:
+ ['/tmp/cosmos_venv_ecom_intermediate/bin/dbt', 'deps', '--project-dir', '/tmp/tmpz2bcwv0x', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+From /tmp/tmpz2bcwv0x
+[2025-09-18T13:34:00.710+0000] {subprocess.py:56} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-18T13:34:00.710+0000] {subprocess.py:69} INFO - Running command: ['/tmp/cosmos_venv_ecom_intermediate/bin/dbt', 'deps', '--project-dir', '/tmp/tmpz2bcwv0x', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+[2025-09-18T13:34:00.721+0000] {subprocess.py:80} INFO - Command output:
+[2025-09-18T13:34:02.368+0000] {subprocess.py:90} INFO - [0m13:34:02  Running with dbt=1.10.11
+[2025-09-18T13:34:03.297+0000] {subprocess.py:90} INFO - [0m13:34:03  Installing dbt-labs/dbt_utils
+[2025-09-18T13:34:04.106+0000] {subprocess.py:90} INFO - [0m13:34:04  Installed from version 1.3.0
+[2025-09-18T13:34:04.107+0000] {subprocess.py:90} INFO - [0m13:34:04  Updated version available: 1.3.1
+[2025-09-18T13:34:04.108+0000] {subprocess.py:90} INFO - [0m13:34:04
+[2025-09-18T13:34:04.110+0000] {subprocess.py:90} INFO - [0m13:34:04  Updates available for packages: ['dbt-labs/dbt_utils']
+[2025-09-18T13:34:04.111+0000] {subprocess.py:90} INFO - Update your versions in packages.yml, then run dbt deps
+[2025-09-18T13:34:05.960+0000] {subprocess.py:94} INFO - Command exited with return code 0
+[2025-09-18T13:34:05.960+0000] {local.py:441} INFO - Update your versions in packages.yml, then run dbt deps
+[2025-09-18T13:34:05.961+0000] {virtualenv.py:99} INFO - Using Python binary from virtualenv: /tmp/cosmos_venv_ecom_intermediate/bin/python
+[2025-09-18T13:34:05.961+0000] {local.py:434} INFO - Trying to run the command:
+ ['/tmp/cosmos_venv_ecom_intermediate/bin/dbt', 'test', '--models', 'orders', '--project-dir', '/tmp/tmpz2bcwv0x', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+From /tmp/tmpz2bcwv0x
+[2025-09-18T13:34:05.962+0000] {subprocess.py:56} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-18T13:34:05.962+0000] {subprocess.py:69} INFO - Running command: ['/tmp/cosmos_venv_ecom_intermediate/bin/dbt', 'test', '--models', 'orders', '--project-dir', '/tmp/tmpz2bcwv0x', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+[2025-09-18T13:34:05.976+0000] {subprocess.py:80} INFO - Command output:
+[2025-09-18T13:34:07.912+0000] {subprocess.py:90} INFO - [0m13:34:07  Running with dbt=1.10.11
+[2025-09-18T13:34:07.915+0000] {subprocess.py:90} INFO - [0m13:34:07  [[33mWARNING[0m]: Deprecated functionality
+[2025-09-18T13:34:07.916+0000] {subprocess.py:90} INFO - Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+[2025-09-18T13:34:07.916+0000] {subprocess.py:90} INFO - `-s`.
+[2025-09-18T13:34:08.181+0000] {subprocess.py:90} INFO - [0m13:34:08  Registered adapter: clickhouse=1.9.3
+[2025-09-18T13:34:09.073+0000] {subprocess.py:90} INFO - [0m13:34:09  Found 15 models, 50 data tests, 8 sources, 597 macros
+[2025-09-18T13:34:09.076+0000] {subprocess.py:90} INFO - [0m13:34:09
+[2025-09-18T13:34:09.077+0000] {subprocess.py:90} INFO - [0m13:34:09  Concurrency: 4 threads (target='dev')
+[2025-09-18T13:34:09.077+0000] {subprocess.py:90} INFO - [0m13:34:09
+[2025-09-18T13:34:09.194+0000] {subprocess.py:90} INFO - [0m13:34:09  1 of 5 START test not_null_orders_order_id ..................................... [RUN]
+[2025-09-18T13:34:09.195+0000] {subprocess.py:90} INFO - [0m13:34:09  2 of 5 START test relationships_order_items_order_id__order_id__ref_orders_ .... [RUN]
+[2025-09-18T13:34:09.195+0000] {subprocess.py:90} INFO - [0m13:34:09  3 of 5 START test relationships_orders_customer_id__customer_id__ref_customers_enriched_  [RUN]
+[2025-09-18T13:34:09.196+0000] {subprocess.py:90} INFO - [0m13:34:09  4 of 5 START test relationships_orders_status_id__status_id__ref_order_statuses_  [RUN]
+[2025-09-18T13:34:09.310+0000] {subprocess.py:90} INFO - [0m13:34:09  1 of 5 PASS not_null_orders_order_id ........................................... [[32mPASS[0m in 0.11s]
+[2025-09-18T13:34:09.318+0000] {subprocess.py:90} INFO - [0m13:34:09  5 of 5 START test unique_orders_order_id ....................................... [RUN]
+[2025-09-18T13:34:09.363+0000] {subprocess.py:90} INFO - [0m13:34:09  5 of 5 FAIL 2042 unique_orders_order_id ........................................ [[31mFAIL 2042[0m in 0.04s]
+[2025-09-18T13:34:09.379+0000] {subprocess.py:90} INFO - [0m13:34:09  3 of 5 ERROR relationships_orders_customer_id__customer_id__ref_customers_enriched_  [[31mERROR[0m in 0.18s]
+[2025-09-18T13:34:09.383+0000] {subprocess.py:90} INFO - [0m13:34:09  4 of 5 PASS relationships_orders_status_id__status_id__ref_order_statuses_ ..... [[32mPASS[0m in 0.18s]
+[2025-09-18T13:34:09.385+0000] {subprocess.py:90} INFO - [0m13:34:09  2 of 5 PASS relationships_order_items_order_id__order_id__ref_orders_ .......... [[32mPASS[0m in 0.19s]
+[2025-09-18T13:34:09.393+0000] {subprocess.py:90} INFO - [0m13:34:09
+[2025-09-18T13:34:09.394+0000] {subprocess.py:90} INFO - [0m13:34:09  Finished running 5 data tests in 0 hours 0 minutes and 0.32 seconds (0.32s).
+[2025-09-18T13:34:09.456+0000] {subprocess.py:90} INFO - [0m13:34:09
+[2025-09-18T13:34:09.456+0000] {subprocess.py:90} INFO - [0m13:34:09  [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[2025-09-18T13:34:09.456+0000] {subprocess.py:90} INFO - [0m13:34:09
+[2025-09-18T13:34:09.457+0000] {subprocess.py:90} INFO - [0m13:34:09  [31mFailure in test unique_orders_order_id (models/ecom_intermediate/schema.yml)[0m
+[2025-09-18T13:34:09.458+0000] {subprocess.py:90} INFO - [0m13:34:09    Got 2042 results, configured to fail if != 0
+[2025-09-18T13:34:09.458+0000] {subprocess.py:90} INFO - [0m13:34:09
+[2025-09-18T13:34:09.459+0000] {subprocess.py:90} INFO - [0m13:34:09    compiled code at target/compiled/ecom_intermediate/models/ecom_intermediate/schema.yml/unique_orders_order_id.sql
+[2025-09-18T13:34:09.459+0000] {subprocess.py:90} INFO - [0m13:34:09
+[2025-09-18T13:34:09.460+0000] {subprocess.py:90} INFO - [0m13:34:09  [31mFailure in test relationships_orders_customer_id__customer_id__ref_customers_enriched_ (models/ecom_intermediate/schema.yml)[0m
+[2025-09-18T13:34:09.461+0000] {subprocess.py:90} INFO - [0m13:34:09    Database Error in test relationships_orders_customer_id__customer_id__ref_customers_enriched_ (models/ecom_intermediate/schema.yml)
+[2025-09-18T13:34:09.461+0000] {subprocess.py:90} INFO -   HTTPDriver for http://clickhouse:8123 received ClickHouse error code 47
+[2025-09-18T13:34:09.461+0000] {subprocess.py:90} INFO -    Code: 47. DB::Exception: Unknown expression identifier 'customer_id' in scope parent AS (SELECT customer_id AS to_field FROM ecom_db_intermediate.customers_enriched). (UNKNOWN_IDENTIFIER) (version 24.8.14.39 (official build))
+[2025-09-18T13:34:09.462+0000] {subprocess.py:90} INFO -   compiled code at target/run/ecom_intermediate/models/ecom_intermediate/schema.yml/relationships_orders_db7c5094b0557c0df685ba91e2e993fc.sql
+[2025-09-18T13:34:09.462+0000] {subprocess.py:90} INFO - [0m13:34:09
+[2025-09-18T13:34:09.463+0000] {subprocess.py:90} INFO - [0m13:34:09    compiled code at target/compiled/ecom_intermediate/models/ecom_intermediate/schema.yml/relationships_orders_db7c5094b0557c0df685ba91e2e993fc.sql
+[2025-09-18T13:34:09.463+0000] {subprocess.py:90} INFO - [0m13:34:09
+[2025-09-18T13:34:09.463+0000] {subprocess.py:90} INFO - [0m13:34:09  Done. PASS=3 WARN=0 ERROR=2 SKIP=0 NO-OP=0 TOTAL=5
+[2025-09-18T13:34:09.464+0000] {subprocess.py:90} INFO - [0m13:34:09  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+[2025-09-18T13:34:09.464+0000] {subprocess.py:90} INFO - Summary of encountered deprecations:
+[2025-09-18T13:34:09.464+0000] {subprocess.py:90} INFO - - ModelParamUsageDeprecation: 1 occurrence
+[2025-09-18T13:34:09.464+0000] {subprocess.py:90} INFO - To see all deprecation instances instead of just the first occurrence of each,
+[2025-09-18T13:34:09.465+0000] {subprocess.py:90} INFO - run command again with the `--show-all-deprecations` flag. You may also need to
+[2025-09-18T13:34:09.465+0000] {subprocess.py:90} INFO - run with `--no-partial-parse` as some deprecations are only encountered during
+[2025-09-18T13:34:09.465+0000] {subprocess.py:90} INFO - parsing.
+[2025-09-18T13:34:11.105+0000] {subprocess.py:94} INFO - Command exited with return code 1
+[2025-09-18T13:34:11.106+0000] {local.py:441} INFO - parsing.
+[2025-09-18T13:34:11.123+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/manifest/v12.json is above dbt-ol supported version 7. This might cause errors.
+[2025-09-18T13:34:11.124+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/run-results/v6.json is above dbt-ol supported version 5. This might cause errors.
+[2025-09-18T13:34:11.135+0000] {local.py:547} INFO - Inlets: []
+[2025-09-18T13:34:11.135+0000] {local.py:548} INFO - Outlets: []
+[2025-09-18T13:34:11.136+0000] {local.py:772} INFO - Assigning inlets/outlets without DatasetAlias
+[2025-09-18T13:34:11.137+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:34:11.283+0000] {local.py:253} ERROR - [0m13:34:07  Running with dbt=1.10.11
+[0m13:34:07  [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m13:34:08  Registered adapter: clickhouse=1.9.3
+[0m13:34:09  Found 15 models, 50 data tests, 8 sources, 597 macros
+[0m13:34:09
+[0m13:34:09  Concurrency: 4 threads (target='dev')
+[0m13:34:09
+[0m13:34:09  1 of 5 START test not_null_orders_order_id ..................................... [RUN]
+[0m13:34:09  2 of 5 START test relationships_order_items_order_id__order_id__ref_orders_ .... [RUN]
+[0m13:34:09  3 of 5 START test relationships_orders_customer_id__customer_id__ref_customers_enriched_  [RUN]
+[0m13:34:09  4 of 5 START test relationships_orders_status_id__status_id__ref_order_statuses_  [RUN]
+[0m13:34:09  1 of 5 PASS not_null_orders_order_id ........................................... [[32mPASS[0m in 0.11s]
+[0m13:34:09  5 of 5 START test unique_orders_order_id ....................................... [RUN]
+[0m13:34:09  5 of 5 FAIL 2042 unique_orders_order_id ........................................ [[31mFAIL 2042[0m in 0.04s]
+[0m13:34:09  3 of 5 ERROR relationships_orders_customer_id__customer_id__ref_customers_enriched_  [[31mERROR[0m in 0.18s]
+[0m13:34:09  4 of 5 PASS relationships_orders_status_id__status_id__ref_order_statuses_ ..... [[32mPASS[0m in 0.18s]
+[0m13:34:09  2 of 5 PASS relationships_order_items_order_id__order_id__ref_orders_ .......... [[32mPASS[0m in 0.19s]
+[0m13:34:09
+[0m13:34:09  Finished running 5 data tests in 0 hours 0 minutes and 0.32 seconds (0.32s).
+[0m13:34:09
+[0m13:34:09  [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:34:09
+[0m13:34:09  [31mFailure in test unique_orders_order_id (models/ecom_intermediate/schema.yml)[0m
+[0m13:34:09    Got 2042 results, configured to fail if != 0
+[0m13:34:09
+[0m13:34:09    compiled code at target/compiled/ecom_intermediate/models/ecom_intermediate/schema.yml/unique_orders_order_id.sql
+[0m13:34:09
+[0m13:34:09  [31mFailure in test relationships_orders_customer_id__customer_id__ref_customers_enriched_ (models/ecom_intermediate/schema.yml)[0m
+[0m13:34:09    Database Error in test relationships_orders_customer_id__customer_id__ref_customers_enriched_ (models/ecom_intermediate/schema.yml)
+  HTTPDriver for http://clickhouse:8123 received ClickHouse error code 47
+   Code: 47. DB::Exception: Unknown expression identifier 'customer_id' in scope parent AS (SELECT customer_id AS to_field FROM ecom_db_intermediate.customers_enriched). (UNKNOWN_IDENTIFIER) (version 24.8.14.39 (official build))
+  compiled code at target/run/ecom_intermediate/models/ecom_intermediate/schema.yml/relationships_orders_db7c5094b0557c0df685ba91e2e993fc.sql
+[0m13:34:09
+[0m13:34:09    compiled code at target/compiled/ecom_intermediate/models/ecom_intermediate/schema.yml/relationships_orders_db7c5094b0557c0df685ba91e2e993fc.sql
+[0m13:34:09
+[0m13:34:09  Done. PASS=3 WARN=0 ERROR=2 SKIP=0 NO-OP=0 TOTAL=5
+[0m13:34:09  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[2025-09-18T13:34:11.290+0000] {virtualenv.py:131} INFO - Releasing virtualenv lock
+[2025-09-18T13:34:11.291+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-18T13:34:11.326+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/virtualenv.py", line 144, in execute
+    output = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/local.py", line 1089, in execute
+    result = self.build_and_run_cmd(context=context, cmd_flags=self.add_cmd_flags())
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/local.py", line 853, in build_and_run_cmd
+    result = self.run_command(
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/virtualenv.py", line 129, in run_command
+    return super().run_command(cmd, env, context, run_as_async=run_as_async, async_context=async_context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/local.py", line 650, in run_command
+    self.handle_exception(result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/local.py", line 254, in handle_exception_subprocess
+    raise AirflowException(f"dbt command failed. The command returned a non-zero exit code {result.exit_code}.")
+airflow.exceptions.AirflowException: dbt command failed. The command returned a non-zero exit code 1.
+[2025-09-18T13:34:11.329+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dbt_intermediate, task_id=intermediate.orders.test, run_id=scheduled__2025-09-17T00:00:00+00:00, execution_date=20250917T000000, start_date=20250918T133357, end_date=20250918T133411
+[2025-09-18T13:34:11.346+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 499 for task intermediate.orders.test (dbt command failed. The command returned a non-zero exit code 1.; 2913)
+[2025-09-18T13:34:11.376+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-09-18T13:34:11.433+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-18T13:34:11.446+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,111 @@
+[2025-09-13T09:40:35.374+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-13T09:40:36.257+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_marts.marts.dim_categories.run scheduled__2025-09-12T00:00:00+00:00 [queued]>
+[2025-09-13T09:40:36.297+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_marts.marts.dim_categories.run scheduled__2025-09-12T00:00:00+00:00 [queued]>
+[2025-09-13T09:40:36.299+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-13T09:40:36.363+0000] {taskinstance.py:2330} INFO - Executing <Task(DbtRunVirtualenvOperator): marts.dim_categories.run> on 2025-09-12 00:00:00+00:00
+[2025-09-13T09:40:36.378+0000] {standard_task_runner.py:64} INFO - Started process 6180 to run task
+[2025-09-13T09:40:36.383+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_marts', 'marts.dim_categories.run', 'scheduled__2025-09-12T00:00:00+00:00', '--job-id', '185', '--raw', '--subdir', 'DAGS_FOLDER/dbt_marts.py', '--cfg-path', '/tmp/tmp8ccw1hls']
+[2025-09-13T09:40:36.387+0000] {standard_task_runner.py:91} INFO - Job 185: Subtask marts.dim_categories.run
+[2025-09-13T09:40:37.081+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_marts.marts.dim_categories.run scheduled__2025-09-12T00:00:00+00:00 [running]> on host e95bde6b8d07
+[2025-09-13T09:40:38.093+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_marts' AIRFLOW_CTX_TASK_ID='marts.dim_categories.run' AIRFLOW_CTX_EXECUTION_DATE='2025-09-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-12T00:00:00+00:00'
+[2025-09-13T09:40:38.096+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-13T09:40:38.121+0000] {virtualenv.py:120} INFO - Checking if the virtualenv lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock exists
+[2025-09-13T09:40:38.122+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:38.124+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:38.125+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:39.127+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:39.127+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:39.128+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:40.129+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:40.130+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:40.131+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:41.132+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:41.133+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:41.134+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:42.136+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:42.138+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:42.139+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:43.141+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:43.141+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:43.142+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:44.143+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:44.144+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:44.145+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:45.147+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:45.147+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:45.148+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:46.149+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:46.150+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:46.151+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:47.154+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:47.154+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:47.155+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:48.156+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:48.157+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:48.158+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:49.160+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:49.161+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:49.161+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:50.162+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:50.163+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:50.164+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:51.165+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:51.166+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:51.167+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:52.168+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:52.169+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:52.170+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:53.171+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:53.172+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:53.173+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:54.174+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:54.175+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:54.176+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:55.176+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6178
+[2025-09-13T09:40:55.177+0000] {virtualenv.py:181} INFO - Process 6178 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:55.178+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:56.178+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6192
+[2025-09-13T09:40:56.179+0000] {virtualenv.py:181} INFO - Process 6192 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:56.180+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:57.182+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6192
+[2025-09-13T09:40:57.183+0000] {virtualenv.py:181} INFO - Process 6192 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:57.183+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:58.184+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6192
+[2025-09-13T09:40:58.185+0000] {virtualenv.py:181} INFO - Process 6192 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:58.186+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:40:59.188+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6192
+[2025-09-13T09:40:59.189+0000] {virtualenv.py:181} INFO - Process 6192 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:40:59.189+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:00.191+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6192
+[2025-09-13T09:41:00.192+0000] {virtualenv.py:181} INFO - Process 6192 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:00.195+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:01.197+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6192
+[2025-09-13T09:41:01.199+0000] {virtualenv.py:181} INFO - Process 6192 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:01.199+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:02.202+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6192
+[2025-09-13T09:41:02.203+0000] {virtualenv.py:181} INFO - Process 6192 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:02.204+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:03.210+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6192
+[2025-09-13T09:41:03.216+0000] {virtualenv.py:181} INFO - Process 6192 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:03.220+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:04.226+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:04.229+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:04.231+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:05.234+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:05.237+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:05.239+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:06.241+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:06.243+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:06.244+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:07.245+0000] {virtualenv.py:178} INFO - Checking for running process with PID 6194
+[2025-09-13T09:41:07.246+0000] {virtualenv.py:181} INFO - Process 6194 running: True and has the lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock.
+[2025-09-13T09:41:07.246+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-13T09:41:07.746+0000] {local_task_job_runner.py:313} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-09-13T09:41:07.749+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-09-13T09:41:07.754+0000] {process_utils.py:132} INFO - Sending 15 to group 6180. PIDs of all processes in the group: [6180]
+[2025-09-13T09:41:07.756+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 6180
+[2025-09-13T09:41:07.757+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-09-13T09:41:07.757+0000] {virtualenv.py:131} INFO - Releasing virtualenv lock
+[2025-09-13T09:41:07.758+0000] {virtualenv.py:210} WARNING - Lockfile owned by process of pid 6194, while operator has pid 6180
+[2025-09-13T09:41:07.760+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-13T09:41:07.938+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=6180, status='terminated', exitcode=0, started='09:40:36') (6180) terminated with exit code 0

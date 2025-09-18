@@ -1,0 +1,84 @@
+[2025-09-12T16:37:56.387+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-12T16:37:56.450+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_income_aggregate.update_income_aggregate manual__2025-09-12T16:37:55.554809+00:00 [queued]>
+[2025-09-12T16:37:56.460+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_income_aggregate.update_income_aggregate manual__2025-09-12T16:37:55.554809+00:00 [queued]>
+[2025-09-12T16:37:56.471+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-12T16:37:56.487+0000] {taskinstance.py:2330} INFO - Executing <Task(ClickHouseOperator): update_income_aggregate> on 2025-09-12 16:37:55.554809+00:00
+[2025-09-12T16:37:56.495+0000] {standard_task_runner.py:64} INFO - Started process 2893 to run task
+[2025-09-12T16:37:56.498+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_income_aggregate', 'update_income_aggregate', 'manual__2025-09-12T16:37:55.554809+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/dd.py', '--cfg-path', '/tmp/tmpz4jt_7ss']
+[2025-09-12T16:37:56.501+0000] {standard_task_runner.py:91} INFO - Job 92: Subtask update_income_aggregate
+[2025-09-12T16:37:56.645+0000] {task_command.py:426} INFO - Running <TaskInstance: update_income_aggregate.update_income_aggregate manual__2025-09-12T16:37:55.554809+00:00 [running]> on host e95bde6b8d07
+[2025-09-12T16:37:56.900+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_income_aggregate' AIRFLOW_CTX_TASK_ID='update_income_aggregate' AIRFLOW_CTX_EXECUTION_DATE='2025-09-12T16:37:55.554809+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-12T16:37:55.554809+00:00'
+[2025-09-12T16:37:56.901+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-12T16:37:56.948+0000] {base.py:84} INFO - Using connection ID 'ch_ecom_staging_conn' for task execution.
+[2025-09-12T16:37:56.949+0000] {clickhouse.py:79} INFO - 
+                Select * from stg_categories
+            
+[2025-09-12T16:37:56.961+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-12T16:37:56.962+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 83, in execute
+    return self._hook_execute()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow_clickhouse_plugin/operators/clickhouse.py", line 69, in _hook_execute
+    return hook.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow_clickhouse_plugin/hooks/clickhouse.py", line 80, in execute
+    last_result = conn.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_driver/client.py", line 370, in execute
+    with self.disconnect_on_error(query, settings):
+  File "/usr/local/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_driver/client.py", line 313, in disconnect_on_error
+    self.establish_connection(settings)
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_driver/client.py", line 300, in establish_connection
+    self.connection.force_connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_driver/connection.py", line 258, in force_connect
+    self.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_driver/connection.py", line 399, in connect
+    return self._init_connection(host, port)
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_driver/connection.py", line 343, in _init_connection
+    self.receive_hello()
+  File "/home/airflow/.local/lib/python3.10/site-packages/clickhouse_driver/connection.py", line 528, in receive_hello
+    raise self.receive_exception()
+clickhouse_driver.errors.ServerException: Code: 516.
+DB::Exception: admin: Authentication failed: password is incorrect, or there is no user with such name.. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000d17d45b
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x0000000007db1dec
+2. DB::AccessControl::authenticate(DB::Credentials const&, Poco::Net::IPAddress const&, String const&) const @ 0x000000001013d6d8
+3. DB::Session::authenticate(DB::Credentials const&, Poco::Net::SocketAddress const&) @ 0x0000000011160f44
+4. DB::TCPHandler::receiveHello() @ 0x00000000125490cf
+5. DB::TCPHandler::runImpl() @ 0x000000001253d75f
+6. DB::TCPHandler::run() @ 0x00000000125599f8
+7. Poco::Net::TCPServerConnection::start() @ 0x000000001533c547
+8. Poco::Net::TCPServerDispatcher::run() @ 0x000000001533c9d9
+9. Poco::PooledThread::run() @ 0x0000000015309981
+10. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000015307f3d
+11. ? @ 0x00007d69331ab609
+12. ? @ 0x00007d69330d0353
+
+[2025-09-12T16:37:57.001+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=update_income_aggregate, task_id=update_income_aggregate, run_id=manual__2025-09-12T16:37:55.554809+00:00, execution_date=20250912T163755, start_date=20250912T163756, end_date=20250912T163757
+[2025-09-12T16:37:57.028+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 92 for task update_income_aggregate (Code: 516.
+DB::Exception: admin: Authentication failed: password is incorrect, or there is no user with such name.. Stack trace:
+
+0. DB::Exception::Exception(DB::Exception::MessageMasked&&, int, bool) @ 0x000000000d17d45b
+1. DB::Exception::Exception(PreformattedMessage&&, int) @ 0x0000000007db1dec
+2. DB::AccessControl::authenticate(DB::Credentials const&, Poco::Net::IPAddress const&, String const&) const @ 0x000000001013d6d8
+3. DB::Session::authenticate(DB::Credentials const&, Poco::Net::SocketAddress const&) @ 0x0000000011160f44
+4. DB::TCPHandler::receiveHello() @ 0x00000000125490cf
+5. DB::TCPHandler::runImpl() @ 0x000000001253d75f
+6. DB::TCPHandler::run() @ 0x00000000125599f8
+7. Poco::Net::TCPServerConnection::start() @ 0x000000001533c547
+8. Poco::Net::TCPServerDispatcher::run() @ 0x000000001533c9d9
+9. Poco::PooledThread::run() @ 0x0000000015309981
+10. Poco::ThreadImpl::runnableEntry(void*) @ 0x0000000015307f3d
+11. ? @ 0x00007d69331ab609
+12. ? @ 0x00007d69330d0353
+; 2893)
+[2025-09-12T16:37:57.073+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-09-12T16:37:57.120+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-12T16:37:57.132+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,21 @@
+name: 'ecom_intermediate'
+version: '1.0.0'
+profile: 'ecom_intermediate'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  ecom_intermediate:
+    ecom_intermediate:
+      +materialized: table
+      +schema: ecom_db_intermediate
+   

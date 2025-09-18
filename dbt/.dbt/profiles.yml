@@ -1,0 +1,15 @@
+ecom:                # trùng với 'profile' trong dbt_project.yml (dbt init đã đặt theo tên project)
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      driver: http          # http hoặc native
+      host: clickhouse      # tên service ClickHouse trong docker-compose
+      port: 8123            # HTTP: 8123 (HTTPS: 8443); Native: 9000 (TLS: 9440)
+      user: admin           # theo env của bạn
+      password: "123456"    # theo env của bạn
+      secure: false         # dùng HTTPS/TLS thì true
+      verify: false         # nếu secure=true mà không có CA hợp lệ thì đặt false
+      threads: 4
+      connect_timeout: 10
+      send_receive_timeout: 300

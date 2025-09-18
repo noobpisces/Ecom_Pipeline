@@ -1,0 +1,35 @@
+# Định nghĩa cấu hình chung (anchor)
+default_clickhouse: &default_clickhouse
+  type: clickhouse
+  driver: http
+  host: clickhouse
+  port: 8123
+  user: admin
+  password: "123456"
+  secure: false
+  verify: false
+  threads: 4
+  connect_timeout: 10
+  send_receive_timeout: 300
+
+# Profile 1
+ecom_staging:
+  target: dev
+  outputs:
+    dev:
+      <<: *default_clickhouse   # alias (tham chiếu đến anchor)
+
+# Profile 2
+ecom_intermediate:
+  target: dev
+  outputs:
+    dev:
+      <<: *default_clickhouse
+
+# Profile 3
+ecom_marts:
+  target: dev
+  outputs:
+    dev:
+      <<: *default_clickhouse
+      

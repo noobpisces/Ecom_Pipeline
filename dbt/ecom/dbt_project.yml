@@ -1,0 +1,27 @@
+name: 'ecom'
+version: '1.0.0'
+profile: 'ecom'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  ecom:
+    ecom_staging:
+      +materialized: view
+      +schema: ecom_db_staging
+    ecom_intermediate:
+      +materialized: table
+      +schema: ecom_db_intermediate
+    ecom_marts:
+      +materialized: table
+      +schema: ecom_db_marts
+      +tags: ["marts"]

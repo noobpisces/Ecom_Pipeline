@@ -1,0 +1,275 @@
+[2025-09-13T09:28:42.104+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-13T09:28:42.274+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_intermediate.intermediate.subcategories_enriched.run scheduled__2025-09-12T00:00:00+00:00 [queued]>
+[2025-09-13T09:28:42.366+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_intermediate.intermediate.subcategories_enriched.run scheduled__2025-09-12T00:00:00+00:00 [queued]>
+[2025-09-13T09:28:42.382+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-13T09:28:42.462+0000] {taskinstance.py:2330} INFO - Executing <Task(DbtRunVirtualenvOperator): intermediate.subcategories_enriched.run> on 2025-09-12 00:00:00+00:00
+[2025-09-13T09:28:42.481+0000] {standard_task_runner.py:64} INFO - Started process 4135 to run task
+[2025-09-13T09:28:42.491+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_intermediate', 'intermediate.subcategories_enriched.run', 'scheduled__2025-09-12T00:00:00+00:00', '--job-id', '152', '--raw', '--subdir', 'DAGS_FOLDER/dbt_intermediate.py', '--cfg-path', '/tmp/tmp1i1armap']
+[2025-09-13T09:28:42.500+0000] {standard_task_runner.py:91} INFO - Job 152: Subtask intermediate.subcategories_enriched.run
+[2025-09-13T09:28:43.448+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_intermediate.intermediate.subcategories_enriched.run scheduled__2025-09-12T00:00:00+00:00 [running]> on host e95bde6b8d07
+[2025-09-13T09:28:44.848+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_intermediate' AIRFLOW_CTX_TASK_ID='intermediate.subcategories_enriched.run' AIRFLOW_CTX_EXECUTION_DATE='2025-09-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-12T00:00:00+00:00'
+[2025-09-13T09:28:44.853+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-13T09:28:44.876+0000] {virtualenv.py:120} INFO - Checking if the virtualenv lock /tmp/cosmos_venv_ecom_intermediate/cosmos_virtualenv.lock exists
+[2025-09-13T09:28:44.884+0000] {virtualenv.py:126} INFO - Acquiring the virtualenv lock
+[2025-09-13T09:28:44.886+0000] {virtualenv.py:195} INFO - Acquiring lock at /tmp/cosmos_venv_ecom_intermediate/cosmos_virtualenv.lock with pid 4135
+[2025-09-13T09:28:44.891+0000] {virtualenv.py:153} INFO - Creating or updating the virtualenv at `/tmp/cosmos_venv_ecom_intermediate
+[2025-09-13T09:28:44.892+0000] {process_utils.py:183} INFO - Executing cmd: /home/***/.local/bin/python -m virtualenv /tmp/cosmos_venv_ecom_intermediate --python=python3
+[2025-09-13T09:28:44.894+0000] {process_utils.py:187} INFO - Output:
+[2025-09-13T09:28:46.475+0000] {process_utils.py:191} INFO - created virtual environment CPython3.10.14.final.0-64 in 430ms
+[2025-09-13T09:28:46.476+0000] {process_utils.py:191} INFO -   creator CPython3Posix(dest=/tmp/cosmos_venv_ecom_intermediate, clear=False, no_vcs_ignore=False, global=False)
+[2025-09-13T09:28:46.477+0000] {process_utils.py:191} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/***/.local/share/virtualenv)
+[2025-09-13T09:28:46.477+0000] {process_utils.py:191} INFO -     added seed packages: pip==25.2, setuptools==80.9.0, wheel==0.45.1
+[2025-09-13T09:28:46.478+0000] {process_utils.py:191} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2025-09-13T09:28:46.537+0000] {process_utils.py:183} INFO - Executing cmd: /tmp/cosmos_venv_ecom_intermediate/bin/pip install dbt-clickhouse
+[2025-09-13T09:28:46.538+0000] {process_utils.py:187} INFO - Output:
+[2025-09-13T09:28:48.452+0000] {process_utils.py:191} INFO - Collecting dbt-clickhouse
+[2025-09-13T09:28:48.455+0000] {process_utils.py:191} INFO -   Using cached dbt_clickhouse-1.9.3-py2.py3-none-any.whl.metadata (37 kB)
+[2025-09-13T09:28:48.562+0000] {process_utils.py:191} INFO - Collecting dbt-core>=1.9 (from dbt-clickhouse)
+[2025-09-13T09:28:48.565+0000] {process_utils.py:191} INFO -   Using cached dbt_core-1.10.11-py3-none-any.whl.metadata (4.2 kB)
+[2025-09-13T09:28:49.191+0000] {process_utils.py:191} INFO - Collecting clickhouse-connect>=0.6.22 (from dbt-clickhouse)
+[2025-09-13T09:28:49.194+0000] {process_utils.py:191} INFO -   Using cached clickhouse_connect-0.8.18-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+[2025-09-13T09:28:49.310+0000] {process_utils.py:191} INFO - Collecting clickhouse-driver>=0.2.6 (from dbt-clickhouse)
+[2025-09-13T09:28:49.314+0000] {process_utils.py:191} INFO -   Using cached clickhouse_driver-0.2.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.1 kB)
+[2025-09-13T09:28:49.318+0000] {process_utils.py:191} INFO - Requirement already satisfied: setuptools>=0.69 in /tmp/cosmos_venv_ecom_intermediate/lib/python3.10/site-packages (from dbt-clickhouse) (80.9.0)
+[2025-09-13T09:28:49.375+0000] {process_utils.py:191} INFO - Collecting certifi (from clickhouse-connect>=0.6.22->dbt-clickhouse)
+[2025-09-13T09:28:49.378+0000] {process_utils.py:191} INFO -   Using cached certifi-2025.8.3-py3-none-any.whl.metadata (2.4 kB)
+[2025-09-13T09:28:49.448+0000] {process_utils.py:191} INFO - Collecting urllib3>=1.26 (from clickhouse-connect>=0.6.22->dbt-clickhouse)
+[2025-09-13T09:28:49.451+0000] {process_utils.py:191} INFO -   Using cached urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+[2025-09-13T09:28:49.525+0000] {process_utils.py:191} INFO - Collecting pytz (from clickhouse-connect>=0.6.22->dbt-clickhouse)
+[2025-09-13T09:28:49.528+0000] {process_utils.py:191} INFO -   Using cached pytz-2025.2-py2.py3-none-any.whl.metadata (22 kB)
+[2025-09-13T09:28:49.649+0000] {process_utils.py:191} INFO - Collecting zstandard (from clickhouse-connect>=0.6.22->dbt-clickhouse)
+[2025-09-13T09:28:49.651+0000] {process_utils.py:191} INFO -   Using cached zstandard-0.24.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.1 kB)
+[2025-09-13T09:28:49.789+0000] {process_utils.py:191} INFO - Collecting lz4 (from clickhouse-connect>=0.6.22->dbt-clickhouse)
+[2025-09-13T09:28:49.793+0000] {process_utils.py:191} INFO -   Using cached lz4-4.4.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.8 kB)
+[2025-09-13T09:28:49.852+0000] {process_utils.py:191} INFO - Collecting tzlocal (from clickhouse-driver>=0.2.6->dbt-clickhouse)
+[2025-09-13T09:28:49.856+0000] {process_utils.py:191} INFO -   Using cached tzlocal-5.3.1-py3-none-any.whl.metadata (7.6 kB)
+[2025-09-13T09:28:49.917+0000] {process_utils.py:191} INFO - Collecting agate<1.10,>=1.7.0 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:49.921+0000] {process_utils.py:191} INFO -   Using cached agate-1.9.1-py2.py3-none-any.whl.metadata (3.2 kB)
+[2025-09-13T09:28:49.983+0000] {process_utils.py:191} INFO - Collecting Jinja2<4,>=3.1.3 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:49.986+0000] {process_utils.py:191} INFO -   Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+[2025-09-13T09:28:50.046+0000] {process_utils.py:191} INFO - Collecting mashumaro<3.15,>=3.9 (from mashumaro[msgpack]<3.15,>=3.9->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:50.050+0000] {process_utils.py:191} INFO -   Using cached mashumaro-3.14-py3-none-any.whl.metadata (114 kB)
+[2025-09-13T09:28:50.113+0000] {process_utils.py:191} INFO - Collecting click<9.0,>=8.0.2 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:50.116+0000] {process_utils.py:191} INFO -   Using cached click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+[2025-09-13T09:28:50.182+0000] {process_utils.py:191} INFO - Collecting jsonschema<5.0,>=4.19.1 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:50.185+0000] {process_utils.py:191} INFO -   Using cached jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+[2025-09-13T09:28:50.253+0000] {process_utils.py:191} INFO - Collecting networkx<4.0,>=2.3 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:50.256+0000] {process_utils.py:191} INFO -   Using cached networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+[2025-09-13T09:28:50.657+0000] {process_utils.py:191} INFO - Collecting protobuf<7.0,>=6.0 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:50.670+0000] {process_utils.py:191} INFO -   Using cached protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+[2025-09-13T09:28:50.752+0000] {process_utils.py:191} INFO - Collecting requests<3.0.0 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:50.755+0000] {process_utils.py:191} INFO -   Using cached requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+[2025-09-13T09:28:50.816+0000] {process_utils.py:191} INFO - Collecting snowplow-tracker<2.0,>=1.0.2 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:50.819+0000] {process_utils.py:191} INFO -   Using cached snowplow_tracker-1.1.0-py3-none-any.whl.metadata (5.7 kB)
+[2025-09-13T09:28:50.876+0000] {process_utils.py:191} INFO - Collecting pathspec<0.13,>=0.9 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:50.879+0000] {process_utils.py:191} INFO -   Using cached pathspec-0.12.1-py3-none-any.whl.metadata (21 kB)
+[2025-09-13T09:28:50.937+0000] {process_utils.py:191} INFO - Collecting sqlparse<0.6.0,>=0.5.0 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:50.941+0000] {process_utils.py:191} INFO -   Using cached sqlparse-0.5.3-py3-none-any.whl.metadata (3.9 kB)
+[2025-09-13T09:28:51.013+0000] {process_utils.py:191} INFO - Collecting dbt-extractor<=0.6,>=0.5.0 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:51.016+0000] {process_utils.py:191} INFO -   Using cached dbt_extractor-0.6.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.6 kB)
+[2025-09-13T09:28:51.086+0000] {process_utils.py:191} INFO - Collecting dbt-semantic-interfaces<0.10,>=0.9.0 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:51.089+0000] {process_utils.py:191} INFO -   Using cached dbt_semantic_interfaces-0.9.0-py3-none-any.whl.metadata (2.6 kB)
+[2025-09-13T09:28:51.154+0000] {process_utils.py:191} INFO - Collecting dbt-common<2.0,>=1.27.0 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:51.157+0000] {process_utils.py:191} INFO -   Using cached dbt_common-1.30.0-py3-none-any.whl.metadata (5.0 kB)
+[2025-09-13T09:28:51.224+0000] {process_utils.py:191} INFO - Collecting dbt-adapters<2.0,>=1.15.5 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:51.227+0000] {process_utils.py:191} INFO -   Using cached dbt_adapters-1.16.7-py3-none-any.whl.metadata (4.5 kB)
+[2025-09-13T09:28:51.525+0000] {process_utils.py:191} INFO - Collecting dbt-protos<2.0,>=1.0.346 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:51.528+0000] {process_utils.py:191} INFO -   Using cached dbt_protos-1.0.375-py3-none-any.whl.metadata (859 bytes)
+[2025-09-13T09:28:51.875+0000] {process_utils.py:191} INFO - Collecting pydantic<3 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.114+0000] {process_utils.py:191} INFO -   Downloading pydantic-2.11.8-py3-none-any.whl.metadata (68 kB)
+[2025-09-13T09:28:52.273+0000] {process_utils.py:191} INFO - Collecting packaging>20.9 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.276+0000] {process_utils.py:191} INFO -   Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+[2025-09-13T09:28:52.363+0000] {process_utils.py:191} INFO - Collecting pyyaml>=6.0 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.366+0000] {process_utils.py:191} INFO -   Using cached PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+[2025-09-13T09:28:52.416+0000] {process_utils.py:191} INFO - Collecting daff>=1.3.46 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.418+0000] {process_utils.py:191} INFO -   Using cached daff-1.4.2-py3-none-any.whl.metadata (10 kB)
+[2025-09-13T09:28:52.480+0000] {process_utils.py:191} INFO - Collecting typing-extensions>=4.4 (from dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.484+0000] {process_utils.py:191} INFO -   Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+[2025-09-13T09:28:52.542+0000] {process_utils.py:191} INFO - Collecting Babel>=2.0 (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.544+0000] {process_utils.py:191} INFO -   Using cached babel-2.17.0-py3-none-any.whl.metadata (2.0 kB)
+[2025-09-13T09:28:52.595+0000] {process_utils.py:191} INFO - Collecting isodate>=0.5.4 (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.598+0000] {process_utils.py:191} INFO -   Using cached isodate-0.7.2-py3-none-any.whl.metadata (11 kB)
+[2025-09-13T09:28:52.647+0000] {process_utils.py:191} INFO - Collecting leather>=0.3.2 (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.649+0000] {process_utils.py:191} INFO -   Using cached leather-0.4.0-py2.py3-none-any.whl.metadata (2.8 kB)
+[2025-09-13T09:28:52.700+0000] {process_utils.py:191} INFO - Collecting parsedatetime!=2.5,>=2.1 (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.704+0000] {process_utils.py:191} INFO -   Using cached parsedatetime-2.6-py3-none-any.whl.metadata (4.7 kB)
+[2025-09-13T09:28:52.760+0000] {process_utils.py:191} INFO - Collecting python-slugify>=1.2.1 (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.763+0000] {process_utils.py:191} INFO -   Using cached python_slugify-8.0.4-py2.py3-none-any.whl.metadata (8.5 kB)
+[2025-09-13T09:28:52.812+0000] {process_utils.py:191} INFO - Collecting pytimeparse>=1.1.5 (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.814+0000] {process_utils.py:191} INFO -   Using cached pytimeparse-1.1.8-py2.py3-none-any.whl.metadata (3.4 kB)
+[2025-09-13T09:28:52.887+0000] {process_utils.py:191} INFO - Collecting colorama<0.5,>=0.3.9 (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.890+0000] {process_utils.py:191} INFO -   Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+[2025-09-13T09:28:52.964+0000] {process_utils.py:191} INFO - Collecting deepdiff<9.0,>=7.0 (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.967+0000] {process_utils.py:191} INFO -   Using cached deepdiff-8.6.1-py3-none-any.whl.metadata (8.6 kB)
+[2025-09-13T09:28:52.977+0000] {process_utils.py:191} INFO - Collecting isodate>=0.5.4 (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:52.981+0000] {process_utils.py:191} INFO -   Using cached isodate-0.6.1-py2.py3-none-any.whl.metadata (9.6 kB)
+[2025-09-13T09:28:53.066+0000] {process_utils.py:191} INFO - Collecting python-dateutil<3.0,>=2.0 (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.069+0000] {process_utils.py:191} INFO -   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+[2025-09-13T09:28:53.290+0000] {process_utils.py:191} INFO - Collecting importlib-metadata<9,>=6.0 (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.294+0000] {process_utils.py:191} INFO -   Using cached importlib_metadata-8.7.0-py3-none-any.whl.metadata (4.8 kB)
+[2025-09-13T09:28:53.367+0000] {process_utils.py:191} INFO - Collecting more-itertools<11.0,>=8.0 (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.370+0000] {process_utils.py:191} INFO -   Using cached more_itertools-10.8.0-py3-none-any.whl.metadata (39 kB)
+[2025-09-13T09:28:53.461+0000] {process_utils.py:191} INFO - Collecting orderly-set<6,>=5.4.1 (from deepdiff<9.0,>=7.0->dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.464+0000] {process_utils.py:191} INFO -   Using cached orderly_set-5.5.0-py3-none-any.whl.metadata (6.6 kB)
+[2025-09-13T09:28:53.530+0000] {process_utils.py:191} INFO - Collecting zipp>=3.20 (from importlib-metadata<9,>=6.0->dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.532+0000] {process_utils.py:191} INFO -   Using cached zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+[2025-09-13T09:28:53.587+0000] {process_utils.py:191} INFO - Collecting six (from isodate>=0.5.4->agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.591+0000] {process_utils.py:191} INFO -   Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+[2025-09-13T09:28:53.685+0000] {process_utils.py:191} INFO - Collecting MarkupSafe>=2.0 (from Jinja2<4,>=3.1.3->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.688+0000] {process_utils.py:191} INFO -   Using cached MarkupSafe-3.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+[2025-09-13T09:28:53.743+0000] {process_utils.py:191} INFO - Collecting attrs>=22.2.0 (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.745+0000] {process_utils.py:191} INFO -   Using cached attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+[2025-09-13T09:28:53.809+0000] {process_utils.py:191} INFO - Collecting jsonschema-specifications>=2023.03.6 (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.812+0000] {process_utils.py:191} INFO -   Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+[2025-09-13T09:28:53.882+0000] {process_utils.py:191} INFO - Collecting referencing>=0.28.4 (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:53.887+0000] {process_utils.py:191} INFO -   Using cached referencing-0.36.2-py3-none-any.whl.metadata (2.8 kB)
+[2025-09-13T09:28:54.289+0000] {process_utils.py:191} INFO - Collecting rpds-py>=0.7.1 (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:54.292+0000] {process_utils.py:191} INFO -   Using cached rpds_py-0.27.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+[2025-09-13T09:28:54.455+0000] {process_utils.py:191} INFO - Collecting msgpack>=0.5.6 (from mashumaro[msgpack]<3.15,>=3.9->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:54.467+0000] {process_utils.py:191} INFO -   Using cached msgpack-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.4 kB)
+[2025-09-13T09:28:54.522+0000] {process_utils.py:191} INFO - Collecting annotated-types>=0.6.0 (from pydantic<3->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:54.525+0000] {process_utils.py:191} INFO -   Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+[2025-09-13T09:28:55.464+0000] {process_utils.py:191} INFO - Collecting pydantic-core==2.33.2 (from pydantic<3->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:55.478+0000] {process_utils.py:191} INFO -   Using cached pydantic_core-2.33.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+[2025-09-13T09:28:55.533+0000] {process_utils.py:191} INFO - Collecting typing-inspection>=0.4.0 (from pydantic<3->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:55.536+0000] {process_utils.py:191} INFO -   Using cached typing_inspection-0.4.1-py3-none-any.whl.metadata (2.6 kB)
+[2025-09-13T09:28:55.689+0000] {process_utils.py:191} INFO - Collecting charset_normalizer<4,>=2 (from requests<3.0.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:55.702+0000] {process_utils.py:191} INFO -   Using cached charset_normalizer-3.4.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+[2025-09-13T09:28:55.756+0000] {process_utils.py:191} INFO - Collecting idna<4,>=2.5 (from requests<3.0.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:55.759+0000] {process_utils.py:191} INFO -   Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+[2025-09-13T09:28:55.860+0000] {process_utils.py:191} INFO - Collecting text-unidecode>=1.3 (from python-slugify>=1.2.1->agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse)
+[2025-09-13T09:28:55.863+0000] {process_utils.py:191} INFO -   Using cached text_unidecode-1.3-py2.py3-none-any.whl.metadata (2.4 kB)
+[2025-09-13T09:28:55.918+0000] {process_utils.py:191} INFO - Using cached dbt_clickhouse-1.9.3-py2.py3-none-any.whl (70 kB)
+[2025-09-13T09:28:55.921+0000] {process_utils.py:191} INFO - Using cached clickhouse_connect-0.8.18-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (979 kB)
+[2025-09-13T09:28:55.926+0000] {process_utils.py:191} INFO - Using cached clickhouse_driver-0.2.9-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (935 kB)
+[2025-09-13T09:28:55.930+0000] {process_utils.py:191} INFO - Using cached dbt_core-1.10.11-py3-none-any.whl (984 kB)
+[2025-09-13T09:28:55.935+0000] {process_utils.py:191} INFO - Using cached agate-1.9.1-py2.py3-none-any.whl (95 kB)
+[2025-09-13T09:28:55.938+0000] {process_utils.py:191} INFO - Using cached click-8.2.1-py3-none-any.whl (102 kB)
+[2025-09-13T09:28:55.940+0000] {process_utils.py:191} INFO - Using cached dbt_adapters-1.16.7-py3-none-any.whl (167 kB)
+[2025-09-13T09:28:55.943+0000] {process_utils.py:191} INFO - Using cached dbt_common-1.30.0-py3-none-any.whl (86 kB)
+[2025-09-13T09:28:55.945+0000] {process_utils.py:191} INFO - Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+[2025-09-13T09:28:55.948+0000] {process_utils.py:191} INFO - Using cached dbt_extractor-0.6.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (442 kB)
+[2025-09-13T09:28:55.951+0000] {process_utils.py:191} INFO - Using cached dbt_protos-1.0.375-py3-none-any.whl (95 kB)
+[2025-09-13T09:28:55.953+0000] {process_utils.py:191} INFO - Using cached dbt_semantic_interfaces-0.9.0-py3-none-any.whl (147 kB)
+[2025-09-13T09:28:55.956+0000] {process_utils.py:191} INFO - Using cached deepdiff-8.6.1-py3-none-any.whl (91 kB)
+[2025-09-13T09:28:55.959+0000] {process_utils.py:191} INFO - Using cached importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+[2025-09-13T09:28:55.961+0000] {process_utils.py:191} INFO - Using cached isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+[2025-09-13T09:28:55.964+0000] {process_utils.py:191} INFO - Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+[2025-09-13T09:28:55.966+0000] {process_utils.py:191} INFO - Using cached jsonschema-4.25.1-py3-none-any.whl (90 kB)
+[2025-09-13T09:28:55.968+0000] {process_utils.py:191} INFO - Using cached mashumaro-3.14-py3-none-any.whl (92 kB)
+[2025-09-13T09:28:55.971+0000] {process_utils.py:191} INFO - Using cached more_itertools-10.8.0-py3-none-any.whl (69 kB)
+[2025-09-13T09:28:55.974+0000] {process_utils.py:191} INFO - Using cached networkx-3.4.2-py3-none-any.whl (1.7 MB)
+[2025-09-13T09:28:55.979+0000] {process_utils.py:191} INFO - Using cached orderly_set-5.5.0-py3-none-any.whl (13 kB)
+[2025-09-13T09:28:55.981+0000] {process_utils.py:191} INFO - Using cached pathspec-0.12.1-py3-none-any.whl (31 kB)
+[2025-09-13T09:28:55.983+0000] {process_utils.py:191} INFO - Using cached protobuf-6.32.1-cp39-abi3-manylinux2014_x86_64.whl (322 kB)
+[2025-09-13T09:28:56.024+0000] {process_utils.py:191} INFO - Downloading pydantic-2.11.8-py3-none-any.whl (444 kB)
+[2025-09-13T09:28:56.146+0000] {process_utils.py:191} INFO - Using cached pydantic_core-2.33.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+[2025-09-13T09:28:56.151+0000] {process_utils.py:191} INFO - Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+[2025-09-13T09:28:56.153+0000] {process_utils.py:191} INFO - Using cached PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (751 kB)
+[2025-09-13T09:28:56.157+0000] {process_utils.py:191} INFO - Using cached requests-2.32.5-py3-none-any.whl (64 kB)
+[2025-09-13T09:28:56.159+0000] {process_utils.py:191} INFO - Using cached charset_normalizer-3.4.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (152 kB)
+[2025-09-13T09:28:56.162+0000] {process_utils.py:191} INFO - Using cached idna-3.10-py3-none-any.whl (70 kB)
+[2025-09-13T09:28:56.164+0000] {process_utils.py:191} INFO - Using cached snowplow_tracker-1.1.0-py3-none-any.whl (44 kB)
+[2025-09-13T09:28:56.166+0000] {process_utils.py:191} INFO - Using cached sqlparse-0.5.3-py3-none-any.whl (44 kB)
+[2025-09-13T09:28:56.168+0000] {process_utils.py:191} INFO - Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+[2025-09-13T09:28:56.170+0000] {process_utils.py:191} INFO - Using cached urllib3-2.5.0-py3-none-any.whl (129 kB)
+[2025-09-13T09:28:56.172+0000] {process_utils.py:191} INFO - Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+[2025-09-13T09:28:56.174+0000] {process_utils.py:191} INFO - Using cached attrs-25.3.0-py3-none-any.whl (63 kB)
+[2025-09-13T09:28:56.176+0000] {process_utils.py:191} INFO - Using cached babel-2.17.0-py3-none-any.whl (10.2 MB)
+[2025-09-13T09:28:56.196+0000] {process_utils.py:191} INFO - Using cached certifi-2025.8.3-py3-none-any.whl (161 kB)
+[2025-09-13T09:28:56.199+0000] {process_utils.py:191} INFO - Using cached daff-1.4.2-py3-none-any.whl (144 kB)
+[2025-09-13T09:28:56.201+0000] {process_utils.py:191} INFO - Using cached jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+[2025-09-13T09:28:56.203+0000] {process_utils.py:191} INFO - Using cached leather-0.4.0-py2.py3-none-any.whl (30 kB)
+[2025-09-13T09:28:56.205+0000] {process_utils.py:191} INFO - Using cached MarkupSafe-3.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20 kB)
+[2025-09-13T09:28:56.207+0000] {process_utils.py:191} INFO - Using cached msgpack-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (408 kB)
+[2025-09-13T09:28:56.210+0000] {process_utils.py:191} INFO - Using cached packaging-25.0-py3-none-any.whl (66 kB)
+[2025-09-13T09:28:56.213+0000] {process_utils.py:191} INFO - Using cached parsedatetime-2.6-py3-none-any.whl (42 kB)
+[2025-09-13T09:28:56.215+0000] {process_utils.py:191} INFO - Using cached python_slugify-8.0.4-py2.py3-none-any.whl (10 kB)
+[2025-09-13T09:28:56.217+0000] {process_utils.py:191} INFO - Using cached pytimeparse-1.1.8-py2.py3-none-any.whl (10.0 kB)
+[2025-09-13T09:28:56.219+0000] {process_utils.py:191} INFO - Using cached pytz-2025.2-py2.py3-none-any.whl (509 kB)
+[2025-09-13T09:28:56.223+0000] {process_utils.py:191} INFO - Using cached referencing-0.36.2-py3-none-any.whl (26 kB)
+[2025-09-13T09:28:56.225+0000] {process_utils.py:191} INFO - Using cached rpds_py-0.27.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (384 kB)
+[2025-09-13T09:28:56.228+0000] {process_utils.py:191} INFO - Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+[2025-09-13T09:28:56.230+0000] {process_utils.py:191} INFO - Using cached text_unidecode-1.3-py2.py3-none-any.whl (78 kB)
+[2025-09-13T09:28:56.233+0000] {process_utils.py:191} INFO - Using cached typing_inspection-0.4.1-py3-none-any.whl (14 kB)
+[2025-09-13T09:28:56.235+0000] {process_utils.py:191} INFO - Using cached zipp-3.23.0-py3-none-any.whl (10 kB)
+[2025-09-13T09:28:56.237+0000] {process_utils.py:191} INFO - Using cached lz4-4.4.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+[2025-09-13T09:28:56.242+0000] {process_utils.py:191} INFO - Using cached tzlocal-5.3.1-py3-none-any.whl (18 kB)
+[2025-09-13T09:28:56.244+0000] {process_utils.py:191} INFO - Using cached zstandard-0.24.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.6 MB)
+[2025-09-13T09:28:56.452+0000] {process_utils.py:191} INFO - Installing collected packages: text-unidecode, pytz, pytimeparse, parsedatetime, leather, daff, zstandard, zipp, urllib3, tzlocal, typing-extensions, sqlparse, six, rpds-py, pyyaml, python-slugify, protobuf, pathspec, packaging, orderly-set, networkx, msgpack, more-itertools, MarkupSafe, lz4, idna, dbt-extractor, colorama, click, charset_normalizer, certifi, Babel, attrs, annotated-types, typing-inspection, requests, referencing, python-dateutil, pydantic-core, mashumaro, Jinja2, isodate, importlib-metadata, deepdiff, dbt-protos, clickhouse-driver, clickhouse-connect, snowplow-tracker, pydantic, jsonschema-specifications, agate, jsonschema, dbt-semantic-interfaces, dbt-common, dbt-adapters, dbt-core, dbt-clickhouse
+[2025-09-13T09:29:01.322+0000] {process_utils.py:191} INFO - 
+[2025-09-13T09:29:01.332+0000] {process_utils.py:191} INFO - Successfully installed Babel-2.17.0 Jinja2-3.1.6 MarkupSafe-3.0.2 agate-1.9.1 annotated-types-0.7.0 attrs-25.3.0 certifi-2025.8.3 charset_normalizer-3.4.3 click-8.2.1 clickhouse-connect-0.8.18 clickhouse-driver-0.2.9 colorama-0.4.6 daff-1.4.2 dbt-adapters-1.16.7 dbt-clickhouse-1.9.3 dbt-common-1.30.0 dbt-core-1.10.11 dbt-extractor-0.6.0 dbt-protos-1.0.375 dbt-semantic-interfaces-0.9.0 deepdiff-8.6.1 idna-3.10 importlib-metadata-8.7.0 isodate-0.6.1 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 leather-0.4.0 lz4-4.4.4 mashumaro-3.14 more-itertools-10.8.0 msgpack-1.1.1 networkx-3.4.2 orderly-set-5.5.0 packaging-25.0 parsedatetime-2.6 pathspec-0.12.1 protobuf-6.32.1 pydantic-2.11.8 pydantic-core-2.33.2 python-dateutil-2.9.0.post0 python-slugify-8.0.4 pytimeparse-1.1.8 pytz-2025.2 pyyaml-6.0.2 referencing-0.36.2 requests-2.32.5 rpds-py-0.27.1 six-1.17.0 snowplow-tracker-1.1.0 sqlparse-0.5.3 text-unidecode-1.3 typing-extensions-4.15.0 typing-inspection-0.4.1 tzlocal-5.3.1 urllib3-2.5.0 zipp-3.23.0 zstandard-0.24.0
+[2025-09-13T09:29:02.210+0000] {local.py:470} INFO - Cloning project to writable temp directory /tmp/tmpwke7f5e1 from /opt/airflow/dags/dbt/ecom_intermediate
+[2025-09-13T09:29:02.219+0000] {local.py:490} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/dbt_intermediate__intermediate/target/partial_parse.msgpack
+[2025-09-13T09:29:02.232+0000] {config.py:362} INFO - Using user-supplied profiles.yml at /opt/airflow/dags/dbt/profiles.yml
+[2025-09-13T09:29:02.240+0000] {virtualenv.py:99} INFO - Using Python binary from virtualenv: /tmp/cosmos_venv_ecom_intermediate/bin/python
+[2025-09-13T09:29:02.240+0000] {local.py:434} INFO - Trying to run the command:
+ ['/tmp/cosmos_venv_ecom_intermediate/bin/dbt', 'deps', '--project-dir', '/tmp/tmpwke7f5e1', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+From /tmp/tmpwke7f5e1
+[2025-09-13T09:29:02.241+0000] {subprocess.py:56} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-13T09:29:02.241+0000] {subprocess.py:69} INFO - Running command: ['/tmp/cosmos_venv_ecom_intermediate/bin/dbt', 'deps', '--project-dir', '/tmp/tmpwke7f5e1', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+[2025-09-13T09:29:02.251+0000] {subprocess.py:80} INFO - Command output:
+[2025-09-13T09:29:04.713+0000] {subprocess.py:90} INFO - [0m09:29:04  Running with dbt=1.10.11
+[2025-09-13T09:29:06.090+0000] {subprocess.py:90} INFO - [0m09:29:06  Installing dbt-labs/dbt_utils
+[2025-09-13T09:29:06.689+0000] {subprocess.py:90} INFO - [0m09:29:06  Installed from version 1.3.0
+[2025-09-13T09:29:06.691+0000] {subprocess.py:90} INFO - [0m09:29:06  Updated version available: 1.3.1
+[2025-09-13T09:29:06.691+0000] {subprocess.py:90} INFO - [0m09:29:06
+[2025-09-13T09:29:06.692+0000] {subprocess.py:90} INFO - [0m09:29:06  Updates available for packages: ['dbt-labs/dbt_utils']
+[2025-09-13T09:29:06.693+0000] {subprocess.py:90} INFO - Update your versions in packages.yml, then run dbt deps
+[2025-09-13T09:29:09.003+0000] {subprocess.py:94} INFO - Command exited with return code 0
+[2025-09-13T09:29:09.004+0000] {local.py:441} INFO - Update your versions in packages.yml, then run dbt deps
+[2025-09-13T09:29:09.004+0000] {virtualenv.py:99} INFO - Using Python binary from virtualenv: /tmp/cosmos_venv_ecom_intermediate/bin/python
+[2025-09-13T09:29:09.004+0000] {local.py:434} INFO - Trying to run the command:
+ ['/tmp/cosmos_venv_ecom_intermediate/bin/dbt', 'run', '--models', 'subcategories_enriched', '--project-dir', '/tmp/tmpwke7f5e1', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+From /tmp/tmpwke7f5e1
+[2025-09-13T09:29:09.005+0000] {subprocess.py:56} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-13T09:29:09.005+0000] {subprocess.py:69} INFO - Running command: ['/tmp/cosmos_venv_ecom_intermediate/bin/dbt', 'run', '--models', 'subcategories_enriched', '--project-dir', '/tmp/tmpwke7f5e1', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+[2025-09-13T09:29:09.016+0000] {subprocess.py:80} INFO - Command output:
+[2025-09-13T09:29:11.191+0000] {subprocess.py:90} INFO - [0m09:29:11  Running with dbt=1.10.11
+[2025-09-13T09:29:11.192+0000] {subprocess.py:90} INFO - [0m09:29:11  [[33mWARNING[0m]: Deprecated functionality
+[2025-09-13T09:29:11.193+0000] {subprocess.py:90} INFO - Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+[2025-09-13T09:29:11.193+0000] {subprocess.py:90} INFO - `-s`.
+[2025-09-13T09:29:11.487+0000] {subprocess.py:90} INFO - [0m09:29:11  Registered adapter: clickhouse=1.9.3
+[2025-09-13T09:29:11.735+0000] {subprocess.py:90} INFO - [0m09:29:11  Unable to do partial parsing because of a version mismatch
+[2025-09-13T09:29:14.696+0000] {subprocess.py:90} INFO - [0m09:29:14  [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+[2025-09-13T09:29:14.697+0000] {subprocess.py:90} INFO - functionality
+[2025-09-13T09:29:14.697+0000] {subprocess.py:90} INFO - Found top-level arguments to test `relationships`. Arguments to generic tests
+[2025-09-13T09:29:14.698+0000] {subprocess.py:90} INFO - should be nested under the `arguments` property.`
+[2025-09-13T09:29:15.684+0000] {subprocess.py:90} INFO - [0m09:29:15  Found 15 models, 50 data tests, 8 sources, 597 macros
+[2025-09-13T09:29:15.689+0000] {subprocess.py:90} INFO - [0m09:29:15
+[2025-09-13T09:29:15.690+0000] {subprocess.py:90} INFO - [0m09:29:15  Concurrency: 4 threads (target='dev')
+[2025-09-13T09:29:15.690+0000] {subprocess.py:90} INFO - [0m09:29:15
+[2025-09-13T09:29:15.928+0000] {subprocess.py:90} INFO - [0m09:29:15  1 of 1 START sql table model `ecom_db_intermediate`.`subcategories_enriched` ... [RUN]
+[2025-09-13T09:29:16.143+0000] {subprocess.py:90} INFO - [0m09:29:16  1 of 1 OK created sql table model `ecom_db_intermediate`.`subcategories_enriched`  [[32mOK[0m in 0.21s]
+[2025-09-13T09:29:16.147+0000] {subprocess.py:90} INFO - [0m09:29:16
+[2025-09-13T09:29:16.151+0000] {subprocess.py:90} INFO - [0m09:29:16  Finished running 1 table model in 0 hours 0 minutes and 0.46 seconds (0.46s).
+[2025-09-13T09:29:16.315+0000] {subprocess.py:90} INFO - [0m09:29:16
+[2025-09-13T09:29:16.315+0000] {subprocess.py:90} INFO - [0m09:29:16  [32mCompleted successfully[0m
+[2025-09-13T09:29:16.316+0000] {subprocess.py:90} INFO - [0m09:29:16
+[2025-09-13T09:29:16.317+0000] {subprocess.py:90} INFO - [0m09:29:16  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[2025-09-13T09:29:16.317+0000] {subprocess.py:90} INFO - [0m09:29:16  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+[2025-09-13T09:29:16.318+0000] {subprocess.py:90} INFO - Summary of encountered deprecations:
+[2025-09-13T09:29:16.318+0000] {subprocess.py:90} INFO - - ModelParamUsageDeprecation: 1 occurrence
+[2025-09-13T09:29:16.319+0000] {subprocess.py:90} INFO - - MissingArgumentsPropertyInGenericTestDeprecation: 13 occurrences
+[2025-09-13T09:29:16.320+0000] {subprocess.py:90} INFO - To see all deprecation instances instead of just the first occurrence of each,
+[2025-09-13T09:29:16.320+0000] {subprocess.py:90} INFO - run command again with the `--show-all-deprecations` flag. You may also need to
+[2025-09-13T09:29:16.321+0000] {subprocess.py:90} INFO - run with `--no-partial-parse` as some deprecations are only encountered during
+[2025-09-13T09:29:16.321+0000] {subprocess.py:90} INFO - parsing.
+[2025-09-13T09:29:18.179+0000] {subprocess.py:94} INFO - Command exited with return code 0
+[2025-09-13T09:29:18.180+0000] {local.py:441} INFO - parsing.
+[2025-09-13T09:29:18.193+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/manifest/v12.json is above dbt-ol supported version 7. This might cause errors.
+[2025-09-13T09:29:18.194+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/run-results/v6.json is above dbt-ol supported version 5. This might cause errors.
+[2025-09-13T09:29:18.202+0000] {local.py:547} INFO - Inlets: []
+[2025-09-13T09:29:18.203+0000] {local.py:548} INFO - Outlets: []
+[2025-09-13T09:29:18.204+0000] {local.py:772} INFO - Assigning inlets/outlets without DatasetAlias
+[2025-09-13T09:29:18.204+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-13T09:29:18.306+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-13 00:00:00+00:00, run_after=2025-09-14 00:00:00+00:00
+[2025-09-13T09:29:18.418+0000] {virtualenv.py:131} INFO - Releasing virtualenv lock
+[2025-09-13T09:29:18.420+0000] {virtualenv.py:145} INFO - None
+[2025-09-13T09:29:18.420+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-13T09:29:18.469+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dbt_intermediate, task_id=intermediate.subcategories_enriched.run, run_id=scheduled__2025-09-12T00:00:00+00:00, execution_date=20250912T000000, start_date=20250913T092842, end_date=20250913T092918
+[2025-09-13T09:29:18.534+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-13T09:29:18.641+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-13T09:29:18.653+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

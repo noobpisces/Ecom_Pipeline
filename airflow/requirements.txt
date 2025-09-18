@@ -1,0 +1,23 @@
+apache-airflow-providers-apache-spark==4.8.2
+apache-airflow-providers-amazon==8.25.0
+apache-airflow-providers-postgres==5.11.2
+ apache-airflow-providers-common-sql==1.14.2
+apache-airflow-providers-smtp==1.7.1
+clickhouse-driver==0.2.9
+boto3
+minio
+psycopg2-binary
+clickhouse-connect
+dotenv
+faker
+# astronomer-cosmos==1.10.2
+# dbt-core
+# dbt-clickhouse==1.9.3
+# dbt-adapters==1.16.7
+# dbt-common==1.30.0
+# airflow-clickhouse-plugin==1.4.0
+
+astronomer-cosmos[dbt-clickhouse]==1.10.2
+# astronomer-cosmos
+# dbt-core
+# dbt-clickhouse==1.9.3

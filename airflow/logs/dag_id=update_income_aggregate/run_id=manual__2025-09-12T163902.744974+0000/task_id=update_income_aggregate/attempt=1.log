@@ -1,0 +1,20 @@
+[2025-09-12T16:39:04.031+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-12T16:39:04.097+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: update_income_aggregate.update_income_aggregate manual__2025-09-12T16:39:02.744974+00:00 [queued]>
+[2025-09-12T16:39:04.109+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: update_income_aggregate.update_income_aggregate manual__2025-09-12T16:39:02.744974+00:00 [queued]>
+[2025-09-12T16:39:04.120+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-12T16:39:04.136+0000] {taskinstance.py:2330} INFO - Executing <Task(ClickHouseOperator): update_income_aggregate> on 2025-09-12 16:39:02.744974+00:00
+[2025-09-12T16:39:04.142+0000] {standard_task_runner.py:64} INFO - Started process 2923 to run task
+[2025-09-12T16:39:04.146+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'update_income_aggregate', 'update_income_aggregate', 'manual__2025-09-12T16:39:02.744974+00:00', '--job-id', '93', '--raw', '--subdir', 'DAGS_FOLDER/dd.py', '--cfg-path', '/tmp/tmpl6qmv3ip']
+[2025-09-12T16:39:04.149+0000] {standard_task_runner.py:91} INFO - Job 93: Subtask update_income_aggregate
+[2025-09-12T16:39:04.300+0000] {task_command.py:426} INFO - Running <TaskInstance: update_income_aggregate.update_income_aggregate manual__2025-09-12T16:39:02.744974+00:00 [running]> on host e95bde6b8d07
+[2025-09-12T16:39:04.582+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='update_income_aggregate' AIRFLOW_CTX_TASK_ID='update_income_aggregate' AIRFLOW_CTX_EXECUTION_DATE='2025-09-12T16:39:02.744974+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-12T16:39:02.744974+00:00'
+[2025-09-12T16:39:04.583+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-12T16:39:04.634+0000] {base.py:84} INFO - Using connection ID 'ch_ecom_staging_conn' for task execution.
+[2025-09-12T16:39:04.635+0000] {clickhouse.py:79} INFO - 
+                Select * from stg_categories
+            
+[2025-09-12T16:39:04.666+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-12T16:39:04.779+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=update_income_aggregate, task_id=update_income_aggregate, run_id=manual__2025-09-12T16:39:02.744974+00:00, execution_date=20250912T163902, start_date=20250912T163904, end_date=20250912T163904
+[2025-09-12T16:39:04.840+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-12T16:39:04.895+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-12T16:39:04.897+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
