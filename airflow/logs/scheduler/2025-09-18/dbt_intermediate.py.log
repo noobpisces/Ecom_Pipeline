@@ -960,3 +960,213 @@
 [2025-09-18T13:55:18.852+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:18.852+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-09-18T13:55:18.888+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:18.887+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
 [2025-09-18T13:55:18.924+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.549 seconds
+[2025-09-18T13:55:49.306+0000] {processor.py:161} INFO - Started process (PID=3979) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:55:49.307+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T13:55:49.309+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:49.308+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:55:49.329+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:49.329+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T13:55:51.368+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.368+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 1.9815395450000324
+[2025-09-18T13:55:51.368+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.368+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|3979]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T13:55:51.372+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.372+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:55:51.372+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.372+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T13:55:51.373+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.373+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T13:55:51.373+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.373+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|3979]: It took 2.04s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:55:51.522+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.522+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|3979]: It took 0.149s to build the Airflow DAG.
+[2025-09-18T13:55:51.524+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:55:51.551+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.550+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:55:51.583+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.583+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T13:55:51.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.326 seconds
+[2025-09-18T13:56:22.066+0000] {processor.py:161} INFO - Started process (PID=4005) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:56:22.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T13:56:22.068+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:22.068+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:56:22.090+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:22.090+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T13:56:24.406+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.406+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 2.26338738000004
+[2025-09-18T13:56:24.407+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.407+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4005]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T13:56:24.411+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.411+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:56:24.412+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.411+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T13:56:24.412+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.412+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T13:56:24.412+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.412+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4005]: It took 2.32s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:56:24.568+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.568+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4005]: It took 0.156s to build the Airflow DAG.
+[2025-09-18T13:56:24.569+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:56:24.602+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.602+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:56:24.633+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.633+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T13:56:24.669+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.616 seconds
+[2025-09-18T13:56:55.053+0000] {processor.py:161} INFO - Started process (PID=4031) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:56:55.055+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T13:56:55.056+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:55.055+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:56:55.073+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:55.073+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T13:56:57.232+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.232+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 2.1016388170000937
+[2025-09-18T13:56:57.233+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.233+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4031]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T13:56:57.237+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.237+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:56:57.238+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.238+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T13:56:57.238+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.238+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T13:56:57.239+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.239+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4031]: It took 2.17s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:56:57.405+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.405+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4031]: It took 0.166s to build the Airflow DAG.
+[2025-09-18T13:56:57.407+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:56:57.444+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.444+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:56:57.479+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.479+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T13:56:57.518+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.473 seconds
+[2025-09-18T13:57:27.894+0000] {processor.py:161} INFO - Started process (PID=4057) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:57:27.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T13:57:27.897+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:27.896+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:57:27.915+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:27.915+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T13:57:30.074+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.074+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 2.102251441000135
+[2025-09-18T13:57:30.075+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.075+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4057]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T13:57:30.080+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.079+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:57:30.081+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.080+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T13:57:30.081+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.081+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T13:57:30.082+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.082+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4057]: It took 2.17s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:57:30.248+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.248+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4057]: It took 0.167s to build the Airflow DAG.
+[2025-09-18T13:57:30.250+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:57:30.288+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.288+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:57:30.322+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.322+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T13:57:30.378+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.492 seconds
+[2025-09-18T13:58:06.233+0000] {processor.py:161} INFO - Started process (PID=4083) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:58:06.234+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T13:58:06.235+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:06.235+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:58:06.255+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:06.255+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T13:58:08.573+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.573+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 2.2621488680001676
+[2025-09-18T13:58:08.573+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.573+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4083]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T13:58:08.577+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.577+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:58:08.578+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.577+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T13:58:08.578+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.578+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T13:58:08.579+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.579+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4083]: It took 2.32s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:58:08.742+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.741+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4083]: It took 0.163s to build the Airflow DAG.
+[2025-09-18T13:58:08.743+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:58:08.779+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.778+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:58:08.813+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.813+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T13:58:08.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.634 seconds
+[2025-09-18T13:58:39.264+0000] {processor.py:161} INFO - Started process (PID=4109) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:58:39.266+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T13:58:39.267+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:39.267+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:58:39.290+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:39.289+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T13:58:41.413+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.413+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 2.07063699299988
+[2025-09-18T13:58:41.414+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.414+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4109]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T13:58:41.417+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.417+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:58:41.418+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.418+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T13:58:41.418+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.418+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T13:58:41.419+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.419+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4109]: It took 2.13s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:58:41.591+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.591+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4109]: It took 0.172s to build the Airflow DAG.
+[2025-09-18T13:58:41.593+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:58:41.632+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.632+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:58:41.669+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.668+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T13:58:41.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.456 seconds
+[2025-09-18T13:59:11.824+0000] {processor.py:161} INFO - Started process (PID=4135) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:59:11.826+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T13:59:11.828+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:11.827+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:59:11.854+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:11.854+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T13:59:13.786+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.785+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 1.8767545129999235
+[2025-09-18T13:59:13.786+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.786+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4135]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T13:59:13.790+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.789+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:59:13.790+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.790+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T13:59:13.791+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.791+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T13:59:13.791+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.791+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4135]: It took 1.94s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:59:14.110+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:14.110+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4135]: It took 0.318s to build the Airflow DAG.
+[2025-09-18T13:59:14.115+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:59:14.160+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:14.159+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:59:14.189+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:14.189+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T13:59:14.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.414 seconds
+[2025-09-18T13:59:44.633+0000] {processor.py:161} INFO - Started process (PID=4161) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:59:44.634+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T13:59:44.635+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:44.635+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:59:44.654+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:44.654+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T13:59:46.894+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.894+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 2.191573051999967
+[2025-09-18T13:59:46.895+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.895+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4161]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T13:59:46.899+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.899+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:59:46.900+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.900+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T13:59:46.900+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.900+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T13:59:46.901+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.901+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4161]: It took 2.25s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:59:47.037+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:47.037+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4161]: It took 0.136s to build the Airflow DAG.
+[2025-09-18T13:59:47.039+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T13:59:47.076+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:47.075+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:59:47.120+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:47.119+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T13:59:47.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.534 seconds
+[2025-09-18T14:00:17.539+0000] {processor.py:161} INFO - Started process (PID=4187) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:00:17.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T14:00:17.542+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:17.541+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:00:17.563+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:17.563+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T14:00:19.516+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.515+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 1.9043807670000206
+[2025-09-18T14:00:19.516+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.516+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4187]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T14:00:19.521+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.521+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:00:19.522+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.522+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T14:00:19.523+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.523+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T14:00:19.524+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.524+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4187]: It took 1.96s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:00:19.672+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.672+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4187]: It took 0.148s to build the Airflow DAG.
+[2025-09-18T14:00:19.673+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:00:19.711+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.711+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:00:19.743+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.743+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T14:00:19.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.257 seconds
+[2025-09-18T14:00:50.178+0000] {processor.py:161} INFO - Started process (PID=4213) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:00:50.179+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T14:00:50.180+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:50.180+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:00:50.200+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:50.200+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T14:00:52.126+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.125+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 1.8771471439999914
+[2025-09-18T14:00:52.126+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.126+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4213]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T14:00:52.129+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.129+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:00:52.130+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.130+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T14:00:52.130+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.130+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T14:00:52.131+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.130+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4213]: It took 1.93s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:00:52.292+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.292+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4213]: It took 0.162s to build the Airflow DAG.
+[2025-09-18T14:00:52.294+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:00:52.327+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.326+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:00:52.360+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.359+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T14:00:52.392+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.221 seconds
+[2025-09-18T14:01:22.739+0000] {processor.py:161} INFO - Started process (PID=4239) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:01:22.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T14:01:22.741+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:22.741+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:01:22.761+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:22.760+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T14:01:24.896+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.895+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 2.0865547409998726
+[2025-09-18T14:01:24.896+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.896+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4239]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T14:01:24.899+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.899+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:01:24.900+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.899+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T14:01:24.900+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.900+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T14:01:24.901+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.900+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4239]: It took 2.14s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:01:25.041+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:25.040+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4239]: It took 0.14s to build the Airflow DAG.
+[2025-09-18T14:01:25.043+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:01:25.079+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:25.079+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:01:25.110+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:25.109+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T14:01:25.135+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.404 seconds
+[2025-09-18T14:01:55.516+0000] {processor.py:161} INFO - Started process (PID=4265) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:01:55.517+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T14:01:55.519+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:55.518+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:01:55.540+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:55.539+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T14:01:57.596+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.596+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 1.9942563029999292
+[2025-09-18T14:01:57.597+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.597+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4265]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T14:01:57.599+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.599+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:01:57.600+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.600+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T14:01:57.600+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.600+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T14:01:57.601+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.601+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4265]: It took 2.06s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:01:57.753+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.753+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4265]: It took 0.152s to build the Airflow DAG.
+[2025-09-18T14:01:57.755+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:01:57.786+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.786+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:01:57.817+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.816+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T14:01:57.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.349 seconds
+[2025-09-18T14:02:28.257+0000] {processor.py:161} INFO - Started process (PID=4291) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:02:28.258+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T14:02:28.260+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:28.259+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:02:28.285+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:28.285+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T14:02:30.330+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.330+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 1.9671900219996132
+[2025-09-18T14:02:30.331+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.330+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4291]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T14:02:30.333+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.333+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:02:30.334+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.334+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T14:02:30.334+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.334+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T14:02:30.335+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.334+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4291]: It took 2.05s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:02:30.493+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.493+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4291]: It took 0.158s to build the Airflow DAG.
+[2025-09-18T14:02:30.495+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:02:30.525+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.525+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:02:30.558+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.557+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T14:02:30.596+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.351 seconds
+[2025-09-18T14:03:05.150+0000] {processor.py:161} INFO - Started process (PID=4317) to work on /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:03:05.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_intermediate.py for tasks to queue
+[2025-09-18T14:03:05.152+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:05.152+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:03:05.171+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:05.171+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_intermediate__intermediate...
+[2025-09-18T14:03:07.190+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.189+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_intermediate__intermediate for current version: 1.9690582810003434
+[2025-09-18T14:03:07.190+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.190+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4317]: The cache size for cosmos_cache__dbt_intermediate__intermediate is 57472
+[2025-09-18T14:03:07.193+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.193+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_intermediate__intermediate - 944a1bcb43442755527a0c911206aa2c,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:03:07.194+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.193+0000] {graph.py:565} INFO - Total nodes: 73
+[2025-09-18T14:03:07.194+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.194+0000] {graph.py:566} INFO - Total filtered nodes: 73
+[2025-09-18T14:03:07.194+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.194+0000] {converter.py:291} INFO - Cosmos performance (dbt_intermediate__intermediate) -  [e95bde6b8d07|4317]: It took 2.02s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:03:07.339+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.339+0000] {converter.py:336} INFO - Cosmos performance (dbt_intermediate__intermediate) - [e95bde6b8d07|4317]: It took 0.145s to build the Airflow DAG.
+[2025-09-18T14:03:07.341+0000] {processor.py:840} INFO - DAG(s) 'dbt_intermediate' retrieved from /opt/airflow/dags/dbt_intermediate.py
+[2025-09-18T14:03:07.373+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.373+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:03:07.403+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.403+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_intermediate to 2025-09-18 00:00:00+00:00, run_after=2025-09-19 00:00:00+00:00
+[2025-09-18T14:03:07.438+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_intermediate.py took 2.295 seconds

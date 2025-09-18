@@ -988,3 +988,213 @@
 [2025-09-18T13:55:18.707+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:18.707+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-09-18T13:55:18.737+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:18.737+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
 [2025-09-18T13:55:18.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.420 seconds
+[2025-09-18T13:55:49.295+0000] {processor.py:161} INFO - Started process (PID=3976) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:55:49.296+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T13:55:49.297+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:49.297+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:55:49.317+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:49.317+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T13:55:51.319+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.319+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 1.9401445080002304
+[2025-09-18T13:55:51.320+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.320+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|3976]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T13:55:51.323+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.323+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:55:51.324+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.324+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T13:55:51.324+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.324+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T13:55:51.325+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.324+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|3976]: It took 2.01s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:55:51.390+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.390+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|3976]: It took 0.0651s to build the Airflow DAG.
+[2025-09-18T13:55:51.394+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:55:51.422+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.422+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:55:51.451+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.450+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:55:51.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.208 seconds
+[2025-09-18T13:56:22.053+0000] {processor.py:161} INFO - Started process (PID=4002) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:56:22.055+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T13:56:22.056+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:22.055+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:56:22.076+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:22.075+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T13:56:24.359+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.359+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 2.2256502100003672
+[2025-09-18T13:56:24.360+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.360+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4002]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T13:56:24.363+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.362+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:56:24.363+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.363+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T13:56:24.363+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.363+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T13:56:24.364+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.364+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4002]: It took 2.29s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:56:24.434+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.434+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4002]: It took 0.0703s to build the Airflow DAG.
+[2025-09-18T13:56:24.435+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:56:24.468+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.467+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:56:24.498+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.498+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:56:24.533+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.491 seconds
+[2025-09-18T13:56:55.038+0000] {processor.py:161} INFO - Started process (PID=4028) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:56:55.040+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T13:56:55.041+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:55.040+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:56:55.059+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:55.059+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T13:56:57.179+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.179+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 2.0636735870002667
+[2025-09-18T13:56:57.179+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.179+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4028]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T13:56:57.182+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.182+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:56:57.183+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.183+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T13:56:57.183+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.183+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T13:56:57.184+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.184+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4028]: It took 2.12s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:56:57.256+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.256+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4028]: It took 0.072s to build the Airflow DAG.
+[2025-09-18T13:56:57.258+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:56:57.283+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.283+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:56:57.319+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.319+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:56:57.375+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.344 seconds
+[2025-09-18T13:57:27.502+0000] {processor.py:161} INFO - Started process (PID=4054) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:57:27.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T13:57:27.506+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:27.505+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:57:27.529+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:27.528+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T13:57:29.657+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:29.657+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 2.063116060000084
+[2025-09-18T13:57:29.658+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:29.658+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4054]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T13:57:29.662+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:29.662+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:57:29.663+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:29.663+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T13:57:29.664+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:29.663+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T13:57:29.664+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:29.664+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4054]: It took 2.14s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:57:29.738+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:29.738+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4054]: It took 0.074s to build the Airflow DAG.
+[2025-09-18T13:57:29.740+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:57:29.769+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:29.768+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:57:29.804+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:29.804+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:57:29.852+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.359 seconds
+[2025-09-18T13:58:06.221+0000] {processor.py:161} INFO - Started process (PID=4080) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:58:06.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T13:58:06.225+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:06.224+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:58:06.248+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:06.247+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T13:58:08.493+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.492+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 2.1909025969998766
+[2025-09-18T13:58:08.493+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.493+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4080]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T13:58:08.497+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.496+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:58:08.498+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.497+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T13:58:08.498+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.498+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T13:58:08.499+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.499+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4080]: It took 2.25s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:58:08.595+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.595+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4080]: It took 0.0963s to build the Airflow DAG.
+[2025-09-18T13:58:08.597+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:58:08.628+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.627+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:58:08.662+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:08.662+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:58:08.710+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.506 seconds
+[2025-09-18T13:58:39.255+0000] {processor.py:161} INFO - Started process (PID=4106) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:58:39.256+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T13:58:39.257+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:39.257+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:58:39.279+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:39.279+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T13:58:41.354+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.354+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 2.019933927999773
+[2025-09-18T13:58:41.355+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.355+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4106]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T13:58:41.360+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.360+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:58:41.361+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.360+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T13:58:41.361+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.361+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T13:58:41.362+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.362+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4106]: It took 2.08s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:58:41.443+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.443+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4106]: It took 0.0814s to build the Airflow DAG.
+[2025-09-18T13:58:41.445+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:58:41.477+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.477+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:58:41.508+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.508+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:58:41.555+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.308 seconds
+[2025-09-18T13:59:11.809+0000] {processor.py:161} INFO - Started process (PID=4132) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:59:11.811+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T13:59:11.818+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:11.818+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:59:11.852+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:11.852+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T13:59:13.752+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.752+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 1.8427929439999389
+[2025-09-18T13:59:13.752+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.752+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4132]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T13:59:13.755+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.754+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:59:13.755+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.755+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T13:59:13.756+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.756+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T13:59:13.756+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.756+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4132]: It took 1.9s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:59:13.847+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.846+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4132]: It took 0.0906s to build the Airflow DAG.
+[2025-09-18T13:59:13.849+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:59:13.891+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.891+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:59:13.940+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:13.940+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:59:14.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.209 seconds
+[2025-09-18T13:59:44.626+0000] {processor.py:161} INFO - Started process (PID=4158) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:59:44.627+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T13:59:44.629+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:44.628+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:59:44.650+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:44.650+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T13:59:46.838+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.838+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 2.135846930000298
+[2025-09-18T13:59:46.839+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.839+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4158]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T13:59:46.843+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.842+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T13:59:46.843+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.843+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T13:59:46.844+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.844+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T13:59:46.845+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.844+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4158]: It took 2.19s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T13:59:46.929+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.929+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4158]: It took 0.0848s to build the Airflow DAG.
+[2025-09-18T13:59:46.931+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T13:59:46.955+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.955+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:59:46.983+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:46.983+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:59:47.029+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.413 seconds
+[2025-09-18T14:00:17.524+0000] {processor.py:161} INFO - Started process (PID=4184) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:00:17.525+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T14:00:17.527+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:17.526+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:00:17.552+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:17.552+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T14:00:19.457+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.456+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 1.8520317200000136
+[2025-09-18T14:00:19.457+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.457+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4184]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T14:00:19.460+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.460+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:00:19.461+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.460+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T14:00:19.461+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.461+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T14:00:19.462+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.462+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4184]: It took 1.91s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:00:19.547+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.546+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4184]: It took 0.0849s to build the Airflow DAG.
+[2025-09-18T14:00:19.548+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:00:19.574+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.574+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:00:19.603+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.602+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:00:19.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.136 seconds
+[2025-09-18T14:00:50.173+0000] {processor.py:161} INFO - Started process (PID=4210) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:00:50.174+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T14:00:50.176+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:50.175+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:00:50.195+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:50.195+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T14:00:52.082+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.082+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 1.8368075499997758
+[2025-09-18T14:00:52.083+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.083+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4210]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T14:00:52.086+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.086+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:00:52.087+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.087+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T14:00:52.087+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.087+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T14:00:52.088+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.088+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4210]: It took 1.89s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:00:52.161+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.161+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4210]: It took 0.073s to build the Airflow DAG.
+[2025-09-18T14:00:52.162+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:00:52.192+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.192+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:00:52.225+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.225+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:00:52.262+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.099 seconds
+[2025-09-18T14:01:22.731+0000] {processor.py:161} INFO - Started process (PID=4236) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:01:22.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T14:01:22.733+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:22.733+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:01:22.754+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:22.753+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T14:01:24.843+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.842+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 2.039957361999768
+[2025-09-18T14:01:24.843+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.843+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4236]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T14:01:24.847+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.847+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:01:24.848+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.848+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T14:01:24.849+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.849+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T14:01:24.849+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.849+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4236]: It took 2.1s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:01:24.930+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.930+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4236]: It took 0.0811s to build the Airflow DAG.
+[2025-09-18T14:01:24.932+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:01:24.956+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.956+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:01:24.986+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:24.986+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:01:25.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.311 seconds
+[2025-09-18T14:01:55.501+0000] {processor.py:161} INFO - Started process (PID=4262) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:01:55.503+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T14:01:55.504+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:55.504+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:01:55.529+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:55.529+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T14:01:57.550+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.550+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 1.9571693649995723
+[2025-09-18T14:01:57.551+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.551+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4262]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T14:01:57.553+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.553+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:01:57.554+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.554+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T14:01:57.554+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.554+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T14:01:57.555+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.555+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4262]: It took 2.03s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:01:57.621+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.621+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4262]: It took 0.0662s to build the Airflow DAG.
+[2025-09-18T14:01:57.623+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:01:57.649+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.649+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:01:57.676+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.676+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:01:57.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.234 seconds
+[2025-09-18T14:02:28.240+0000] {processor.py:161} INFO - Started process (PID=4288) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:02:28.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T14:02:28.245+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:28.244+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:02:28.272+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:28.271+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T14:02:30.283+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.283+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 1.9309911260002082
+[2025-09-18T14:02:30.284+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.284+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4288]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T14:02:30.287+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.286+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:02:30.287+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.287+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T14:02:30.288+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.287+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T14:02:30.288+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.288+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4288]: It took 2.02s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:02:30.359+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.359+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4288]: It took 0.0708s to build the Airflow DAG.
+[2025-09-18T14:02:30.360+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:02:30.386+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.386+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:02:30.430+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.429+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:02:30.479+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.249 seconds
+[2025-09-18T14:03:05.141+0000] {processor.py:161} INFO - Started process (PID=4314) to work on /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:03:05.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dbt_staging.py for tasks to queue
+[2025-09-18T14:03:05.144+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:05.143+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:03:05.163+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:05.163+0000] {graph.py:615} INFO - Trying to parse the dbt project using dbt ls cache cosmos_cache__dbt_staging__dbt_ecom...
+[2025-09-18T14:03:07.143+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.143+0000] {cache.py:320} INFO - Cosmos performance: time to calculate cache identifier cosmos_cache__dbt_staging__dbt_ecom for current version: 1.9308161660001133
+[2025-09-18T14:03:07.144+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.144+0000] {graph.py:632} INFO - Cosmos performance [e95bde6b8d07|4314]: The cache size for cosmos_cache__dbt_staging__dbt_ecom is 48891
+[2025-09-18T14:03:07.147+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.146+0000] {graph.py:640} INFO - Cosmos performance: Cache hit for cosmos_cache__dbt_staging__dbt_ecom - ef82b5d48583b5732b9f7482a08bc9a8,d41d8cd98f00b204e9800998ecf8427e
+[2025-09-18T14:03:07.147+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.147+0000] {graph.py:565} INFO - Total nodes: 70
+[2025-09-18T14:03:07.148+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.148+0000] {graph.py:566} INFO - Total filtered nodes: 70
+[2025-09-18T14:03:07.148+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.148+0000] {converter.py:291} INFO - Cosmos performance (dbt_staging__dbt_ecom) -  [e95bde6b8d07|4314]: It took 1.99s to parse the dbt project for DAG using LoadMode.DBT_LS_CACHE
+[2025-09-18T14:03:07.214+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.214+0000] {converter.py:336} INFO - Cosmos performance (dbt_staging__dbt_ecom) - [e95bde6b8d07|4314]: It took 0.0659s to build the Airflow DAG.
+[2025-09-18T14:03:07.216+0000] {processor.py:840} INFO - DAG(s) 'dbt_staging' retrieved from /opt/airflow/dags/dbt_staging.py
+[2025-09-18T14:03:07.240+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.239+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:03:07.271+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.271+0000] {dag.py:3947} INFO - Setting next_dagrun for dbt_staging to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:03:07.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dbt_staging.py took 2.175 seconds

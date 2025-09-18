@@ -467,3 +467,101 @@
 [2025-09-18T13:55:19.660+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:19.659+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-09-18T13:55:19.692+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:19.692+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
 [2025-09-18T13:55:19.735+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.765 seconds
+[2025-09-18T13:55:51.679+0000] {processor.py:161} INFO - Started process (PID=3994) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T13:55:51.680+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T13:55:51.681+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:51.681+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:55:52.250+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:55:52.306+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:52.305+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:55:52.337+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:55:52.337+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:55:52.376+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.705 seconds
+[2025-09-18T13:56:24.718+0000] {processor.py:161} INFO - Started process (PID=4020) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T13:56:24.720+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T13:56:24.721+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:24.721+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:56:25.353+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:56:25.421+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:25.421+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:56:25.453+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:25.453+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:56:25.502+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.793 seconds
+[2025-09-18T13:56:57.573+0000] {processor.py:161} INFO - Started process (PID=4046) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T13:56:57.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T13:56:57.580+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:57.579+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:56:58.260+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:56:58.324+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:58.323+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:56:58.354+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:56:58.353+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:56:58.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.833 seconds
+[2025-09-18T13:57:30.019+0000] {processor.py:161} INFO - Started process (PID=4067) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T13:57:30.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T13:57:30.022+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.022+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:57:30.755+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:57:30.818+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.818+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:57:30.851+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:57:30.851+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:57:30.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.893 seconds
+[2025-09-18T13:58:09.025+0000] {processor.py:161} INFO - Started process (PID=4098) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T13:58:09.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T13:58:09.029+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:09.028+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:58:09.761+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:58:09.827+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:09.826+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:58:09.860+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:09.860+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:58:09.910+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.901 seconds
+[2025-09-18T13:58:41.772+0000] {processor.py:161} INFO - Started process (PID=4124) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T13:58:41.773+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T13:58:41.775+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:41.775+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:58:42.486+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:58:42.550+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:42.549+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:58:42.589+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:58:42.589+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:58:42.638+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.875 seconds
+[2025-09-18T13:59:14.223+0000] {processor.py:161} INFO - Started process (PID=4145) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T13:59:14.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T13:59:14.226+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:14.225+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:59:14.756+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:59:14.813+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:14.813+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:59:14.845+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:14.845+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:59:14.900+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.685 seconds
+[2025-09-18T13:59:47.184+0000] {processor.py:161} INFO - Started process (PID=4172) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T13:59:47.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T13:59:47.187+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:47.186+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:59:47.743+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T13:59:47.803+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:47.803+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T13:59:47.836+0000] {logging_mixin.py:188} INFO - [2025-09-18T13:59:47.836+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T13:59:47.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.717 seconds
+[2025-09-18T14:00:19.806+0000] {processor.py:161} INFO - Started process (PID=4197) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T14:00:19.807+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T14:00:19.809+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:19.808+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:00:20.336+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:00:20.401+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:20.401+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:00:20.431+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:20.431+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:00:20.475+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.678 seconds
+[2025-09-18T14:00:52.434+0000] {processor.py:161} INFO - Started process (PID=4225) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T14:00:52.435+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T14:00:52.437+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:52.436+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:00:52.965+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:00:53.014+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:53.014+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:00:53.050+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:00:53.050+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:00:53.098+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.681 seconds
+[2025-09-18T14:01:25.191+0000] {processor.py:161} INFO - Started process (PID=4251) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T14:01:25.192+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T14:01:25.194+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:25.193+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:01:25.734+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:01:25.785+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:25.785+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:01:25.832+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:25.832+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:01:25.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.708 seconds
+[2025-09-18T14:01:57.892+0000] {processor.py:161} INFO - Started process (PID=4277) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T14:01:57.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T14:01:57.895+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:57.894+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:01:58.441+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:01:58.498+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:58.497+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:01:58.531+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:01:58.531+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:01:58.586+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.701 seconds
+[2025-09-18T14:02:30.631+0000] {processor.py:161} INFO - Started process (PID=4303) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T14:02:30.632+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T14:02:30.633+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:30.633+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:02:31.212+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:02:31.264+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:31.263+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:02:31.291+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:02:31.290+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:02:31.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.718 seconds
+[2025-09-18T14:03:07.598+0000] {processor.py:161} INFO - Started process (PID=4332) to work on /opt/airflow/dags/sync_data.py
+[2025-09-18T14:03:07.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sync_data.py for tasks to queue
+[2025-09-18T14:03:07.600+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:07.600+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:03:08.179+0000] {processor.py:840} INFO - DAG(s) 'generate_append_latest_pipeline' retrieved from /opt/airflow/dags/sync_data.py
+[2025-09-18T14:03:08.242+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:08.241+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-18T14:03:08.272+0000] {logging_mixin.py:188} INFO - [2025-09-18T14:03:08.271+0000] {dag.py:3947} INFO - Setting next_dagrun for generate_append_latest_pipeline to 2025-09-17 00:00:00+00:00, run_after=2025-09-18 00:00:00+00:00
+[2025-09-18T14:03:08.316+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sync_data.py took 0.727 seconds
