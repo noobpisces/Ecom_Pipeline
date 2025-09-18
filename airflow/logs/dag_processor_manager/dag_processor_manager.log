@@ -21995,3 +21995,374 @@ File Path                                PID  Runtime      # DAGs    # Errors  L
 /opt/airflow/dags/sync_data.py                                  1           0  0.75s           2025-09-18T14:02:31
 /opt/airflow/dags/dd.py                                         0           0  0.09s           2025-09-18T14:02:30
 ================================================================================
+[2025-09-18T14:03:35.868+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.44s           2025-09-18T14:03:09
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.32s           2025-09-18T14:03:07
+/opt/airflow/dags/dbt_staging.py                                1           0  2.20s           2025-09-18T14:03:07
+/opt/airflow/dags/sync_data.py                                  1           0  0.76s           2025-09-18T14:03:08
+/opt/airflow/dags/dd.py                                         0           0  0.11s           2025-09-18T14:03:07
+================================================================================
+[2025-09-18T14:04:06.445+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.39s           2025-09-18T14:03:42
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.27s           2025-09-18T14:03:40
+/opt/airflow/dags/dbt_staging.py                                1           0  2.16s           2025-09-18T14:03:40
+/opt/airflow/dags/sync_data.py                                  1           0  0.78s           2025-09-18T14:03:40
+/opt/airflow/dags/dd.py                                         0           0  0.09s           2025-09-18T14:03:40
+================================================================================
+[2025-09-18T14:04:36.841+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.72s           2025-09-18T14:04:15
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.40s           2025-09-18T14:04:12
+/opt/airflow/dags/dbt_staging.py                                1           0  2.28s           2025-09-18T14:04:12
+/opt/airflow/dags/sync_data.py                                  1           0  0.95s           2025-09-18T14:04:14
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:04:12
+================================================================================
+[2025-09-18T14:05:07.365+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.55s           2025-09-18T14:04:45
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.41s           2025-09-18T14:04:48
+/opt/airflow/dags/dbt_staging.py                                1           0  2.32s           2025-09-18T14:04:45
+/opt/airflow/dags/sync_data.py                                  1           0  0.87s           2025-09-18T14:04:46
+/opt/airflow/dags/dd.py                                         0           0  0.12s           2025-09-18T14:04:43
+================================================================================
+[2025-09-18T14:05:37.994+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.31s           2025-09-18T14:05:18
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.29s           2025-09-18T14:05:21
+/opt/airflow/dags/dbt_staging.py                                1           0  2.26s           2025-09-18T14:05:17
+/opt/airflow/dags/sync_data.py                                  1           0  0.73s           2025-09-18T14:05:18
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:05:13
+================================================================================
+[2025-09-18T14:06:08.421+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.29s           2025-09-18T14:05:51
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.29s           2025-09-18T14:05:53
+/opt/airflow/dags/dbt_staging.py                                1           0  2.11s           2025-09-18T14:05:50
+/opt/airflow/dags/sync_data.py                                  1           0  0.82s           2025-09-18T14:05:51
+/opt/airflow/dags/dd.py                                         0           0  0.12s           2025-09-18T14:05:44
+================================================================================
+[2025-09-18T14:06:39.113+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.52s           2025-09-18T14:06:26
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.27s           2025-09-18T14:06:23
+/opt/airflow/dags/dbt_staging.py                                1           0  2.13s           2025-09-18T14:06:22
+/opt/airflow/dags/sync_data.py                                  1           0  0.77s           2025-09-18T14:06:23
+/opt/airflow/dags/dd.py                                         0           0  0.11s           2025-09-18T14:06:14
+================================================================================
+[2025-09-18T14:07:09.838+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.37s           2025-09-18T14:06:56
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.36s           2025-09-18T14:06:58
+/opt/airflow/dags/dbt_staging.py                                1           0  2.35s           2025-09-18T14:06:55
+/opt/airflow/dags/sync_data.py                                  1           0  0.75s           2025-09-18T14:06:56
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:06:45
+================================================================================
+[2025-09-18T14:07:40.529+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_staging.py                                1           0  2.38s           2025-09-18T14:07:28
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.35s           2025-09-18T14:07:29
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.34s           2025-09-18T14:07:31
+/opt/airflow/dags/sync_data.py                                  1           0  0.75s           2025-09-18T14:07:29
+/opt/airflow/dags/dd.py                                         0           0  0.09s           2025-09-18T14:07:16
+================================================================================
+[2025-09-18T14:07:50.719+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-18T14:12:36.978+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2025-09-18T14:12:38.209+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2025-09-18T14:12:38.217+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2025-09-18T14:12:38.221+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-09-18T14:12:38.223+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-18T14:12:53.825+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-18T14:12:53.939+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/dbt_intermediate.py   4562  0.02s             0           0
+/opt/airflow/dags/dbt_marts.py                                  0           0
+/opt/airflow/dags/dbt_staging.py        4559  0.04s             0           0
+/opt/airflow/dags/dd.py                                         0           0
+/opt/airflow/dags/sync_data.py                                  0           0
+================================================================================
+[2025-09-18T14:13:23.977+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.61s           2025-09-18T14:12:58
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.28s           2025-09-18T14:12:56
+/opt/airflow/dags/dbt_staging.py                                1           0  2.18s           2025-09-18T14:12:56
+/opt/airflow/dags/sync_data.py                                  1           0  0.74s           2025-09-18T14:12:57
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:12:56
+================================================================================
+[2025-09-18T14:13:54.436+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.47s           2025-09-18T14:13:29
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.36s           2025-09-18T14:13:31
+/opt/airflow/dags/dbt_staging.py                                1           0  2.32s           2025-09-18T14:13:28
+/opt/airflow/dags/sync_data.py                                  1           0  0.86s           2025-09-18T14:13:30
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:13:29
+================================================================================
+[2025-09-18T14:14:25.065+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.39s           2025-09-18T14:14:04
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.31s           2025-09-18T14:14:01
+/opt/airflow/dags/dbt_staging.py                                1           0  2.18s           2025-09-18T14:14:01
+/opt/airflow/dags/sync_data.py                                  1           0  0.77s           2025-09-18T14:14:02
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:14:01
+================================================================================
+[2025-09-18T14:14:55.189+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.56s           2025-09-18T14:14:36
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.25s           2025-09-18T14:14:34
+/opt/airflow/dags/dbt_staging.py                                1           0  2.14s           2025-09-18T14:14:34
+/opt/airflow/dags/sync_data.py                                  1           0  0.77s           2025-09-18T14:14:36
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:14:34
+================================================================================
+[2025-09-18T14:15:25.402+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.47s           2025-09-18T14:15:07
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.36s           2025-09-18T14:15:09
+/opt/airflow/dags/dbt_staging.py                                1           0  2.18s           2025-09-18T14:15:06
+/opt/airflow/dags/sync_data.py                                  1           0  0.52s           2025-09-18T14:15:07
+/opt/airflow/dags/dd.py                                         0           0  0.18s           2025-09-18T14:15:07
+================================================================================
+[2025-09-18T14:33:04.396+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-18T14:34:13.009+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-18T14:34:13.050+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py   4720  0.01s             1           0  2.42s           2025-09-18T14:15:39
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.34s           2025-09-18T14:15:42
+/opt/airflow/dags/dbt_staging.py        4717  0.02s             1           0  2.30s           2025-09-18T14:15:39
+/opt/airflow/dags/sync_data.py                                  1           0  0.55s           2025-09-18T14:15:40
+/opt/airflow/dags/dd.py                                         0           0  0.11s           2025-09-18T14:15:39
+================================================================================
+[2025-09-18T14:34:43.145+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.70s           2025-09-18T14:34:17
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.27s           2025-09-18T14:34:15
+/opt/airflow/dags/dbt_staging.py                                1           0  2.15s           2025-09-18T14:34:15
+/opt/airflow/dags/sync_data.py                                  1           0  0.92s           2025-09-18T14:34:16
+/opt/airflow/dags/dd.py                                         0           0  0.09s           2025-09-18T14:34:15
+================================================================================
+[2025-09-18T14:35:13.575+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.71s           2025-09-18T14:34:48
+/opt/airflow/dags/dbt_staging.py                                1           0  2.56s           2025-09-18T14:34:48
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.50s           2025-09-18T14:34:50
+/opt/airflow/dags/sync_data.py                                  1           0  0.79s           2025-09-18T14:34:50
+/opt/airflow/dags/dd.py                                         0           0  0.13s           2025-09-18T14:34:48
+================================================================================
+[2025-09-18T14:35:43.964+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.97s           2025-09-18T14:35:21
+/opt/airflow/dags/dbt_staging.py                                1           0  2.79s           2025-09-18T14:35:21
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.76s           2025-09-18T14:35:24
+/opt/airflow/dags/sync_data.py                                  1           0  1.14s           2025-09-18T14:35:22
+/opt/airflow/dags/dd.py                                         0           0  0.12s           2025-09-18T14:35:21
+================================================================================
+[2025-09-18T14:36:14.871+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  3.05s           2025-09-18T14:35:57
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.95s           2025-09-18T14:35:57
+/opt/airflow/dags/dbt_staging.py                                1           0  2.30s           2025-09-18T14:35:53
+/opt/airflow/dags/sync_data.py                                  1           0  0.80s           2025-09-18T14:35:54
+/opt/airflow/dags/dd.py                                         0           0  0.09s           2025-09-18T14:35:51
+================================================================================
+[2025-09-18T14:36:45.845+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.56s           2025-09-18T14:36:30
+/opt/airflow/dags/dbt_staging.py                                1           0  2.55s           2025-09-18T14:36:26
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.53s           2025-09-18T14:36:30
+/opt/airflow/dags/sync_data.py                                  1           0  0.56s           2025-09-18T14:36:25
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:36:22
+================================================================================
+[2025-09-18T14:37:15.858+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_staging.py                                1           0  2.90s           2025-09-18T14:36:59
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.83s           2025-09-18T14:37:03
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.80s           2025-09-18T14:37:03
+/opt/airflow/dags/sync_data.py                                  1           0  1.16s           2025-09-18T14:36:57
+/opt/airflow/dags/dd.py                                         0           0  0.13s           2025-09-18T14:36:53
+================================================================================
+[2025-09-18T14:37:46.015+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.81s           2025-09-18T14:37:36
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.77s           2025-09-18T14:37:36
+/opt/airflow/dags/dbt_staging.py                                1           0  2.40s           2025-09-18T14:37:32
+/opt/airflow/dags/sync_data.py                                  1           0  0.83s           2025-09-18T14:37:28
+/opt/airflow/dags/dd.py                                         0           0  0.09s           2025-09-18T14:37:24
+================================================================================
+[2025-09-18T14:38:05.084+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2025-09-18T14:38:20.382+0000] {manager.py:740} INFO - There are 5 files in /opt/airflow/dags
+[2025-09-18T14:38:20.407+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_staging.py                                1           0  17.34s          2025-09-18T14:38:20
+/opt/airflow/dags/dbt_intermediate.py   4960  0.01s             1           0  2.81s           2025-09-18T14:37:36
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.77s           2025-09-18T14:37:36
+/opt/airflow/dags/sync_data.py                                  1           0  0.86s           2025-09-18T14:38:00
+/opt/airflow/dags/dd.py                                         0           0  0.11s           2025-09-18T14:37:54
+================================================================================
+[2025-09-18T14:38:50.531+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_staging.py        4981  0.01s             1           0  17.34s          2025-09-18T14:38:20
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.58s           2025-09-18T14:38:22
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.55s           2025-09-18T14:38:22
+/opt/airflow/dags/sync_data.py                                  1           0  0.77s           2025-09-18T14:38:31
+/opt/airflow/dags/dd.py                                         0           0  0.09s           2025-09-18T14:38:24
+================================================================================
+[2025-09-18T14:39:20.767+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.35s           2025-09-18T14:38:55
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.32s           2025-09-18T14:38:55
+/opt/airflow/dags/dbt_staging.py                                1           0  2.27s           2025-09-18T14:38:52
+/opt/airflow/dags/sync_data.py                                  1           0  0.54s           2025-09-18T14:39:02
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:38:56
+================================================================================
+[2025-09-18T14:39:51.403+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.95s           2025-09-18T14:39:29
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.90s           2025-09-18T14:39:29
+/opt/airflow/dags/dbt_staging.py                                1           0  2.47s           2025-09-18T14:39:25
+/opt/airflow/dags/sync_data.py                                  1           0  0.81s           2025-09-18T14:39:34
+/opt/airflow/dags/dd.py                                         0           0  0.12s           2025-09-18T14:39:29
+================================================================================
+[2025-09-18T14:40:21.467+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_staging.py                                1           0  2.47s           2025-09-18T14:39:58
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.41s           2025-09-18T14:40:02
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.38s           2025-09-18T14:40:02
+/opt/airflow/dags/sync_data.py                                  1           0  0.86s           2025-09-18T14:40:05
+/opt/airflow/dags/dd.py                                         0           0  0.09s           2025-09-18T14:40:02
+================================================================================
+[2025-09-18T14:40:51.929+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.33s           2025-09-18T14:40:34
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.29s           2025-09-18T14:40:34
+/opt/airflow/dags/dbt_staging.py                                1           0  2.28s           2025-09-18T14:40:31
+/opt/airflow/dags/sync_data.py                                  1           0  0.87s           2025-09-18T14:40:36
+/opt/airflow/dags/dd.py                                         0           0  0.09s           2025-09-18T14:40:34
+================================================================================
+[2025-09-18T14:41:22.026+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                              PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/dbt_intermediate.py                           1           0  2.49s           2025-09-18T14:41:07
+/opt/airflow/dags/dbt_marts.py                                  1           0  2.47s           2025-09-18T14:41:07
+/opt/airflow/dags/dbt_staging.py                                1           0  2.23s           2025-09-18T14:41:04
+/opt/airflow/dags/sync_data.py                                  0           1  0.13s           2025-09-18T14:41:08
+/opt/airflow/dags/dd.py                                         0           0  0.10s           2025-09-18T14:41:07
+================================================================================
