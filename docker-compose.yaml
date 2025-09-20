@@ -76,6 +76,9 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__PARALLELISM: "128"            # tổng số task RUNNING tối đa trong hệ thống
+      AIRFLOW__CORE__MAX_ACTIVE_TASKS_PER_DAG: "60" # số task RUNNING tối đa cho mỗi DAG
+      AIRFLOW__CORE__MAX_ACTIVE_RUNS_PER_DAG: "4"   # nếu 1 DAG có nhiều run chồng nhau
     user: "50000:0"
     volumes:
       - ./airflow/dags:/opt/airflow/dags

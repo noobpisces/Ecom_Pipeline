@@ -17,15 +17,16 @@ profile_cfg = ProfileConfig(
 
 exec_cfg = ExecutionConfig(
     execution_mode=ExecutionMode.VIRTUALENV,
-    virtualenv_dir=Path("/tmp/cosmos_venv_ecom_intermediate"),
+    virtualenv_dir=Path("/opt/airflow/cosmos_venvs/ecom_intermediate"),
 )
+
 render_cfg = RenderConfig(load_method=LoadMode.DBT_LS)
 
 with DAG(
     dag_id="dbt_intermediate",
     start_date=datetime(2024, 1, 1),
-    concurrency=1,
-    max_active_runs=1,
+    concurrency=60,             # cho phép tối đa 60 task RUNNING cùng lúc trong DAG này
+    max_active_runs=1,          # chỉ 1 run đang hoạt động để dồn tài nguyên cho run hiện tại
     catchup=False,
 ) as dag:
     dbt_intermediate = DbtTaskGroup(

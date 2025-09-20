@@ -1,0 +1,4 @@
+[2025-09-19T10:07:23.132+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-19T10:07:23.800+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_intermediate.intermediate.order_statuses.run manual__2025-09-19T10:07:12.196360+00:00 [None]>
+[2025-09-19T10:07:23.833+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_intermediate.intermediate.order_statuses.run manual__2025-09-19T10:07:12.196360+00:00 [None]>
+[2025-09-19T10:07:23.834+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1

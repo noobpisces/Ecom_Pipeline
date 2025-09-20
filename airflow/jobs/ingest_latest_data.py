@@ -78,58 +78,6 @@ class IncrementalETL:
     # Extract
     # --------------------------
 
-    def _coerce_dt(x):
-        # Trả NaT nếu không parse được
-        if x is None:
-            return pd.NaT
-        # NaN float
-        if isinstance(x, float) and pd.isna(x):
-            return pd.NaT
-        try:
-            # Thử parse thẳng; để utc=False (tz-naive) vì ta chỉ kiểm tra hợp lệ
-            return pd.to_datetime(x, errors='coerce', utc=False)
-        except Exception:
-            return pd.NaT
-
-    def debug_dump_invalid_created_at(df, sample_rows=50, csv_path='debug/invalid_created_at_rows.csv'):
-        if 'CREATED_AT' not in df.columns:
-            print('[DEBUG] Column CREATED_AT không tồn tại trong DataFrame.')
-            return
-
-        # Chuẩn hoá các "giá trị trống" thường gặp về NaN để dễ detect
-        df = df.copy()
-        df['CREATED_AT'] = df['CREATED_AT'].replace(
-            ['', ' ', 'NULL', 'null', 'None', 'none', 'NaT', '0000-00-00', '0000-00-00 00:00:00'],
-            np.nan
-        )
-
-        converted = df['CREATED_AT'].map(_coerce_dt)
-        bad_mask = converted.isna()
-
-        total = len(df)
-        bad = int(bad_mask.sum())
-        print(f'[DEBUG] CREATED_AT null/invalid: {bad} / {total}')
-
-        if bad == 0:
-            return
-
-        # Cột gợi ý để in kèm cho dễ truy vết; chỉ in những cột có tồn tại
-        cols_hint = [c for c in ['ID', 'INTERACTION_ID', 'USER_ID', 'EVENT_TYPE', 'SOURCE', 'CREATED_AT'] if c in df.columns]
-        cols_show = cols_hint if cols_hint else ['CREATED_AT']
-
-        # In vài dòng mẫu ra console
-        print('[DEBUG] Top rows có CREATED_AT invalid:')
-        print(df.loc[bad_mask, cols_show].head(sample_rows).to_string(index=False))
-
-        # Thống kê kiểu dữ liệu raw để biết đang gặp None/chuỗi/kiểu khác
-        raw_series = df.loc[bad_mask, 'CREATED_AT']
-        print('[DEBUG] Phân bố kiểu Python của CREATED_AT invalid:')
-        print(raw_series.map(lambda x: type(x).__name__).value_counts())
-
-        # Tạo thư mục và dump full rows để soi ngoài đời
-        os.makedirs(os.path.dirname(csv_path), exist_ok=True)
-        df.loc[bad_mask].to_csv(csv_path, index=False)
-        print(f'[DEBUG] Đã ghi toàn bộ dòng invalid vào: {csv_path}')
     
     def extract_historic_from_s3(self, table_name):
         """Extract historic data from S3 CSV files"""

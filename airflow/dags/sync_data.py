@@ -4,9 +4,9 @@ from datetime import datetime, timedelta
 import os
 import sys
 from pathlib import Path
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))  # thêm /opt/airflow vào sys.path
-from jobs.generate_latest_synthetic_data import RecentEcommerceDataGenerator, save_data
-from jobs.test2 import IncrementalETL
+sys.path.append(os.path.join(os.path.dirname(__file__), "..", "jobs"))
+from generate_latest_data import RecentEcommerceDataGenerator, save_data
+from ingest_latest_data import IncrementalETL
 
 args = {
     'owner': 'airflow',

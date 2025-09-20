@@ -1,0 +1,253 @@
+[2025-09-19T17:00:34.702+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-19T17:00:34.997+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_staging.dbt_ecom.stg_subcategories.test manual__2025-09-19T16:52:09.172903+00:00 [queued]>
+[2025-09-19T17:00:35.009+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_staging.dbt_ecom.stg_subcategories.test manual__2025-09-19T16:52:09.172903+00:00 [queued]>
+[2025-09-19T17:00:35.019+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-19T17:00:35.034+0000] {taskinstance.py:2330} INFO - Executing <Task(DbtTestVirtualenvOperator): dbt_ecom.stg_subcategories.test> on 2025-09-19 16:52:09.172903+00:00
+[2025-09-19T17:00:35.041+0000] {standard_task_runner.py:64} INFO - Started process 4340 to run task
+[2025-09-19T17:00:35.045+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_staging', 'dbt_ecom.stg_subcategories.test', 'manual__2025-09-19T16:52:09.172903+00:00', '--job-id', '624', '--raw', '--subdir', 'DAGS_FOLDER/dbt_staging.py', '--cfg-path', '/tmp/tmpwz2636h2']
+[2025-09-19T17:00:35.047+0000] {standard_task_runner.py:91} INFO - Job 624: Subtask dbt_ecom.stg_subcategories.test
+[2025-09-19T17:00:35.207+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_staging.dbt_ecom.stg_subcategories.test manual__2025-09-19T16:52:09.172903+00:00 [running]> on host e95bde6b8d07
+[2025-09-19T17:00:35.468+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_staging' AIRFLOW_CTX_TASK_ID='dbt_ecom.stg_subcategories.test' AIRFLOW_CTX_EXECUTION_DATE='2025-09-19T16:52:09.172903+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-09-19T16:52:09.172903+00:00'
+[2025-09-19T17:00:35.469+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-19T17:00:35.482+0000] {baseoperator.py:400} WARNING - DbtTestVirtualenvOperator.execute cannot be called outside TaskInstance!
+[2025-09-19T17:00:35.483+0000] {virtualenv.py:120} INFO - Checking if the virtualenv lock /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock exists
+[2025-09-19T17:00:35.483+0000] {virtualenv.py:126} INFO - Acquiring the virtualenv lock
+[2025-09-19T17:00:35.484+0000] {virtualenv.py:195} INFO - Acquiring lock at /tmp/cosmos_venv_ecom/cosmos_virtualenv.lock with pid 4340
+[2025-09-19T17:00:35.484+0000] {virtualenv.py:153} INFO - Creating or updating the virtualenv at `/tmp/cosmos_venv_ecom
+[2025-09-19T17:00:35.484+0000] {process_utils.py:183} INFO - Executing cmd: /home/***/.local/bin/python -m virtualenv /tmp/cosmos_venv_ecom --python=python3
+[2025-09-19T17:00:35.485+0000] {process_utils.py:187} INFO - Output:
+[2025-09-19T17:00:37.252+0000] {process_utils.py:191} INFO - created virtual environment CPython3.10.14.final.0-64 in 655ms
+[2025-09-19T17:00:37.252+0000] {process_utils.py:191} INFO -   creator CPython3Posix(dest=/tmp/cosmos_venv_ecom, clear=False, no_vcs_ignore=False, global=False)
+[2025-09-19T17:00:37.253+0000] {process_utils.py:191} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/***/.local/share/virtualenv)
+[2025-09-19T17:00:37.254+0000] {process_utils.py:191} INFO -     added seed packages: MarkupSafe==3.0.2, PyYAML==6.0.2, agate==1.9.1, annotated_types==0.7.0, attrs==25.3.0, babel==2.17.0, certifi==2025.8.3, charset_normalizer==3.4.3, click==8.2.1, clickhouse_connect==0.8.18, clickhouse_driver==0.2.9, colorama==0.4.6, daff==1.4.2, dbt_adapters==1.16.7, dbt_clickhouse==1.9.3, dbt_common==1.30.0, dbt_core==1.10.11, dbt_extractor==0.6.0, dbt_protos==1.0.375, dbt_semantic_interfaces==0.9.0, deepdiff==8.6.1, idna==3.10, importlib_metadata==8.7.0, isodate==0.6.1, jinja2==3.1.6, jsonschema==4.25.1, jsonschema_specifications==2025.9.1, leather==0.4.0, lz4==4.4.4, mashumaro==3.14, more_itertools==10.8.0, msgpack==1.1.1, networkx==3.4.2, orderly_set==5.5.0, packaging==25.0, parsedatetime==2.6, pathspec==0.12.1, pip==25.2, protobuf==6.32.1, pydantic==2.11.7, pydantic_core==2.33.2, python_dateutil==2.9.0.post0, python_slugify==8.0.4, pytimeparse==1.1.8, pytz==2025.2, referencing==0.36.2, requests==2.32.5, rpds_py==0.27.1, setuptools==80.9.0, six==1.17.0, snowplow_tracker==1.1.0, sqlparse==0.5.3, text_unidecode==1.3, typing_extensions==4.15.0, typing_inspection==0.4.1, tzlocal==5.3.1, urllib3==2.5.0, wheel==0.45.1, zipp==3.23.0, zstandard==0.24.0
+[2025-09-19T17:00:37.255+0000] {process_utils.py:191} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2025-09-19T17:00:37.346+0000] {process_utils.py:183} INFO - Executing cmd: /tmp/cosmos_venv_ecom/bin/pip install dbt-clickhouse
+[2025-09-19T17:00:37.347+0000] {process_utils.py:187} INFO - Output:
+[2025-09-19T17:00:38.871+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-clickhouse in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (1.9.3)
+[2025-09-19T17:00:38.874+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-core>=1.9 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-clickhouse) (1.10.11)
+[2025-09-19T17:00:38.875+0000] {process_utils.py:191} INFO - Requirement already satisfied: clickhouse-connect>=0.6.22 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-clickhouse) (0.8.18)
+[2025-09-19T17:00:38.875+0000] {process_utils.py:191} INFO - Requirement already satisfied: clickhouse-driver>=0.2.6 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-clickhouse) (0.2.9)
+[2025-09-19T17:00:38.876+0000] {process_utils.py:191} INFO - Requirement already satisfied: setuptools>=0.69 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-clickhouse) (80.9.0)
+[2025-09-19T17:00:38.880+0000] {process_utils.py:191} INFO - Requirement already satisfied: certifi in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (2025.8.3)
+[2025-09-19T17:00:38.885+0000] {process_utils.py:191} INFO - Requirement already satisfied: urllib3>=1.26 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (2.5.0)
+[2025-09-19T17:00:38.886+0000] {process_utils.py:191} INFO - Requirement already satisfied: pytz in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (2025.2)
+[2025-09-19T17:00:38.891+0000] {process_utils.py:191} INFO - Requirement already satisfied: zstandard in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (0.24.0)
+[2025-09-19T17:00:38.891+0000] {process_utils.py:191} INFO - Requirement already satisfied: lz4 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (4.4.4)
+[2025-09-19T17:00:38.896+0000] {process_utils.py:191} INFO - Requirement already satisfied: tzlocal in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from clickhouse-driver>=0.2.6->dbt-clickhouse) (5.3.1)
+[2025-09-19T17:00:38.909+0000] {process_utils.py:191} INFO - Requirement already satisfied: agate<1.10,>=1.7.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.9.1)
+[2025-09-19T17:00:38.910+0000] {process_utils.py:191} INFO - Requirement already satisfied: Jinja2<4,>=3.1.3 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (3.1.6)
+[2025-09-19T17:00:38.912+0000] {process_utils.py:191} INFO - Requirement already satisfied: mashumaro<3.15,>=3.9 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from mashumaro[msgpack]<3.15,>=3.9->dbt-core>=1.9->dbt-clickhouse) (3.14)
+[2025-09-19T17:00:38.913+0000] {process_utils.py:191} INFO - Requirement already satisfied: click<9.0,>=8.0.2 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (8.2.1)
+[2025-09-19T17:00:38.914+0000] {process_utils.py:191} INFO - Requirement already satisfied: jsonschema<5.0,>=4.19.1 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (4.25.1)
+[2025-09-19T17:00:38.915+0000] {process_utils.py:191} INFO - Requirement already satisfied: networkx<4.0,>=2.3 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (3.4.2)
+[2025-09-19T17:00:38.915+0000] {process_utils.py:191} INFO - Requirement already satisfied: protobuf<7.0,>=6.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (6.32.1)
+[2025-09-19T17:00:38.916+0000] {process_utils.py:191} INFO - Requirement already satisfied: requests<3.0.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (2.32.5)
+[2025-09-19T17:00:38.917+0000] {process_utils.py:191} INFO - Requirement already satisfied: snowplow-tracker<2.0,>=1.0.2 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.1.0)
+[2025-09-19T17:00:38.918+0000] {process_utils.py:191} INFO - Requirement already satisfied: pathspec<0.13,>=0.9 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.12.1)
+[2025-09-19T17:00:38.928+0000] {process_utils.py:191} INFO - Requirement already satisfied: sqlparse<0.6.0,>=0.5.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.5.3)
+[2025-09-19T17:00:38.929+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-extractor<=0.6,>=0.5.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.6.0)
+[2025-09-19T17:00:38.930+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-semantic-interfaces<0.10,>=0.9.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.9.0)
+[2025-09-19T17:00:38.931+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-common<2.0,>=1.27.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.30.0)
+[2025-09-19T17:00:38.932+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-adapters<2.0,>=1.15.5 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.16.7)
+[2025-09-19T17:00:38.933+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-protos<2.0,>=1.0.346 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.0.375)
+[2025-09-19T17:00:38.934+0000] {process_utils.py:191} INFO - Requirement already satisfied: pydantic<3 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (2.11.7)
+[2025-09-19T17:00:38.935+0000] {process_utils.py:191} INFO - Requirement already satisfied: packaging>20.9 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (25.0)
+[2025-09-19T17:00:38.937+0000] {process_utils.py:191} INFO - Requirement already satisfied: pyyaml>=6.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (6.0.2)
+[2025-09-19T17:00:38.938+0000] {process_utils.py:191} INFO - Requirement already satisfied: daff>=1.3.46 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.4.2)
+[2025-09-19T17:00:38.938+0000] {process_utils.py:191} INFO - Requirement already satisfied: typing-extensions>=4.4 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (4.15.0)
+[2025-09-19T17:00:38.944+0000] {process_utils.py:191} INFO - Requirement already satisfied: Babel>=2.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (2.17.0)
+[2025-09-19T17:00:38.945+0000] {process_utils.py:191} INFO - Requirement already satisfied: isodate>=0.5.4 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (0.6.1)
+[2025-09-19T17:00:38.946+0000] {process_utils.py:191} INFO - Requirement already satisfied: leather>=0.3.2 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (0.4.0)
+[2025-09-19T17:00:38.948+0000] {process_utils.py:191} INFO - Requirement already satisfied: parsedatetime!=2.5,>=2.1 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (2.6)
+[2025-09-19T17:00:38.949+0000] {process_utils.py:191} INFO - Requirement already satisfied: python-slugify>=1.2.1 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (8.0.4)
+[2025-09-19T17:00:38.949+0000] {process_utils.py:191} INFO - Requirement already satisfied: pytimeparse>=1.1.5 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (1.1.8)
+[2025-09-19T17:00:38.967+0000] {process_utils.py:191} INFO - Requirement already satisfied: colorama<0.5,>=0.3.9 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (0.4.6)
+[2025-09-19T17:00:38.970+0000] {process_utils.py:191} INFO - Requirement already satisfied: deepdiff<9.0,>=7.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (8.6.1)
+[2025-09-19T17:00:38.974+0000] {process_utils.py:191} INFO - Requirement already satisfied: python-dateutil<3.0,>=2.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (2.9.0.post0)
+[2025-09-19T17:00:38.985+0000] {process_utils.py:191} INFO - Requirement already satisfied: importlib-metadata<9,>=6.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse) (8.7.0)
+[2025-09-19T17:00:38.988+0000] {process_utils.py:191} INFO - Requirement already satisfied: more-itertools<11.0,>=8.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse) (10.8.0)
+[2025-09-19T17:00:39.003+0000] {process_utils.py:191} INFO - Requirement already satisfied: orderly-set<6,>=5.4.1 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from deepdiff<9.0,>=7.0->dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (5.5.0)
+[2025-09-19T17:00:39.015+0000] {process_utils.py:191} INFO - Requirement already satisfied: zipp>=3.20 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from importlib-metadata<9,>=6.0->dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse) (3.23.0)
+[2025-09-19T17:00:39.018+0000] {process_utils.py:191} INFO - Requirement already satisfied: six in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from isodate>=0.5.4->agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (1.17.0)
+[2025-09-19T17:00:39.021+0000] {process_utils.py:191} INFO - Requirement already satisfied: MarkupSafe>=2.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from Jinja2<4,>=3.1.3->dbt-core>=1.9->dbt-clickhouse) (3.0.2)
+[2025-09-19T17:00:39.028+0000] {process_utils.py:191} INFO - Requirement already satisfied: attrs>=22.2.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (25.3.0)
+[2025-09-19T17:00:39.030+0000] {process_utils.py:191} INFO - Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (2025.9.1)
+[2025-09-19T17:00:39.031+0000] {process_utils.py:191} INFO - Requirement already satisfied: referencing>=0.28.4 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (0.36.2)
+[2025-09-19T17:00:39.032+0000] {process_utils.py:191} INFO - Requirement already satisfied: rpds-py>=0.7.1 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (0.27.1)
+[2025-09-19T17:00:39.044+0000] {process_utils.py:191} INFO - Requirement already satisfied: msgpack>=0.5.6 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from mashumaro[msgpack]<3.15,>=3.9->dbt-core>=1.9->dbt-clickhouse) (1.1.1)
+[2025-09-19T17:00:39.072+0000] {process_utils.py:191} INFO - Requirement already satisfied: annotated-types>=0.6.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from pydantic<3->dbt-core>=1.9->dbt-clickhouse) (0.7.0)
+[2025-09-19T17:00:39.073+0000] {process_utils.py:191} INFO - Requirement already satisfied: pydantic-core==2.33.2 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from pydantic<3->dbt-core>=1.9->dbt-clickhouse) (2.33.2)
+[2025-09-19T17:00:39.076+0000] {process_utils.py:191} INFO - Requirement already satisfied: typing-inspection>=0.4.0 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from pydantic<3->dbt-core>=1.9->dbt-clickhouse) (0.4.1)
+[2025-09-19T17:00:39.088+0000] {process_utils.py:191} INFO - Requirement already satisfied: charset_normalizer<4,>=2 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from requests<3.0.0->dbt-core>=1.9->dbt-clickhouse) (3.4.3)
+[2025-09-19T17:00:39.089+0000] {process_utils.py:191} INFO - Requirement already satisfied: idna<4,>=2.5 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from requests<3.0.0->dbt-core>=1.9->dbt-clickhouse) (3.10)
+[2025-09-19T17:00:39.174+0000] {process_utils.py:191} INFO - Requirement already satisfied: text-unidecode>=1.3 in /tmp/cosmos_venv_ecom/lib/python3.10/site-packages (from python-slugify>=1.2.1->agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (1.3)
+[2025-09-19T17:00:39.325+0000] {local.py:470} INFO - Cloning project to writable temp directory /tmp/tmpljddcfm3 from /opt/airflow/dags/dbt/ecom_staging
+[2025-09-19T17:00:39.335+0000] {local.py:490} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/dbt_staging__dbt_ecom/target/partial_parse.msgpack
+[2025-09-19T17:00:39.348+0000] {config.py:362} INFO - Using user-supplied profiles.yml at /opt/airflow/dags/dbt/profiles.yml
+[2025-09-19T17:00:39.356+0000] {virtualenv.py:99} INFO - Using Python binary from virtualenv: /tmp/cosmos_venv_ecom/bin/python
+[2025-09-19T17:00:39.357+0000] {local.py:434} INFO - Trying to run the command:
+ ['/tmp/cosmos_venv_ecom/bin/dbt', 'deps', '--project-dir', '/tmp/tmpljddcfm3', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_staging', '--target', 'dev']
+From /tmp/tmpljddcfm3
+[2025-09-19T17:00:39.358+0000] {subprocess.py:56} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-19T17:00:39.358+0000] {subprocess.py:69} INFO - Running command: ['/tmp/cosmos_venv_ecom/bin/dbt', 'deps', '--project-dir', '/tmp/tmpljddcfm3', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_staging', '--target', 'dev']
+[2025-09-19T17:00:39.371+0000] {subprocess.py:80} INFO - Command output:
+[2025-09-19T17:00:41.157+0000] {subprocess.py:90} INFO - [0m17:00:41  Running with dbt=1.10.11
+[2025-09-19T17:00:41.777+0000] {subprocess.py:90} INFO - [0m17:00:41  Installing dbt-labs/dbt_utils
+[2025-09-19T17:00:42.479+0000] {subprocess.py:90} INFO - [0m17:00:42  Installed from version 1.3.0
+[2025-09-19T17:00:42.480+0000] {subprocess.py:90} INFO - [0m17:00:42  Updated version available: 1.3.1
+[2025-09-19T17:00:42.480+0000] {subprocess.py:90} INFO - [0m17:00:42
+[2025-09-19T17:00:42.481+0000] {subprocess.py:90} INFO - [0m17:00:42  Updates available for packages: ['dbt-labs/dbt_utils']
+[2025-09-19T17:00:42.481+0000] {subprocess.py:90} INFO - Update your versions in packages.yml, then run dbt deps
+[2025-09-19T17:00:44.245+0000] {subprocess.py:94} INFO - Command exited with return code 0
+[2025-09-19T17:00:44.245+0000] {local.py:441} INFO - Update your versions in packages.yml, then run dbt deps
+[2025-09-19T17:00:44.246+0000] {virtualenv.py:99} INFO - Using Python binary from virtualenv: /tmp/cosmos_venv_ecom/bin/python
+[2025-09-19T17:00:44.247+0000] {local.py:434} INFO - Trying to run the command:
+ ['/tmp/cosmos_venv_ecom/bin/dbt', 'test', '--models', 'stg_subcategories', '--project-dir', '/tmp/tmpljddcfm3', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_staging', '--target', 'dev']
+From /tmp/tmpljddcfm3
+[2025-09-19T17:00:44.248+0000] {subprocess.py:56} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-19T17:00:44.248+0000] {subprocess.py:69} INFO - Running command: ['/tmp/cosmos_venv_ecom/bin/dbt', 'test', '--models', 'stg_subcategories', '--project-dir', '/tmp/tmpljddcfm3', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_staging', '--target', 'dev']
+[2025-09-19T17:00:44.259+0000] {subprocess.py:80} INFO - Command output:
+[2025-09-19T17:00:46.152+0000] {subprocess.py:90} INFO - [0m17:00:46  Running with dbt=1.10.11
+[2025-09-19T17:00:46.157+0000] {subprocess.py:90} INFO - [0m17:00:46  [[33mWARNING[0m]: Deprecated functionality
+[2025-09-19T17:00:46.158+0000] {subprocess.py:90} INFO - Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+[2025-09-19T17:00:46.159+0000] {subprocess.py:90} INFO - `-s`.
+[2025-09-19T17:00:46.437+0000] {subprocess.py:90} INFO - [0m17:00:46  Registered adapter: clickhouse=1.9.3
+[2025-09-19T17:00:47.123+0000] {subprocess.py:90} INFO - [0m17:00:47  Found 8 models, 54 data tests, 8 sources, 597 macros
+[2025-09-19T17:00:47.126+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.127+0000] {subprocess.py:90} INFO - [0m17:00:47  Concurrency: 4 threads (target='dev')
+[2025-09-19T17:00:47.127+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.249+0000] {subprocess.py:90} INFO - [0m17:00:47  1 of 3 START test not_null_stg_subcategories_CATEGORY_ID ....................... [RUN]
+[2025-09-19T17:00:47.256+0000] {subprocess.py:90} INFO - [0m17:00:47  2 of 3 START test not_null_stg_subcategories_SUBCATEGORY_ID .................... [RUN]
+[2025-09-19T17:00:47.274+0000] {subprocess.py:90} INFO - [0m17:00:47  3 of 3 START test unique_stg_subcategories_SUBCATEGORY_ID ...................... [RUN]
+[2025-09-19T17:00:47.323+0000] {subprocess.py:90} INFO - [0m17:00:47  1 of 3 ERROR not_null_stg_subcategories_CATEGORY_ID ............................ [[31mERROR[0m in 0.07s]
+[2025-09-19T17:00:47.383+0000] {subprocess.py:90} INFO - [0m17:00:47  2 of 3 ERROR not_null_stg_subcategories_SUBCATEGORY_ID ......................... [[31mERROR[0m in 0.13s]
+[2025-09-19T17:00:47.387+0000] {subprocess.py:90} INFO - [0m17:00:47  3 of 3 ERROR unique_stg_subcategories_SUBCATEGORY_ID ........................... [[31mERROR[0m in 0.11s]
+[2025-09-19T17:00:47.393+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.394+0000] {subprocess.py:90} INFO - [0m17:00:47  Finished running 3 data tests in 0 hours 0 minutes and 0.27 seconds (0.27s).
+[2025-09-19T17:00:47.442+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.442+0000] {subprocess.py:90} INFO - [0m17:00:47  [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[2025-09-19T17:00:47.443+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.443+0000] {subprocess.py:90} INFO - [0m17:00:47  [31mFailure in test not_null_stg_subcategories_CATEGORY_ID (models/ecom_staging/schema.yml)[0m
+[2025-09-19T17:00:47.443+0000] {subprocess.py:90} INFO - [0m17:00:47    Database Error in test not_null_stg_subcategories_CATEGORY_ID (models/ecom_staging/schema.yml)
+[2025-09-19T17:00:47.444+0000] {subprocess.py:90} INFO -   HTTPDriver for http://clickhouse:8123 received ClickHouse error code 47
+[2025-09-19T17:00:47.444+0000] {subprocess.py:90} INFO -    Code: 47. DB::Exception: Unknown expression identifier 'CATEGORY_ID' in scope SELECT CATEGORY_ID FROM ecom_db_staging.stg_subcategories WHERE CATEGORY_ID IS NULL. Maybe you meant: ['category_id']. (UNKNOWN_IDENTIFIER) (version 24.8.14.39 (official build))
+[2025-09-19T17:00:47.444+0000] {subprocess.py:90} INFO -   compiled code at target/run/ecom_staging/models/ecom_staging/schema.yml/not_null_stg_subcategories_CATEGORY_ID.sql
+[2025-09-19T17:00:47.445+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.445+0000] {subprocess.py:90} INFO - [0m17:00:47    compiled code at target/compiled/ecom_staging/models/ecom_staging/schema.yml/not_null_stg_subcategories_CATEGORY_ID.sql
+[2025-09-19T17:00:47.445+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.446+0000] {subprocess.py:90} INFO - [0m17:00:47  [31mFailure in test not_null_stg_subcategories_SUBCATEGORY_ID (models/ecom_staging/schema.yml)[0m
+[2025-09-19T17:00:47.446+0000] {subprocess.py:90} INFO - [0m17:00:47    Database Error in test not_null_stg_subcategories_SUBCATEGORY_ID (models/ecom_staging/schema.yml)
+[2025-09-19T17:00:47.446+0000] {subprocess.py:90} INFO -   HTTPDriver for http://clickhouse:8123 received ClickHouse error code 47
+[2025-09-19T17:00:47.446+0000] {subprocess.py:90} INFO -    Code: 47. DB::Exception: Unknown expression identifier 'SUBCATEGORY_ID' in scope SELECT SUBCATEGORY_ID FROM ecom_db_staging.stg_subcategories WHERE SUBCATEGORY_ID IS NULL. Maybe you meant: ['subcategory_id']. (UNKNOWN_IDENTIFIER) (version 24.8.14.39 (official build))
+[2025-09-19T17:00:47.447+0000] {subprocess.py:90} INFO -   compiled code at target/run/ecom_staging/models/ecom_staging/schema.yml/not_null_stg_subcategories_SUBCATEGORY_ID.sql
+[2025-09-19T17:00:47.447+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.447+0000] {subprocess.py:90} INFO - [0m17:00:47    compiled code at target/compiled/ecom_staging/models/ecom_staging/schema.yml/not_null_stg_subcategories_SUBCATEGORY_ID.sql
+[2025-09-19T17:00:47.447+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.447+0000] {subprocess.py:90} INFO - [0m17:00:47  [31mFailure in test unique_stg_subcategories_SUBCATEGORY_ID (models/ecom_staging/schema.yml)[0m
+[2025-09-19T17:00:47.448+0000] {subprocess.py:90} INFO - [0m17:00:47    Database Error in test unique_stg_subcategories_SUBCATEGORY_ID (models/ecom_staging/schema.yml)
+[2025-09-19T17:00:47.448+0000] {subprocess.py:90} INFO -   HTTPDriver for http://clickhouse:8123 received ClickHouse error code 47
+[2025-09-19T17:00:47.448+0000] {subprocess.py:90} INFO -    Code: 47. DB::Exception: Unknown expression identifier 'SUBCATEGORY_ID' in scope SELECT SUBCATEGORY_ID AS unique_field, count(*) AS n_records FROM ecom_db_staging.stg_subcategories WHERE SUBCATEGORY_ID IS NOT NULL GROUP BY SUBCATEGORY_ID HAVING count(*) > 1. Maybe you meant: ['subcategory_id']. (UNKNOWN_IDENTIFIER) (version 24.8.14.39 (official build))
+[2025-09-19T17:00:47.448+0000] {subprocess.py:90} INFO -   compiled code at target/run/ecom_staging/models/ecom_staging/schema.yml/unique_stg_subcategories_SUBCATEGORY_ID.sql
+[2025-09-19T17:00:47.448+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.448+0000] {subprocess.py:90} INFO - [0m17:00:47    compiled code at target/compiled/ecom_staging/models/ecom_staging/schema.yml/unique_stg_subcategories_SUBCATEGORY_ID.sql
+[2025-09-19T17:00:47.449+0000] {subprocess.py:90} INFO - [0m17:00:47
+[2025-09-19T17:00:47.449+0000] {subprocess.py:90} INFO - [0m17:00:47  Done. PASS=0 WARN=0 ERROR=3 SKIP=0 NO-OP=0 TOTAL=3
+[2025-09-19T17:00:47.449+0000] {subprocess.py:90} INFO - [0m17:00:47  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+[2025-09-19T17:00:47.449+0000] {subprocess.py:90} INFO - Summary of encountered deprecations:
+[2025-09-19T17:00:47.449+0000] {subprocess.py:90} INFO - - ModelParamUsageDeprecation: 1 occurrence
+[2025-09-19T17:00:47.450+0000] {subprocess.py:90} INFO - To see all deprecation instances instead of just the first occurrence of each,
+[2025-09-19T17:00:47.450+0000] {subprocess.py:90} INFO - run command again with the `--show-all-deprecations` flag. You may also need to
+[2025-09-19T17:00:47.450+0000] {subprocess.py:90} INFO - run with `--no-partial-parse` as some deprecations are only encountered during
+[2025-09-19T17:00:47.450+0000] {subprocess.py:90} INFO - parsing.
+[2025-09-19T17:00:49.106+0000] {subprocess.py:94} INFO - Command exited with return code 1
+[2025-09-19T17:00:49.107+0000] {local.py:441} INFO - parsing.
+[2025-09-19T17:00:49.123+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/manifest/v12.json is above dbt-ol supported version 7. This might cause errors.
+[2025-09-19T17:00:49.124+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/run-results/v6.json is above dbt-ol supported version 5. This might cause errors.
+[2025-09-19T17:00:49.132+0000] {local.py:547} INFO - Inlets: []
+[2025-09-19T17:00:49.132+0000] {local.py:548} INFO - Outlets: []
+[2025-09-19T17:00:49.133+0000] {local.py:772} INFO - Assigning inlets/outlets without DatasetAlias
+[2025-09-19T17:00:49.133+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-19T17:00:49.252+0000] {local.py:253} ERROR - [0m17:00:46  Running with dbt=1.10.11
+[0m17:00:46  [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+`-s`.
+[0m17:00:46  Registered adapter: clickhouse=1.9.3
+[0m17:00:47  Found 8 models, 54 data tests, 8 sources, 597 macros
+[0m17:00:47
+[0m17:00:47  Concurrency: 4 threads (target='dev')
+[0m17:00:47
+[0m17:00:47  1 of 3 START test not_null_stg_subcategories_CATEGORY_ID ....................... [RUN]
+[0m17:00:47  2 of 3 START test not_null_stg_subcategories_SUBCATEGORY_ID .................... [RUN]
+[0m17:00:47  3 of 3 START test unique_stg_subcategories_SUBCATEGORY_ID ...................... [RUN]
+[0m17:00:47  1 of 3 ERROR not_null_stg_subcategories_CATEGORY_ID ............................ [[31mERROR[0m in 0.07s]
+[0m17:00:47  2 of 3 ERROR not_null_stg_subcategories_SUBCATEGORY_ID ......................... [[31mERROR[0m in 0.13s]
+[0m17:00:47  3 of 3 ERROR unique_stg_subcategories_SUBCATEGORY_ID ........................... [[31mERROR[0m in 0.11s]
+[0m17:00:47
+[0m17:00:47  Finished running 3 data tests in 0 hours 0 minutes and 0.27 seconds (0.27s).
+[0m17:00:47
+[0m17:00:47  [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m17:00:47
+[0m17:00:47  [31mFailure in test not_null_stg_subcategories_CATEGORY_ID (models/ecom_staging/schema.yml)[0m
+[0m17:00:47    Database Error in test not_null_stg_subcategories_CATEGORY_ID (models/ecom_staging/schema.yml)
+  HTTPDriver for http://clickhouse:8123 received ClickHouse error code 47
+   Code: 47. DB::Exception: Unknown expression identifier 'CATEGORY_ID' in scope SELECT CATEGORY_ID FROM ecom_db_staging.stg_subcategories WHERE CATEGORY_ID IS NULL. Maybe you meant: ['category_id']. (UNKNOWN_IDENTIFIER) (version 24.8.14.39 (official build))
+  compiled code at target/run/ecom_staging/models/ecom_staging/schema.yml/not_null_stg_subcategories_CATEGORY_ID.sql
+[0m17:00:47
+[0m17:00:47    compiled code at target/compiled/ecom_staging/models/ecom_staging/schema.yml/not_null_stg_subcategories_CATEGORY_ID.sql
+[0m17:00:47
+[0m17:00:47  [31mFailure in test not_null_stg_subcategories_SUBCATEGORY_ID (models/ecom_staging/schema.yml)[0m
+[0m17:00:47    Database Error in test not_null_stg_subcategories_SUBCATEGORY_ID (models/ecom_staging/schema.yml)
+  HTTPDriver for http://clickhouse:8123 received ClickHouse error code 47
+   Code: 47. DB::Exception: Unknown expression identifier 'SUBCATEGORY_ID' in scope SELECT SUBCATEGORY_ID FROM ecom_db_staging.stg_subcategories WHERE SUBCATEGORY_ID IS NULL. Maybe you meant: ['subcategory_id']. (UNKNOWN_IDENTIFIER) (version 24.8.14.39 (official build))
+  compiled code at target/run/ecom_staging/models/ecom_staging/schema.yml/not_null_stg_subcategories_SUBCATEGORY_ID.sql
+[0m17:00:47
+[0m17:00:47    compiled code at target/compiled/ecom_staging/models/ecom_staging/schema.yml/not_null_stg_subcategories_SUBCATEGORY_ID.sql
+[0m17:00:47
+[0m17:00:47  [31mFailure in test unique_stg_subcategories_SUBCATEGORY_ID (models/ecom_staging/schema.yml)[0m
+[0m17:00:47    Database Error in test unique_stg_subcategories_SUBCATEGORY_ID (models/ecom_staging/schema.yml)
+  HTTPDriver for http://clickhouse:8123 received ClickHouse error code 47
+   Code: 47. DB::Exception: Unknown expression identifier 'SUBCATEGORY_ID' in scope SELECT SUBCATEGORY_ID AS unique_field, count(*) AS n_records FROM ecom_db_staging.stg_subcategories WHERE SUBCATEGORY_ID IS NOT NULL GROUP BY SUBCATEGORY_ID HAVING count(*) > 1. Maybe you meant: ['subcategory_id']. (UNKNOWN_IDENTIFIER) (version 24.8.14.39 (official build))
+  compiled code at target/run/ecom_staging/models/ecom_staging/schema.yml/unique_stg_subcategories_SUBCATEGORY_ID.sql
+[0m17:00:47
+[0m17:00:47    compiled code at target/compiled/ecom_staging/models/ecom_staging/schema.yml/unique_stg_subcategories_SUBCATEGORY_ID.sql
+[0m17:00:47
+[0m17:00:47  Done. PASS=0 WARN=0 ERROR=3 SKIP=0 NO-OP=0 TOTAL=3
+[0m17:00:47  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[2025-09-19T17:00:49.259+0000] {virtualenv.py:131} INFO - Releasing virtualenv lock
+[2025-09-19T17:00:49.260+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-19T17:00:49.294+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/virtualenv.py", line 144, in execute
+    output = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/local.py", line 1089, in execute
+    result = self.build_and_run_cmd(context=context, cmd_flags=self.add_cmd_flags())
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/local.py", line 853, in build_and_run_cmd
+    result = self.run_command(
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/virtualenv.py", line 129, in run_command
+    return super().run_command(cmd, env, context, run_as_async=run_as_async, async_context=async_context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/local.py", line 650, in run_command
+    self.handle_exception(result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/cosmos/operators/local.py", line 254, in handle_exception_subprocess
+    raise AirflowException(f"dbt command failed. The command returned a non-zero exit code {result.exit_code}.")
+airflow.exceptions.AirflowException: dbt command failed. The command returned a non-zero exit code 1.
+[2025-09-19T17:00:49.297+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dbt_staging, task_id=dbt_ecom.stg_subcategories.test, run_id=manual__2025-09-19T16:52:09.172903+00:00, execution_date=20250919T165209, start_date=20250919T170034, end_date=20250919T170049
+[2025-09-19T17:00:49.329+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 624 for task dbt_ecom.stg_subcategories.test (dbt command failed. The command returned a non-zero exit code 1.; 4340)
+[2025-09-19T17:00:49.346+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-09-19T17:00:49.402+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-19T17:00:49.415+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
