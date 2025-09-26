@@ -1,0 +1,392 @@
+[2025-09-22T08:23:13.592+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-22T08:23:14.058+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dbt_intermediate.intermediate.education_types.run scheduled__2025-09-21T00:00:00+00:00 [queued]>
+[2025-09-22T08:23:14.075+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dbt_intermediate.intermediate.education_types.run scheduled__2025-09-21T00:00:00+00:00 [queued]>
+[2025-09-22T08:23:14.077+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-22T08:23:14.124+0000] {taskinstance.py:2330} INFO - Executing <Task(DbtRunVirtualenvOperator): intermediate.education_types.run> on 2025-09-21 00:00:00+00:00
+[2025-09-22T08:23:14.138+0000] {standard_task_runner.py:64} INFO - Started process 3945 to run task
+[2025-09-22T08:23:14.146+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'dbt_intermediate', 'intermediate.education_types.run', 'scheduled__2025-09-21T00:00:00+00:00', '--job-id', '686', '--raw', '--subdir', 'DAGS_FOLDER/dbt_intermediate.py', '--cfg-path', '/tmp/tmpifajghrd']
+[2025-09-22T08:23:14.155+0000] {standard_task_runner.py:91} INFO - Job 686: Subtask intermediate.education_types.run
+[2025-09-22T08:23:14.609+0000] {task_command.py:426} INFO - Running <TaskInstance: dbt_intermediate.intermediate.education_types.run scheduled__2025-09-21T00:00:00+00:00 [running]> on host e95bde6b8d07
+[2025-09-22T08:23:15.302+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dbt_intermediate' AIRFLOW_CTX_TASK_ID='intermediate.education_types.run' AIRFLOW_CTX_EXECUTION_DATE='2025-09-21T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-21T00:00:00+00:00'
+[2025-09-22T08:23:15.304+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-22T08:23:15.331+0000] {virtualenv.py:120} INFO - Checking if the virtualenv lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock exists
+[2025-09-22T08:23:15.332+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:15.333+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:15.337+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:16.342+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:16.343+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:16.343+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:17.345+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:17.346+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:17.346+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:18.348+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:18.349+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:18.351+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:19.353+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:19.354+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:19.354+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:20.356+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:20.357+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:20.358+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:21.359+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:21.360+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:21.361+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:22.363+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:22.363+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:22.364+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:23.366+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:23.367+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:23.367+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:24.369+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:24.373+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:24.373+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:25.375+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:25.376+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:25.377+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:26.379+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:26.380+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:26.381+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:27.382+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:27.383+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:27.384+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:28.382+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:28.382+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:28.383+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:29.385+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:29.386+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:29.386+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:30.388+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:30.389+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:30.389+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:31.391+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3942
+[2025-09-22T08:23:31.392+0000] {virtualenv.py:181} INFO - Process 3942 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:31.393+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:32.395+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:32.395+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:32.396+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:33.398+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:33.398+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:33.399+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:34.401+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:34.402+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:34.404+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:35.406+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:35.406+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:35.407+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:36.411+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:36.412+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:36.414+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:37.418+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:37.418+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:37.419+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:38.420+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:38.421+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:38.422+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:39.426+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:39.426+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:39.427+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:40.429+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:40.430+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:40.430+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:41.432+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:41.432+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:41.433+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:42.433+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:42.434+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:42.434+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:43.436+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:43.437+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:43.438+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:44.440+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:44.441+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:44.441+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:45.443+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:45.444+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:45.444+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:46.446+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:46.447+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:46.448+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:47.450+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3949
+[2025-09-22T08:23:47.451+0000] {virtualenv.py:181} INFO - Process 3949 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:47.452+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:48.454+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:48.454+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:48.455+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:49.456+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:49.457+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:49.458+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:50.460+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:50.463+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:50.464+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:51.466+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:51.466+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:51.467+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:52.469+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:52.470+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:52.471+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:53.473+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:53.474+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:53.474+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:54.476+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:54.477+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:54.478+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:55.480+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:55.481+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:55.482+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:56.484+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:56.486+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:56.487+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:57.489+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:57.489+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:57.490+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:58.493+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:58.494+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:58.494+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:23:59.495+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:23:59.496+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:23:59.497+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:00.499+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:24:00.501+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:00.502+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:01.503+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:24:01.504+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:01.505+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:02.507+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:24:02.508+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:02.509+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:03.511+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3944
+[2025-09-22T08:24:03.512+0000] {virtualenv.py:181} INFO - Process 3944 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:03.513+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:04.515+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:04.515+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:04.516+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:05.518+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:05.519+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:05.520+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:06.521+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:06.523+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:06.523+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:07.526+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:07.527+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:07.529+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:08.531+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:08.532+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:08.533+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:09.535+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:09.536+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:09.536+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:10.538+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:10.539+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:10.539+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:11.541+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:11.542+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:11.542+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:12.544+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:12.545+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:12.545+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:13.547+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:13.548+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:13.548+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:14.550+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:14.550+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:14.551+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:15.553+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:15.553+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:15.554+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:16.555+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:16.556+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:16.557+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:17.558+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:17.559+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:17.559+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:18.561+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:18.562+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:18.563+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:19.565+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:19.566+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:19.567+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:20.569+0000] {virtualenv.py:178} INFO - Checking for running process with PID 3941
+[2025-09-22T08:24:20.570+0000] {virtualenv.py:181} INFO - Process 3941 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:20.571+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:21.572+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:21.573+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:21.573+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:22.575+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:22.575+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:22.576+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:23.577+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:23.578+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:23.579+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:24.580+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:24.581+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:24.581+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:25.582+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:25.583+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:25.584+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:26.585+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:26.586+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:26.587+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:27.589+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:27.590+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:27.594+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:28.595+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:28.596+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:28.596+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:29.597+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:29.598+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:29.598+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:30.600+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:30.601+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:30.601+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:31.603+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:31.603+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:31.604+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:32.605+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:32.606+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:32.606+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:33.608+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:33.609+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:33.609+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:34.611+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:34.612+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:34.612+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:35.614+0000] {virtualenv.py:178} INFO - Checking for running process with PID 4046
+[2025-09-22T08:24:35.615+0000] {virtualenv.py:181} INFO - Process 4046 running: True and has the lock /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock.
+[2025-09-22T08:24:35.615+0000] {virtualenv.py:122} INFO - Waiting for virtualenv lock to be released
+[2025-09-22T08:24:36.617+0000] {virtualenv.py:126} INFO - Acquiring the virtualenv lock
+[2025-09-22T08:24:36.618+0000] {virtualenv.py:195} INFO - Acquiring lock at /opt/***/cosmos_venvs/ecom_intermediate/cosmos_virtualenv.lock with pid 3945
+[2025-09-22T08:24:36.618+0000] {virtualenv.py:153} INFO - Creating or updating the virtualenv at `/opt/***/cosmos_venvs/ecom_intermediate
+[2025-09-22T08:24:36.619+0000] {process_utils.py:183} INFO - Executing cmd: /home/***/.local/bin/python -m virtualenv /opt/***/cosmos_venvs/ecom_intermediate --python=python3
+[2025-09-22T08:24:36.620+0000] {process_utils.py:187} INFO - Output:
+[2025-09-22T08:24:38.283+0000] {process_utils.py:191} INFO - created virtual environment CPython3.10.14.final.0-64 in 740ms
+[2025-09-22T08:24:38.284+0000] {process_utils.py:191} INFO -   creator CPython3Posix(dest=/opt/***/cosmos_venvs/ecom_intermediate, clear=False, no_vcs_ignore=False, global=False)
+[2025-09-22T08:24:38.285+0000] {process_utils.py:191} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/***/.local/share/virtualenv)
+[2025-09-22T08:24:38.287+0000] {process_utils.py:191} INFO -     added seed packages: MarkupSafe==3.0.2, PyYAML==6.0.2, agate==1.9.1, annotated_types==0.7.0, attrs==25.3.0, babel==2.17.0, certifi==2025.8.3, charset_normalizer==3.4.3, click==8.3.0, clickhouse_connect==0.9.1, clickhouse_driver==0.2.9, colorama==0.4.6, daff==1.4.2, dbt_adapters==1.16.7, dbt_clickhouse==1.9.3, dbt_common==1.31.0, dbt_core==1.10.11, dbt_extractor==0.6.0, dbt_protos==1.0.375, dbt_semantic_interfaces==0.9.0, deepdiff==8.6.1, idna==3.10, importlib_metadata==8.7.0, isodate==0.6.1, jinja2==3.1.6, jsonschema==4.25.1, jsonschema_specifications==2025.9.1, leather==0.4.0, lz4==4.4.4, mashumaro==3.14, more_itertools==10.8.0, msgpack==1.1.1, networkx==3.4.2, orderly_set==5.5.0, packaging==25.0, parsedatetime==2.6, pathspec==0.12.1, pip==25.2, protobuf==6.32.1, pydantic==2.11.9, pydantic_core==2.33.2, python_dateutil==2.9.0.post0, python_slugify==8.0.4, pytimeparse==1.1.8, pytz==2025.2, referencing==0.36.2, requests==2.32.5, rpds_py==0.27.1, setuptools==80.9.0, six==1.17.0, snowplow_tracker==1.1.0, sqlparse==0.5.3, text_unidecode==1.3, typing_extensions==4.15.0, typing_inspection==0.4.1, tzlocal==5.3.1, urllib3==2.5.0, wheel==0.45.1, zipp==3.23.0, zstandard==0.25.0
+[2025-09-22T08:24:38.288+0000] {process_utils.py:191} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2025-09-22T08:24:38.416+0000] {process_utils.py:183} INFO - Executing cmd: /opt/***/cosmos_venvs/ecom_intermediate/bin/pip install dbt-clickhouse
+[2025-09-22T08:24:38.418+0000] {process_utils.py:187} INFO - Output:
+[2025-09-22T08:24:39.816+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-clickhouse in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (1.9.3)
+[2025-09-22T08:24:39.818+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-core>=1.9 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-clickhouse) (1.10.11)
+[2025-09-22T08:24:39.819+0000] {process_utils.py:191} INFO - Requirement already satisfied: clickhouse-connect>=0.6.22 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-clickhouse) (0.9.1)
+[2025-09-22T08:24:39.820+0000] {process_utils.py:191} INFO - Requirement already satisfied: clickhouse-driver>=0.2.6 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-clickhouse) (0.2.9)
+[2025-09-22T08:24:39.822+0000] {process_utils.py:191} INFO - Requirement already satisfied: setuptools>=0.69 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-clickhouse) (80.9.0)
+[2025-09-22T08:24:39.827+0000] {process_utils.py:191} INFO - Requirement already satisfied: certifi in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (2025.8.3)
+[2025-09-22T08:24:39.828+0000] {process_utils.py:191} INFO - Requirement already satisfied: urllib3>=1.26 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (2.5.0)
+[2025-09-22T08:24:39.828+0000] {process_utils.py:191} INFO - Requirement already satisfied: pytz in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (2025.2)
+[2025-09-22T08:24:39.829+0000] {process_utils.py:191} INFO - Requirement already satisfied: zstandard in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (0.25.0)
+[2025-09-22T08:24:39.830+0000] {process_utils.py:191} INFO - Requirement already satisfied: lz4 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from clickhouse-connect>=0.6.22->dbt-clickhouse) (4.4.4)
+[2025-09-22T08:24:39.831+0000] {process_utils.py:191} INFO - Requirement already satisfied: tzlocal in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from clickhouse-driver>=0.2.6->dbt-clickhouse) (5.3.1)
+[2025-09-22T08:24:39.835+0000] {process_utils.py:191} INFO - Requirement already satisfied: agate<1.10,>=1.7.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.9.1)
+[2025-09-22T08:24:39.836+0000] {process_utils.py:191} INFO - Requirement already satisfied: Jinja2<4,>=3.1.3 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (3.1.6)
+[2025-09-22T08:24:39.837+0000] {process_utils.py:191} INFO - Requirement already satisfied: mashumaro<3.15,>=3.9 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from mashumaro[msgpack]<3.15,>=3.9->dbt-core>=1.9->dbt-clickhouse) (3.14)
+[2025-09-22T08:24:39.838+0000] {process_utils.py:191} INFO - Requirement already satisfied: click<9.0,>=8.0.2 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (8.3.0)
+[2025-09-22T08:24:39.839+0000] {process_utils.py:191} INFO - Requirement already satisfied: jsonschema<5.0,>=4.19.1 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (4.25.1)
+[2025-09-22T08:24:39.839+0000] {process_utils.py:191} INFO - Requirement already satisfied: networkx<4.0,>=2.3 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (3.4.2)
+[2025-09-22T08:24:39.840+0000] {process_utils.py:191} INFO - Requirement already satisfied: protobuf<7.0,>=6.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (6.32.1)
+[2025-09-22T08:24:39.841+0000] {process_utils.py:191} INFO - Requirement already satisfied: requests<3.0.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (2.32.5)
+[2025-09-22T08:24:39.842+0000] {process_utils.py:191} INFO - Requirement already satisfied: snowplow-tracker<2.0,>=1.0.2 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.1.0)
+[2025-09-22T08:24:39.843+0000] {process_utils.py:191} INFO - Requirement already satisfied: pathspec<0.13,>=0.9 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.12.1)
+[2025-09-22T08:24:39.844+0000] {process_utils.py:191} INFO - Requirement already satisfied: sqlparse<0.6.0,>=0.5.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.5.3)
+[2025-09-22T08:24:39.845+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-extractor<=0.6,>=0.5.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.6.0)
+[2025-09-22T08:24:39.846+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-semantic-interfaces<0.10,>=0.9.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (0.9.0)
+[2025-09-22T08:24:39.847+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-common<2.0,>=1.27.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.31.0)
+[2025-09-22T08:24:39.848+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-adapters<2.0,>=1.15.5 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.16.7)
+[2025-09-22T08:24:39.849+0000] {process_utils.py:191} INFO - Requirement already satisfied: dbt-protos<2.0,>=1.0.346 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.0.375)
+[2025-09-22T08:24:39.849+0000] {process_utils.py:191} INFO - Requirement already satisfied: pydantic<3 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (2.11.9)
+[2025-09-22T08:24:39.850+0000] {process_utils.py:191} INFO - Requirement already satisfied: packaging>20.9 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (25.0)
+[2025-09-22T08:24:39.851+0000] {process_utils.py:191} INFO - Requirement already satisfied: pyyaml>=6.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (6.0.2)
+[2025-09-22T08:24:39.852+0000] {process_utils.py:191} INFO - Requirement already satisfied: daff>=1.3.46 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (1.4.2)
+[2025-09-22T08:24:39.853+0000] {process_utils.py:191} INFO - Requirement already satisfied: typing-extensions>=4.4 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-core>=1.9->dbt-clickhouse) (4.15.0)
+[2025-09-22T08:24:39.858+0000] {process_utils.py:191} INFO - Requirement already satisfied: Babel>=2.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (2.17.0)
+[2025-09-22T08:24:39.859+0000] {process_utils.py:191} INFO - Requirement already satisfied: isodate>=0.5.4 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (0.6.1)
+[2025-09-22T08:24:39.859+0000] {process_utils.py:191} INFO - Requirement already satisfied: leather>=0.3.2 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (0.4.0)
+[2025-09-22T08:24:39.860+0000] {process_utils.py:191} INFO - Requirement already satisfied: parsedatetime!=2.5,>=2.1 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (2.6)
+[2025-09-22T08:24:39.860+0000] {process_utils.py:191} INFO - Requirement already satisfied: python-slugify>=1.2.1 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (8.0.4)
+[2025-09-22T08:24:39.861+0000] {process_utils.py:191} INFO - Requirement already satisfied: pytimeparse>=1.1.5 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (1.1.8)
+[2025-09-22T08:24:39.871+0000] {process_utils.py:191} INFO - Requirement already satisfied: colorama<0.5,>=0.3.9 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (0.4.6)
+[2025-09-22T08:24:39.872+0000] {process_utils.py:191} INFO - Requirement already satisfied: deepdiff<9.0,>=7.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (8.6.1)
+[2025-09-22T08:24:39.875+0000] {process_utils.py:191} INFO - Requirement already satisfied: python-dateutil<3.0,>=2.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (2.9.0.post0)
+[2025-09-22T08:24:39.880+0000] {process_utils.py:191} INFO - Requirement already satisfied: importlib-metadata<9,>=6.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse) (8.7.0)
+[2025-09-22T08:24:39.882+0000] {process_utils.py:191} INFO - Requirement already satisfied: more-itertools<11.0,>=8.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse) (10.8.0)
+[2025-09-22T08:24:39.889+0000] {process_utils.py:191} INFO - Requirement already satisfied: orderly-set<6,>=5.4.1 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from deepdiff<9.0,>=7.0->dbt-common<2.0,>=1.27.0->dbt-core>=1.9->dbt-clickhouse) (5.5.0)
+[2025-09-22T08:24:39.894+0000] {process_utils.py:191} INFO - Requirement already satisfied: zipp>=3.20 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from importlib-metadata<9,>=6.0->dbt-semantic-interfaces<0.10,>=0.9.0->dbt-core>=1.9->dbt-clickhouse) (3.23.0)
+[2025-09-22T08:24:39.896+0000] {process_utils.py:191} INFO - Requirement already satisfied: six in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from isodate>=0.5.4->agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (1.17.0)
+[2025-09-22T08:24:39.898+0000] {process_utils.py:191} INFO - Requirement already satisfied: MarkupSafe>=2.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from Jinja2<4,>=3.1.3->dbt-core>=1.9->dbt-clickhouse) (3.0.2)
+[2025-09-22T08:24:39.902+0000] {process_utils.py:191} INFO - Requirement already satisfied: attrs>=22.2.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (25.3.0)
+[2025-09-22T08:24:39.903+0000] {process_utils.py:191} INFO - Requirement already satisfied: jsonschema-specifications>=2023.03.6 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (2025.9.1)
+[2025-09-22T08:24:39.903+0000] {process_utils.py:191} INFO - Requirement already satisfied: referencing>=0.28.4 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (0.36.2)
+[2025-09-22T08:24:39.904+0000] {process_utils.py:191} INFO - Requirement already satisfied: rpds-py>=0.7.1 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from jsonschema<5.0,>=4.19.1->dbt-core>=1.9->dbt-clickhouse) (0.27.1)
+[2025-09-22T08:24:39.912+0000] {process_utils.py:191} INFO - Requirement already satisfied: msgpack>=0.5.6 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from mashumaro[msgpack]<3.15,>=3.9->dbt-core>=1.9->dbt-clickhouse) (1.1.1)
+[2025-09-22T08:24:39.932+0000] {process_utils.py:191} INFO - Requirement already satisfied: annotated-types>=0.6.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from pydantic<3->dbt-core>=1.9->dbt-clickhouse) (0.7.0)
+[2025-09-22T08:24:39.934+0000] {process_utils.py:191} INFO - Requirement already satisfied: pydantic-core==2.33.2 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from pydantic<3->dbt-core>=1.9->dbt-clickhouse) (2.33.2)
+[2025-09-22T08:24:39.935+0000] {process_utils.py:191} INFO - Requirement already satisfied: typing-inspection>=0.4.0 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from pydantic<3->dbt-core>=1.9->dbt-clickhouse) (0.4.1)
+[2025-09-22T08:24:39.943+0000] {process_utils.py:191} INFO - Requirement already satisfied: charset_normalizer<4,>=2 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from requests<3.0.0->dbt-core>=1.9->dbt-clickhouse) (3.4.3)
+[2025-09-22T08:24:39.944+0000] {process_utils.py:191} INFO - Requirement already satisfied: idna<4,>=2.5 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from requests<3.0.0->dbt-core>=1.9->dbt-clickhouse) (3.10)
+[2025-09-22T08:24:39.990+0000] {process_utils.py:191} INFO - Requirement already satisfied: text-unidecode>=1.3 in ./cosmos_venvs/ecom_intermediate/lib/python3.10/site-packages (from python-slugify>=1.2.1->agate<1.10,>=1.7.0->dbt-core>=1.9->dbt-clickhouse) (1.3)
+[2025-09-22T08:24:40.155+0000] {local.py:470} INFO - Cloning project to writable temp directory /tmp/tmpox85_4_2 from /opt/airflow/dags/dbt/ecom_intermediate
+[2025-09-22T08:24:40.165+0000] {local.py:490} INFO - Partial parse is enabled and the latest partial parse file is /tmp/cosmos/dbt_intermediate__intermediate/target/partial_parse.msgpack
+[2025-09-22T08:24:40.177+0000] {config.py:362} INFO - Using user-supplied profiles.yml at /opt/airflow/dags/dbt/profiles.yml
+[2025-09-22T08:24:40.185+0000] {virtualenv.py:99} INFO - Using Python binary from virtualenv: /opt/***/cosmos_venvs/ecom_intermediate/bin/python
+[2025-09-22T08:24:40.185+0000] {local.py:434} INFO - Trying to run the command:
+ ['/opt/***/cosmos_venvs/ecom_intermediate/bin/dbt', 'deps', '--project-dir', '/tmp/tmpox85_4_2', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+From /tmp/tmpox85_4_2
+[2025-09-22T08:24:40.186+0000] {subprocess.py:56} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-22T08:24:40.186+0000] {subprocess.py:69} INFO - Running command: ['/opt/***/cosmos_venvs/ecom_intermediate/bin/dbt', 'deps', '--project-dir', '/tmp/tmpox85_4_2', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+[2025-09-22T08:24:40.197+0000] {subprocess.py:80} INFO - Command output:
+[2025-09-22T08:24:42.337+0000] {subprocess.py:90} INFO - [0m08:24:42  Running with dbt=1.10.11
+[2025-09-22T08:24:43.022+0000] {subprocess.py:90} INFO - [0m08:24:43  Installing dbt-labs/dbt_utils
+[2025-09-22T08:24:43.717+0000] {subprocess.py:90} INFO - [0m08:24:43  Installed from version 1.3.0
+[2025-09-22T08:24:43.718+0000] {subprocess.py:90} INFO - [0m08:24:43  Updated version available: 1.3.1
+[2025-09-22T08:24:43.719+0000] {subprocess.py:90} INFO - [0m08:24:43
+[2025-09-22T08:24:43.719+0000] {subprocess.py:90} INFO - [0m08:24:43  Updates available for packages: ['dbt-labs/dbt_utils']
+[2025-09-22T08:24:43.720+0000] {subprocess.py:90} INFO - Update your versions in packages.yml, then run dbt deps
+[2025-09-22T08:24:45.459+0000] {subprocess.py:94} INFO - Command exited with return code 0
+[2025-09-22T08:24:45.460+0000] {local.py:441} INFO - Update your versions in packages.yml, then run dbt deps
+[2025-09-22T08:24:45.460+0000] {virtualenv.py:99} INFO - Using Python binary from virtualenv: /opt/***/cosmos_venvs/ecom_intermediate/bin/python
+[2025-09-22T08:24:45.461+0000] {local.py:434} INFO - Trying to run the command:
+ ['/opt/***/cosmos_venvs/ecom_intermediate/bin/dbt', 'run', '--models', 'education_types', '--project-dir', '/tmp/tmpox85_4_2', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+From /tmp/tmpox85_4_2
+[2025-09-22T08:24:45.461+0000] {subprocess.py:56} INFO - Tmp dir root location: 
+ /tmp
+[2025-09-22T08:24:45.462+0000] {subprocess.py:69} INFO - Running command: ['/opt/***/cosmos_venvs/ecom_intermediate/bin/dbt', 'run', '--models', 'education_types', '--project-dir', '/tmp/tmpox85_4_2', '--profiles-dir', '/opt/***/dags/dbt', '--profile', 'ecom_intermediate', '--target', 'dev']
+[2025-09-22T08:24:45.472+0000] {subprocess.py:80} INFO - Command output:
+[2025-09-22T08:24:48.240+0000] {subprocess.py:90} INFO - [0m08:24:48  Running with dbt=1.10.11
+[2025-09-22T08:24:48.243+0000] {subprocess.py:90} INFO - [0m08:24:48  [[33mWARNING[0m]: Deprecated functionality
+[2025-09-22T08:24:48.244+0000] {subprocess.py:90} INFO - Usage of `--models`, `--model`, and `-m` is deprecated in favor of `--select` or
+[2025-09-22T08:24:48.245+0000] {subprocess.py:90} INFO - `-s`.
+[2025-09-22T08:24:48.736+0000] {subprocess.py:90} INFO - [0m08:24:48  Registered adapter: clickhouse=1.9.3
+[2025-09-22T08:24:49.862+0000] {subprocess.py:90} INFO - [0m08:24:49  Found 15 models, 50 data tests, 8 sources, 597 macros
+[2025-09-22T08:24:49.866+0000] {subprocess.py:90} INFO - [0m08:24:49
+[2025-09-22T08:24:49.867+0000] {subprocess.py:90} INFO - [0m08:24:49  Concurrency: 4 threads (target='dev')
+[2025-09-22T08:24:49.867+0000] {subprocess.py:90} INFO - [0m08:24:49
+[2025-09-22T08:24:50.054+0000] {subprocess.py:90} INFO - [0m08:24:50  1 of 1 START sql table model `ecom_db_intermediate`.`education_types` .......... [RUN]
+[2025-09-22T08:24:50.244+0000] {subprocess.py:90} INFO - [0m08:24:50  1 of 1 OK created sql table model `ecom_db_intermediate`.`education_types` ..... [[32mOK[0m in 0.19s]
+[2025-09-22T08:24:50.248+0000] {subprocess.py:90} INFO - [0m08:24:50
+[2025-09-22T08:24:50.249+0000] {subprocess.py:90} INFO - [0m08:24:50  Finished running 1 table model in 0 hours 0 minutes and 0.38 seconds (0.38s).
+[2025-09-22T08:24:50.307+0000] {subprocess.py:90} INFO - [0m08:24:50
+[2025-09-22T08:24:50.308+0000] {subprocess.py:90} INFO - [0m08:24:50  [32mCompleted successfully[0m
+[2025-09-22T08:24:50.309+0000] {subprocess.py:90} INFO - [0m08:24:50
+[2025-09-22T08:24:50.309+0000] {subprocess.py:90} INFO - [0m08:24:50  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[2025-09-22T08:24:50.310+0000] {subprocess.py:90} INFO - [0m08:24:50  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+[2025-09-22T08:24:50.310+0000] {subprocess.py:90} INFO - Summary of encountered deprecations:
+[2025-09-22T08:24:50.311+0000] {subprocess.py:90} INFO - - ModelParamUsageDeprecation: 1 occurrence
+[2025-09-22T08:24:50.312+0000] {subprocess.py:90} INFO - To see all deprecation instances instead of just the first occurrence of each,
+[2025-09-22T08:24:50.312+0000] {subprocess.py:90} INFO - run command again with the `--show-all-deprecations` flag. You may also need to
+[2025-09-22T08:24:50.312+0000] {subprocess.py:90} INFO - run with `--no-partial-parse` as some deprecations are only encountered during
+[2025-09-22T08:24:50.313+0000] {subprocess.py:90} INFO - parsing.
+[2025-09-22T08:24:52.043+0000] {subprocess.py:94} INFO - Command exited with return code 0
+[2025-09-22T08:24:52.044+0000] {local.py:441} INFO - parsing.
+[2025-09-22T08:24:52.061+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/manifest/v12.json is above dbt-ol supported version 7. This might cause errors.
+[2025-09-22T08:24:52.062+0000] {local.py:196} WARNING - Artifact schema version: https://schemas.getdbt.com/dbt/run-results/v6.json is above dbt-ol supported version 5. This might cause errors.
+[2025-09-22T08:24:52.072+0000] {local.py:547} INFO - Inlets: []
+[2025-09-22T08:24:52.073+0000] {local.py:548} INFO - Outlets: []
+[2025-09-22T08:24:52.074+0000] {local.py:772} INFO - Assigning inlets/outlets without DatasetAlias
+[2025-09-22T08:24:52.075+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-09-22T08:24:52.256+0000] {virtualenv.py:131} INFO - Releasing virtualenv lock
+[2025-09-22T08:24:52.258+0000] {virtualenv.py:145} INFO - None
+[2025-09-22T08:24:52.259+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-22T08:24:52.335+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=dbt_intermediate, task_id=intermediate.education_types.run, run_id=scheduled__2025-09-21T00:00:00+00:00, execution_date=20250921T000000, start_date=20250922T082314, end_date=20250922T082452
+[2025-09-22T08:24:52.369+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-22T08:24:52.438+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-09-22T08:24:52.450+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -36,7 +36,7 @@ with DAG(
     dag_id="dbt_staging",
     start_date=datetime(2024, 1, 1),
     schedule="@daily",
-    concurrency=1,
+    concurrency=5,
     max_active_runs=1,
     catchup=False,
 ) as dag:

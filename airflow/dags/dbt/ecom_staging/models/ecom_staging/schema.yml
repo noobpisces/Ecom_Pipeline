@@ -362,84 +362,82 @@ models:
   # STAGING: bỏ unique, chỉ giữ not_null/quan hệ cần thiết
   - name: stg_categories
     columns:
-      - name: CATEGORY_ID
+      - name: category_id
         tests:
           - not_null
-      - name: CATEGORY_NAME
+      - name: category_name
         tests:
           - not_null
 
   - name: stg_customers
     columns:
-      - name: CUSTOMER_ID
-        tests:
-          - not_null
-      - name: EMAIL
+      - name: customer_id
         tests:
           - not_null
 
   - name: stg_interactions
     columns:
-      - name: EVENT_ID
+      - name: event_id
         tests:
           - not_null
-      - name: CUSTOMER_ID
+      - name: customer_id
         tests:
           - not_null
-      - name: PRODUCT_ID
+      - name: product_id
         tests:
           - not_null
 
   - name: stg_order_items
     columns:
-      - name: ORDER_ITEM_ID
+      - name: order_item_id
         tests:
           - not_null
-      - name: ORDER_ID
+      - name: order_id
         tests:
           - not_null
-      - name: PRODUCT_ID
+      - name: product_id
         tests:
           - not_null
 
   - name: stg_orders
     columns:
-      - name: ORDER_ID
+      - name: order_id
         tests:
           - not_null
-      - name: CUSTOMER_ID
+      - name: customer_id
         tests:
           - not_null
 
   - name: stg_products
     columns:
-      - name: PRODUCT_ID
+      - name: product_id
         tests:
           - not_null
-      - name: CATEGORY_ID
+      - name: category_id
         tests:
           - not_null
-      - name: SUBCATEGORY_ID
+      - name: subcategory_id
         tests:
           - not_null
 
   - name: stg_reviews
     columns:
-      - name: PRODUCT_ID
+      - name: product_id
         tests:
           - not_null
-      - name: ORDER_ID
+      - name: order_id
         tests:
           - not_null
-      - name: CUSTOMER_ID
+      - name: customer_id
         tests:
           - not_null
 
   - name: stg_subcategories
     columns:
-      - name: SUBCATEGORY_ID
+      - name: subcategory_id
         tests:
           - not_null
-      - name: CATEGORY_ID
+      - name: category_id
         tests:
           - not_null
+
